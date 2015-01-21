@@ -1,0 +1,6 @@
+.jshintignore
+.jshintrc
+.editorconfig
+.gitattributes
+.jscs.json
+Gruntfile.js

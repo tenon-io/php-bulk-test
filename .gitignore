@@ -1,0 +1,17 @@
+.project
+.settings
+*~
+*.diff
+*.patch
+.DS_Store
+.idea
+package
+.settings
+atlassian-ide-plugin.xml
+node_modules
+bower_components
+temp
+.tmp
+.sass-cache
+dist/config.php
+src/config.php
