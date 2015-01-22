@@ -1,6 +1,6 @@
 # PHP Bulk Tenon Tester
 
-This is a proof-of-concept created to demonstrate testng using Tenon.io.
+This is a proof-of-concept created to demonstrate testing of a series of URLs using Tenon.io.
 
 ## Intro
 
@@ -10,7 +10,7 @@ You should eventually dive right into the documentation to make your own awesome
 
 ## How this thing works
 
-This is a really simple queue tester. It takes a list of URLs and submits them to Tenon in an asynchronous fashion. As it submits the URLs to Tenon, pages are tested, and results written to a database.
+This is a really simple queue tester. It takes a list of URLs (located in a text file) and submits them to Tenon in an asynchronous fashion. As it submits the URLs to Tenon, pages are tested, and results written to a database.
 
 ## Requirements
 
@@ -29,6 +29,11 @@ This will install all project dependencies.
 
 ## Configure
 Next step is to configure it. Open up the file located at `src/lib/config-sample.php`.  That file is very well commented. Make the necessary changes and then save the file as `src/lib/config.php`.
+
+## Set up your queue
+The config file discussed above has a config option called `QUEUE_FILE_PATH`. This must be a plain text file of URLs - **one URL per line** - that you want to test. This repo includes an empty `queue.txt` file as well as a sample file called `fortune-500.txt`. Naturally, you'll want to create your own queue of URLs for the pages you want to test.
+
+*We don't recommend that you actually use the `fortune-500.txt` file because doing so will, obviously, run up against your plan's daily limit*. 
 
 ## Install & Use it
 Next step is to run the following command in Terminal/ Windows Command Prompt:
