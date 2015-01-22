@@ -260,7 +260,7 @@ class tenonQueueTest extends tenonTest
                 $this->db->EscapeString($issues[$x]['errorTitle']),
                 $this->db->EscapeString($issues[$x]['errorDescription']),
                 $this->db->EscapeString(implode(', ', $issues[$x]['standards'])),
-                $this->db->EscapeString(htmlentities($issues[$x]['errorSnippet'])),
+                $this->db->EscapeString($issues[$x]['errorSnippet']),
                 $this->db->EscapeString($issues[$x]['position']['line']),
                 $this->db->EscapeString($issues[$x]['position']['column']),
                 $this->db->EscapeString($issues[$x]['xpath']),
