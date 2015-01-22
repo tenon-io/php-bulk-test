@@ -33,7 +33,7 @@ Now that you're all started and ready to go, here's some general guidance on mak
 * [Issue a pull request](https://help.github.com/articles/using-pull-requests)
 * Drink beer.
 
-You can further be a good citizen by adding your custom JS files to the JSHint and JSCS tasks in the Grunt file.
+You can further be a good citizen by adding your custom JS files to the JSHint task in the Grunt file.
 
 ## Building
 Once you've made your changes/ created your examples, run the Grunt tasks. In terminal, just enter: `grunt`.  This will run all of the Grunt tasks, including making a deployment-ready copy of everything and placing it into the `/dist/` folder.  You can now upload/ deploy the contents of that folder anywhere you like.

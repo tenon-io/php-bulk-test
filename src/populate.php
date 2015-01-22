@@ -11,3 +11,5 @@ else{
 }
 
 $tenon->populateQueue($truncate);
+?>
+Queue Table Populated. If you don't see any errors above, <a href="index.php">go run the tests</a>!

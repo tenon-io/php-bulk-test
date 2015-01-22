@@ -6,7 +6,6 @@
 // error reporting. You should actually be setting this at your server
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED & ~E_WARNING);
 
-
 // debug mode. change this to 'true' to see a bunch of debugging messages for the CURL request. Otherwise leave this to false
 define('DEBUG', false);
 
@@ -30,7 +29,8 @@ define('EXPORT_FILE_NAME', 'tenon.csv');
 // in most cases responses are less than 6 seconds, but that often depends on tested page size, # of errors, etc.
 define('TEST_TIME_LIMIT', 30);
 
-// Total number of times to retry a URL before giving up.  Useful in case the Tenon API returns 500 or something
+// Total number of times to retry a URL before giving up.  Useful in case the Tenon API returns 500 or something.
+// Don't set this too high. Any more than 5 and you're probably wasting your time.
 define('RETRY_LIMIT', 3);
 
 // These are your Tenon request options. For more info, see:
