@@ -61,6 +61,8 @@ if (false === $db->RawExec($sql)) {
     echo '<p>Installation aborted. Could not create the tables.</p>';
     exit;
 } else {
+    echo '<p>Tables Created. Populating Queue Table.</p>';
+
     $tenon->install();
 }
 

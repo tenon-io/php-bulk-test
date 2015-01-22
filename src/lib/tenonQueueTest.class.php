@@ -377,13 +377,14 @@ class tenonQueueTest extends tenonTest
         }
 
         for ($x = 0; $x < $count; $x++) {
+
             $rows[$x] = array(
                 $issues[$x]['url'],
                 $issues[$x]['tID'],
                 $issues[$x]['resultTitle'],
                 $issues[$x]['errorTitle'],
                 $issues[$x]['errorDescription'],
-                implode(', ', $issues[$x]['standards']),
+                $issues[$x]['standards'],
                 html_entity_decode($issues[$x]['errorSnippet']),
                 $issues[$x]['issueLine'],
                 $issues[$x]['issueColumn'],
