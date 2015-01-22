@@ -6,9 +6,9 @@
     "keywords": [
         "accessibility, html, css, javascript, wai-aria"
     ],
-    "homepage": "http://www.tenon.io",
+    "homepage": "https://tenon.io",
     "bugs": {
-        "url": "https://bitbucket.org/tenon-io/tenon-js-embed-code/issues"
+        "url": "https://bitbucket.org/tenon-io/php-bulk-test/issues"
     },
     "contributors": [
         {
@@ -19,11 +19,11 @@
     "author": {
         "name": "Karl Groves",
         "email": "karl@tenon.io",
-        "url": "http://www.tenon.io"
+        "url": "https://tenon.io"
     },
     "repository": {
         "type": "git",
-        "url": "git@bitbucket.org:tenon-io/tenon-js-embed-code.git"
+        "url": "git@bitbucket.org:tenon-io/php-bulk-test.git"
     },
     "dependencies": {
         "time-grunt": "~0.3.1",

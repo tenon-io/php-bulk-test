@@ -26,8 +26,6 @@ $(document).ready(function () {
 
     $('#results caption').liveRegion();
 
-    //@TODO read the existing log.csv file and load the results, if any
-
     function queueTest() {
         $.get('test.php', function (response) {
 
@@ -38,8 +36,6 @@ $(document).ready(function () {
                 var newRow = $('<tr></tr>');
 
                 if ($('th[id="' + response.responseID + '"]').length == 0) {
-
-                    //@TODO append a link to open the CSV file for the specific page's results to the responseID column
                     $(newRow).append('<th scope="row" id="' + response.responseID + '">' + response.responseID + '</th>');
                     $(newRow).append('<td>' + response.dateAdded + '</td>');
                     $(newRow).append('<td>' + response.url + '</td>');
@@ -52,16 +48,18 @@ $(document).ready(function () {
                     //Update the table caption
                     $('#results caption').liveRegion({
                         replace: 'true',
-                        text: 'Total Tested: ' + response.totalTested + ', Total Remaining: ' + response.totalRemaining
+                        text: 'Total Tested: ' + response.totalTested + ', Total Remaining: ' + response.totalRemaining + ', Total Failed: ' + response.totalFailed
                     });
                 }
             }
 
         }, 'json');
+
+
     }
 
 
     if ($('#results').length > 0) {
-        setInterval(queueTest, 500);
+        setInterval(queueTest, 100);
     }
 });

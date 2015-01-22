@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<header role="banner"><a href="http://www.tenon.io"><img src="tenon-logo-no-border-dark.png" alt="Tenon.io"></a></header>
+<header role="banner"><a href="https://tenon.io"><img src="tenon-logo-no-border-dark.png" alt="Tenon.io"></a>
+</header>
 <main id="main" role="main">
 
 </main>

@@ -7,8 +7,7 @@
  */
 class tenonTest
 {
-    protected $url, $opts, $hash;
-    public $tenonResponse, $tURL;
+    public $url, $opts, $hash, $tenonResponse, $tURL;
 
     /**
      * Class constructor
@@ -90,33 +89,6 @@ class tenonTest
         }
 
         return $output;
-    }
-
-    /**
-     *
-     *
-     * @return bool
-     */
-    public function hashExists()
-    {
-        if (file_exists(HASH_FILE_PATH)) {
-            $array = file(HASH_FILE_PATH);
-
-            $array = $this->cleanArray($array);
-
-            if (false == in_array(trim($this->hash), $array, true)) {
-                $handle = fopen(HASH_FILE_PATH, 'a+');
-
-                if (false != $handle) {
-                    fwrite($handle, $this->hash . PHP_EOL);
-                    fclose($handle);
-                }
-
-                return false;
-            } else {
-                return true;
-            }
-        }
     }
 
     /**

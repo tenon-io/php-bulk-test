@@ -2,18 +2,20 @@
 // keep going even if user bounces off the page so that at very least *this* test runs successfully.
 ignore_user_abort(true);
 
+require($_SERVER['DOCUMENT_ROOT'] . '/lib/config.php');
+
 set_time_limit(TEST_TIME_LIMIT);
 
-require('lib/config.php');
-require('lib/tenonTest.class.php');
-require('lib/tenonQueueTest.class.php');
-
-$tenon = new tenonQueueTest(TENON_API_URL, $tenonOpts);
+$tenon = new tenonQueueTest($tenonOpts, $dbConnection);
 
 // check to see if there are any pages in the queue
 // we do this by counting the length of the queue. Proceed if the queue is > 1
 if ($tenon->getQueueLength() > 0) {
-    if(false !== $tenon->pluckURL()) {
+    $next = $tenon->pluckURL();
+
+    if(false !== $next) {
+
+        $tenon->opts['url'] = $next['url'];
 
         $tenon->submit(DEBUG);
 
@@ -21,27 +23,48 @@ if ($tenon->getQueueLength() > 0) {
         http_response_code($tenon->tCode);
 
         // Sanity check to make sure everything went OK
-        if($tenon->tCode <= MAX_HTTP_CODE) {
+        $tenon->decodeResponse();
 
-            $tenon->decodeResponse();
-
-            //assemble a response summary for appending to the #results table
-            $response = array(
+        //assemble a response summary for appending to the #results table
+        $response = array(
                 'responseID'     => $tenon->rspArray['request']['responseID'],
                 'dateAdded'      => $tenon->rspArray['responseTime'],
                 'url'            => $tenon->rspArray['request']['url'],
                 'status'         => $tenon->rspArray['status'],
                 'errors'         => $tenon->rspArray['resultSummary']['issues']['totalErrors'],
                 'warnings'       => $tenon->rspArray['resultSummary']['issues']['totalWarnings'],
-            );
+        );
 
-            $tenon->logResponse($response);
+        // This logs the response no matter what
+        $tenon->logResponse($response);
+
+        // this section updates the queued record
+        if($tenon->rspArray['status'] === 200){
+            $update = $response;
+            unset($update['dateAdded']);
+            unset($update['url']);
+            $update['tested'] = '1';
+            $update['rawResponse'] = $tenon->tenonResponse;
+            $update['dateTested'] = Date::UTC2MySQLDateTime();
+
+            $tenon->logIssues();
         }
+        else{
+            $update['status'] = $tenon->rspArray['status'];
+            $update['tested'] = '0';
+            $update['retries'] = $next['retries'] + 1;
+
+            sleep(1);
+        }
+
+        $update['testing'] = '0';
+        $tenon->updateQueuedURL($update, $next['queueID']);
     }
 
-} // if there aren't any remaining items in the queue, say so
-else {
-    $response = array('totalTested' => $tenon->getLogLength(), 'totalRemaining' => '0');
 }
+
+$response['totalRemaining'] = $tenon->getTotalUntested();
+$response['totalTested'] = $tenon->getTotalTested();
+$response['totalFailed'] = $tenon->getTotalFailed();
 
 echo json_encode($response);

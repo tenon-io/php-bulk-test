@@ -13,5 +13,5 @@ bower_components
 temp
 .tmp
 .sass-cache
-dist/config.php
-src/config.php
+dist/lib/config.php
+src/lib/config.php
