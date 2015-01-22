@@ -1,6 +1,20 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost:8889
+-- Generation Time: Jan 21, 2015 at 10:08 PM
+-- Server version: 5.5.38
+-- PHP Version: 5.5.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+
+--
+-- Database: `bulk_test`
+--
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `issues`
@@ -60,12 +74,34 @@ CREATE TABLE `responseLog` (
   `warnings` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Indexes for dumped tables
+--
 
+--
+-- Indexes for table `issues`
+--
 ALTER TABLE `issues`
  ADD KEY `responseID` (`responseID`);
 
+--
+-- Indexes for table `queue`
+--
 ALTER TABLE `queue`
  ADD PRIMARY KEY (`queueID`);
 
+--
+-- Indexes for table `responseLog`
+--
 ALTER TABLE `responseLog`
  ADD KEY `responseID` (`responseID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `queue`
+--
+ALTER TABLE `queue`
+MODIFY `queueID` int(6) NOT NULL AUTO_INCREMENT;

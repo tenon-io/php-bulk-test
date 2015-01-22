@@ -1,6 +1,9 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/lib/config.php');
 
+$tenon = new tenonQueueTest($tenonOpts, $dbConnection);
+
+
 // Step 1, make sure the tenon.sql file exists
 $sqlFile = $_SERVER['DOCUMENT_ROOT'] . '/install.sql';
 if (file_exists($sqlFile)) {
@@ -13,7 +16,7 @@ if (file_exists($sqlFile)) {
 
 // Step 2, wipe out existing tables
 // Step 2.1: connect to the database
-$db = new dbPDO($PDOConnection['dbName'], $PDOConnection['user'], $PDOConnection['pass'], $PDOConnection['opts'], $PDOConnection['dbType'], $PDOConnection['hostORpath'], $PDOConnection['port']);
+$db = new dbPDO($dbConnection['dbName'], $dbConnection['user'], $dbConnection['pass'], $dbConnection['opts'], $dbConnection['dbType'], $dbConnection['hostORpath'], $dbConnection['port']);
 if ((false === $db) || (get_class($db) !== 'dbPDO')) {
     echo '<p>Database object could not be created. Cannot continue.</p>';
     var_dump($db);
@@ -23,7 +26,7 @@ if ((false === $db) || (get_class($db) !== 'dbPDO')) {
 }
 
 // Step 2.2: get a list of all tables
-$tables = $db->ListTables($PDOConnection['dbName']);
+$tables = $db->ListTables($dbConnection['dbName']);
 if ((false === $tables) || (!is_array($tables))) {
     echo '<p>Could not fetch list of tables.  Cannot continue.</p>';
     var_dump($tables);
