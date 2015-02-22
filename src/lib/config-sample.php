@@ -40,7 +40,6 @@ $tenonOpts = array(
     'certainty'      => 0, // minimum test certainty
     'priority'       => 0, // minimum priority
     'projectID'       => '', // system ID - left blank by default
-    'reportID'       => '', // report ID - left blank by default
     'viewPortHeight' => '', //height of the viewport for Tenon to test in
     'viewPortWidth'  => '', //width of the viewport for Tenon to test in
     'uaString'       => '', // user agent string for Tenon to use
