@@ -305,7 +305,7 @@ class tenonQueueTest extends tenonTest
      * @return bool
      */
     public function exportAllIssues(){
-        $query = "SELECT * FROM issues";
+        $query = "SELECT * FROM issues ORDER BY url";
 
         $data = $this->db->SelectData($query, PDO::FETCH_ASSOC);
 
