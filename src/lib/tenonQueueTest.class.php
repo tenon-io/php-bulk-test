@@ -230,10 +230,28 @@ class tenonQueueTest extends tenonTest
      */
     public function install(){
         $this->populateQueue(true);
+        $this->cleanExts();
 
         $queries[] = "TRUNCATE TABLE issues";
         $queries[] = "TRUNCATE TABLE responseLog";
         return $this->db->MultiQuery($queries);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function cleanExts(){
+        $badExts = array('.png', '.jpg', '.pdf', '.swf', '.css', '.js', '.gif', '.jpeg', '.wav', '.au', '.doc',
+            '.docx', '.txt', '.rtf', '.xls', '.xlsx', '.class', '.bmp', '.inf', '.art', '.htc', '.mov',
+            '.pps', '.ppt', '.pub', '.swf', '.wmf', '.wmv', '.xml');
+
+        foreach($badExts AS $ext){
+            $queries[] = "DELETE FROM queue WHERE url LIKE '%". $ext ."'";
+
+        }
+
+        return $this->db->MultiQuery($queries);
+
     }
 
 

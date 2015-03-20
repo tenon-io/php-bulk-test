@@ -60,6 +60,6 @@ $(document).ready(function () {
 
 
     if ($('#results').length > 0) {
-        setInterval(queueTest, 100);
+        setInterval(queueTest, 500);
     }
 });
