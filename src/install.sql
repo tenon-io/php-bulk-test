@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.2.5
--- http://www.phpmyadmin.net
---
--- Host: localhost:8889
--- Generation Time: Jan 21, 2015 at 10:08 PM
--- Server version: 5.5.38
--- PHP Version: 5.5.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -35,7 +27,7 @@ CREATE TABLE `issues` (
   `certainty` int(3) NOT NULL,
   `priority` int(3) NOT NULL,
   `ref` varchar(255) NOT NULL,
-  `signature` varchar(255) NOT NULL
+  `signature` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -57,7 +49,7 @@ CREATE TABLE `queue` (
   `rawResponse` mediumtext NOT NULL,
   `responseID` varchar(255) NOT NULL,
   `testing` enum('0','1') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -82,13 +74,13 @@ CREATE TABLE `responseLog` (
 -- Indexes for table `issues`
 --
 ALTER TABLE `issues`
- ADD KEY `responseID` (`responseID`);
+ ADD KEY `responseID` (`responseID`), ADD KEY `tID` (`tID`), ADD KEY `certainty` (`certainty`), ADD KEY `priority` (`priority`), ADD KEY `signature` (`signature`);
 
 --
 -- Indexes for table `queue`
 --
 ALTER TABLE `queue`
- ADD PRIMARY KEY (`queueID`);
+ ADD PRIMARY KEY (`queueID`), ADD KEY `retries` (`retries`), ADD KEY `testing` (`testing`), ADD KEY `tested` (`tested`);
 
 --
 -- Indexes for table `responseLog`
