@@ -47,6 +47,9 @@ Finally, navigate to the installed location and open the `/install.php` file. Th
 ## Get your results
 When all your testing is done, simply go to `/export.php`. This will create a master CSV file for all results found and a CSV file for each page tested. They will be located in `/results/`
 
+## View Reports
+You can also get high-level stats information by going to the `/reports.php` page. This information comes in via AJAX due to the possibility of a large amount of data being collected.  Reports will automatically update every 2 minutes via AJAX.
+
 ## Contributing
 
 View the CONTRIBUTING.md doc in the root of this repository.
