@@ -1,0 +1,63 @@
+\hypertarget{classg_timezone}{\section{g\-Timezone Class Reference}
+\label{classg_timezone}\index{g\-Timezone@{g\-Timezone}}
+}
+Inheritance diagram for g\-Timezone\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classg_timezone}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg_timezone_a877ccfb1a58d9c47f2d53ea6e87fa135}{get\-Timezone\-Opts} ()
+\item 
+\hyperlink{classg_timezone_a587655a6cdfbd5d48afd726336fc69e3}{convert\-Time} (\$conv\-\_\-fr\-\_\-zon=0, \$conv\-\_\-fr\-\_\-time=\char`\"{}\char`\"{}, \$conv\-\_\-to\-\_\-zon=0)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classg_timezone}{g\-Timezone} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classg_timezone_a587655a6cdfbd5d48afd726336fc69e3}{\index{g\-Timezone@{g\-Timezone}!convert\-Time@{convert\-Time}}
+\index{convert\-Time@{convert\-Time}!gTimezone@{g\-Timezone}}
+\subsubsection[{convert\-Time}]{\setlength{\rightskip}{0pt plus 5cm}convert\-Time (
+\begin{DoxyParamCaption}
+\item[{}]{\$conv\-\_\-fr\-\_\-zon = {\ttfamily 0}, }
+\item[{}]{\$conv\-\_\-fr\-\_\-time = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{}]{\$conv\-\_\-to\-\_\-zon = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classg_timezone_a587655a6cdfbd5d48afd726336fc69e3}
+Converts time from one timezone to the next Inspired by \href{http://truelogic.org/wordpress/2011/05/22/php-function-to-convert-time-from-one-timezone-to-another/}{\tt http\-://truelogic.\-org/wordpress/2011/05/22/php-\/function-\/to-\/convert-\/time-\/from-\/one-\/timezone-\/to-\/another/} U\-S\-A\-G\-E\-: Gets a G\-M\-T date and turns it into a U\-S East Coast Time \$timezone = new g\-Timezone(); \$us\-East\-Coast = \$timezone-\/$>$(0, “2011-\/05-\/09 11\-:00\-:00″, -\/5);
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$conv\-\_\-fr\-\_\-zon} & the 'from' timezone for the date to be converted, representing deviation from G\-M\-T (such as -\/5 for U\-S Eastern Time) \\
+\hline
+string & {\em \$conv\-\_\-fr\-\_\-time} & the time to be converted \\
+\hline
+int & {\em \$conv\-\_\-to\-\_\-zon} & the 'to' timezone for the new date, representing deviation from G\-M\-T (such as -\/5 for U\-S Eastern Time)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classg_timezone_a877ccfb1a58d9c47f2d53ea6e87fa135}{\index{g\-Timezone@{g\-Timezone}!get\-Timezone\-Opts@{get\-Timezone\-Opts}}
+\index{get\-Timezone\-Opts@{get\-Timezone\-Opts}!gTimezone@{g\-Timezone}}
+\subsubsection[{get\-Timezone\-Opts}]{\setlength{\rightskip}{0pt plus 5cm}get\-Timezone\-Opts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classg_timezone_a877ccfb1a58d9c47f2d53ea6e87fa135}
+returns a \char`\"{}friendly\char`\"{} list of timezone options into an array
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+g\-Timezone.\-class.\-php\end{DoxyCompactItemize}

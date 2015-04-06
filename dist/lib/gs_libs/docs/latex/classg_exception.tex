@@ -1,0 +1,163 @@
+\hypertarget{classg_exception}{\section{g\-Exception Class Reference}
+\label{classg_exception}\index{g\-Exception@{g\-Exception}}
+}
+Inheritance diagram for g\-Exception\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classg_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg_exception_a77206ff4fd1abddfb3db79243b97143a}{\-\_\-\-\_\-construct} (\$message=null, \$code=0, \$previous=null)
+\item 
+\hyperlink{classg_exception_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classg_exception_a385de9a5073a5d365e2f21656c46eee5}{g\-Message} (\$to\-String=true, \$delim=P\-H\-P\-\_\-\-E\-O\-L)
+\item 
+\hyperlink{classg_exception_a3ef664c80085963a2284f0ac6ddf4b25}{send\-Exception\-Email} (\$to, \$from)
+\item 
+\hyperlink{classg_exception_ae9d329cdadd0257c2bdb78ceab77836c}{log\-To\-Database} (\$connection, \$table)
+\item 
+\hyperlink{classg_exception_a9f99ac54ac45fe14024ce79054e31687}{log\-To\-File} (\$path\-To\-File, \$delim\-Char= '-\/', \$mode= 'a+')
+\item 
+\hyperlink{classg_exception_a0831a4e9bbffc32db61190f2a31974f7}{print\-Message} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg_exception_a110f48f6c2f2e5ffec81a1f22f242302}{{\bfseries \$\-Exception\-Query}}\label{classg_exception_a110f48f6c2f2e5ffec81a1f22f242302}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Custom exception handler. Extends P\-H\-P Exception and adds a few new methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classg_exception_a77206ff4fd1abddfb3db79243b97143a}{\index{g\-Exception@{g\-Exception}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!gException@{g\-Exception}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily null}, }
+\item[{}]{\$code = {\ttfamily 0}, }
+\item[{}]{\$previous = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a77206ff4fd1abddfb3db79243b97143a}
+constructor. Operates exactly like parent constructor except explicitly sets \$previous
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & the custom message you define \\
+\hline
+int & {\em \$code} & the custom code you define \\
+\hline
+Exception & {\em \$previous} & the previous exception thrown \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_exception_a421831a265621325e1fdd19aace0c758}{\index{g\-Exception@{g\-Exception}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!gException@{g\-Exception}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{classg_exception_a385de9a5073a5d365e2f21656c46eee5}{\index{g\-Exception@{g\-Exception}!g\-Message@{g\-Message}}
+\index{g\-Message@{g\-Message}!gException@{g\-Exception}}
+\subsubsection[{g\-Message}]{\setlength{\rightskip}{0pt plus 5cm}g\-Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$to\-String = {\ttfamily true}, }
+\item[{}]{\$delim = {\ttfamily PHP\-\_\-EOL}}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a385de9a5073a5d365e2f21656c46eee5}
+Assembles a message with more data than the default
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$to\-String} & whether or not to return a string or an array \\
+\hline
+string & {\em \$delim} & delimiter to use, if returning a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$|$array 
+\end{DoxyReturn}
+\hypertarget{classg_exception_ae9d329cdadd0257c2bdb78ceab77836c}{\index{g\-Exception@{g\-Exception}!log\-To\-Database@{log\-To\-Database}}
+\index{log\-To\-Database@{log\-To\-Database}!gException@{g\-Exception}}
+\subsubsection[{log\-To\-Database}]{\setlength{\rightskip}{0pt plus 5cm}log\-To\-Database (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_ae9d329cdadd0257c2bdb78ceab77836c}
+logs exception information to database
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$connection} & database connection details \\
+\hline
+string & {\em \$table} & the table into which the info will be inserted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_exception_a9f99ac54ac45fe14024ce79054e31687}{\index{g\-Exception@{g\-Exception}!log\-To\-File@{log\-To\-File}}
+\index{log\-To\-File@{log\-To\-File}!gException@{g\-Exception}}
+\subsubsection[{log\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}log\-To\-File (
+\begin{DoxyParamCaption}
+\item[{}]{\$path\-To\-File, }
+\item[{}]{\$delim\-Char = {\ttfamily '-\/'}, }
+\item[{}]{\$mode = {\ttfamily 'a+'}}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a9f99ac54ac45fe14024ce79054e31687}
+logs the exception to a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path\-To\-File} & full filesystem path to the file the log will be added to \\
+\hline
+string & {\em \$delim\-Char} & the character that will delimit new lines \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success 
+\end{DoxyReturn}
+\hypertarget{classg_exception_a0831a4e9bbffc32db61190f2a31974f7}{\index{g\-Exception@{g\-Exception}!print\-Message@{print\-Message}}
+\index{print\-Message@{print\-Message}!gException@{g\-Exception}}
+\subsubsection[{print\-Message}]{\setlength{\rightskip}{0pt plus 5cm}print\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a0831a4e9bbffc32db61190f2a31974f7}
+Simple function to print the message return void Message is echoed to screen \hypertarget{classg_exception_a3ef664c80085963a2284f0ac6ddf4b25}{\index{g\-Exception@{g\-Exception}!send\-Exception\-Email@{send\-Exception\-Email}}
+\index{send\-Exception\-Email@{send\-Exception\-Email}!gException@{g\-Exception}}
+\subsubsection[{send\-Exception\-Email}]{\setlength{\rightskip}{0pt plus 5cm}send\-Exception\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$to, }
+\item[{}]{\$from}
+\end{DoxyParamCaption}
+)}}\label{classg_exception_a3ef664c80085963a2284f0ac6ddf4b25}
+sends an email with exception information
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$to} & recipient of the email message \\
+\hline
+string & {\em \$from} & sender of the email message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+g\-Exception.\-class.\-php\end{DoxyCompactItemize}

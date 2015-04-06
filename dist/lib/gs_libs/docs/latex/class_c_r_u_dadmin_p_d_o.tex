@@ -1,0 +1,342 @@
+\hypertarget{class_c_r_u_dadmin_p_d_o}{\section{C\-R\-U\-Dadmin\-P\-D\-O Class Reference}
+\label{class_c_r_u_dadmin_p_d_o}\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}}
+}
+Inheritance diagram for C\-R\-U\-Dadmin\-P\-D\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_r_u_dadmin_p_d_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\-\_\-\-\_\-construct} (\$db\-Name, \$user, \$pass, \$opts=null, \$db\-Type= 'mysql', \$host\-O\-Rpath= 'localhost', \$port= '')
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a057f051ca656f78a79ca981dacebc88e}{config} (\$array)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a2e355627d2f4a96559f022c4ab82df3c}{insert} (\$data)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a342821d7c67c9611bc7be824c5df8464}{last\-Insert\-I\-D} ()
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a1d8c1067487068c15fdf6bf9a1c9cad5}{update} (\$data, \$id)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a2f8258add505482d7f00ea26493a5723}{delete} (\$id)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a6c93c8a03666211ecc629f533d87fede}{un\-Delete} (\$id)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a62e2e537ded1658daab4890c47e65cac}{real\-Delete} (\$id)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a3f2ceed45deff29e9ddceecacc401b21}{purge\-Deleted} ()
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_a53634d1376ca031c9fb15fc6c414b38d}{get\-By\-I\-D} (\$id, \$fields= '$\ast$ ')
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_aac8a1278b0a669d6aef1d88833acc356}{get\-All} (\$fields= '$\ast$ ', \$criteria\-Field= 'deleted', \$criteria\-Value= '0', \$extras=null, \$order\-By=null, \$order\-Dir= 'A\-S\-C', \$limit=null)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_ac591b2f363dc25c0c4fb3908a66fc510}{Select\-Specific\-Record} (\$criteria\-Field, \$criteria\-Value, \$fields= '$\ast$', \$extras=null)
+\item 
+\hyperlink{class_c_r_u_dadmin_p_d_o_ad7987609659b16267a44981bd5e64b3a}{admin\-Table} (\$fields= '$\ast$ ', \$criteria\-Field= 'deleted', \$criteria\-Value= '0', \$extras=null, \$order\-By=null, \$order\-Dir= 'A\-S\-C', \$limit=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_r_u_dadmin_p_d_o_adfd23e5286c56c7632ecb55887dd2555}{{\bfseries \$db\-Table}}\label{class_c_r_u_dadmin_p_d_o_adfd23e5286c56c7632ecb55887dd2555}
+
+\item 
+\hypertarget{class_c_r_u_dadmin_p_d_o_a8990497e330f7dbddd7c67e496bfa33b}{{\bfseries \$\-P\-Kfield}}\label{class_c_r_u_dadmin_p_d_o_a8990497e330f7dbddd7c67e496bfa33b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class uses the basic\-C\-R\-U\-D class to handle the vast majority of the administration of database entries. This class will provide coverage of the majority of entry administration tasks and can then be extended as needed for more specific cases. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$db\-Name, }
+\item[{}]{\$user, }
+\item[{}]{\$pass, }
+\item[{}]{\$opts = {\ttfamily null}, }
+\item[{}]{\$db\-Type = {\ttfamily 'mysql'}, }
+\item[{}]{\$host\-O\-Rpath = {\ttfamily 'localhost'}, }
+\item[{}]{\$port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}
+class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\-Name} & database name \\
+\hline
+string & {\em \$user} & database username \\
+\hline
+string & {\em \$pass} & database password \\
+\hline
+array & {\em \$opts} & connection options. \\
+\hline
+string & {\em \$db\-Type} & type of database -\/ must be one of the following\-: mysql, sqlite, pgsql, firebird, informix, oracle, odbc, dblib, ibm \\
+\hline
+string & {\em \$host\-O\-Rpath} & ip or name of host (in the case of mysql or pgsql) or file path to db (in case of sqlite, firebird) \\
+\hline
+string & {\em \$port} & additional param where you can specify the port \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a421831a265621325e1fdd19aace0c758}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_r_u_dadmin_p_d_o_ad7987609659b16267a44981bd5e64b3a}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!admin\-Table@{admin\-Table}}
+\index{admin\-Table@{admin\-Table}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{admin\-Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf admin\-Table} (
+\begin{DoxyParamCaption}
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$criteria\-Field = {\ttfamily 'deleted'}, }
+\item[{}]{\$criteria\-Value = {\ttfamily '0'}, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$order\-By = {\ttfamily null}, }
+\item[{}]{\$order\-Dir = {\ttfamily 'ASC'}, }
+\item[{}]{\$limit = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_ad7987609659b16267a44981bd5e64b3a}
+Generates a table to display all records (subject to optional criteria)
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]modify this to be more universally usable\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fields} & \\
+\hline
+string & {\em \$criteria\-Field} & \\
+\hline
+string & {\em \$criteria\-Value} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+string & {\em \$order\-By} & \\
+\hline
+string & {\em \$order\-Dir} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a057f051ca656f78a79ca981dacebc88e}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!config@{config}}
+\index{config@{config}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}config (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a057f051ca656f78a79ca981dacebc88e}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & a list of configuration options \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a2f8258add505482d7f00ea26493a5723}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!delete@{delete}}
+\index{delete@{delete}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a2f8258add505482d7f00ea26493a5723}
+Marks a record as deleted
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be marked as deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_aac8a1278b0a669d6aef1d88833acc356}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}get\-All (
+\begin{DoxyParamCaption}
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$criteria\-Field = {\ttfamily 'deleted'}, }
+\item[{}]{\$criteria\-Value = {\ttfamily '0'}, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$order\-By = {\ttfamily null}, }
+\item[{}]{\$order\-Dir = {\ttfamily 'ASC'}, }
+\item[{}]{\$limit = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_aac8a1278b0a669d6aef1d88833acc356}
+Gets all records (subject to optional criteria)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fields} & \\
+\hline
+string & {\em \$criteria\-Field} & \\
+\hline
+string & {\em \$criteria\-Value} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+string & {\em \$order\-By} & \\
+\hline
+string & {\em \$order\-Dir} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a53634d1376ca031c9fb15fc6c414b38d}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!get\-By\-I\-D@{get\-By\-I\-D}}
+\index{get\-By\-I\-D@{get\-By\-I\-D}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{get\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}get\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a53634d1376ca031c9fb15fc6c414b38d}
+Retrieves a record based on P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be retrieved \\
+\hline
+string & {\em \$fields} & database fields to be retrieved in the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a2e355627d2f4a96559f022c4ab82df3c}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!insert@{insert}}
+\index{insert@{insert}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}insert (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a2e355627d2f4a96559f022c4ab82df3c}
+Adds a new record to the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & associative array of data to be inserted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a342821d7c67c9611bc7be824c5df8464}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!last\-Insert\-I\-D@{last\-Insert\-I\-D}}
+\index{last\-Insert\-I\-D@{last\-Insert\-I\-D}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{last\-Insert\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}last\-Insert\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a342821d7c67c9611bc7be824c5df8464}
+Gets the latest inserted record (based on P\-K\-I\-D) in the table
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a3f2ceed45deff29e9ddceecacc401b21}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!purge\-Deleted@{purge\-Deleted}}
+\index{purge\-Deleted@{purge\-Deleted}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{purge\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}purge\-Deleted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a3f2ceed45deff29e9ddceecacc401b21}
+Permanently removes all records from the database which have been marked as 'deleted' \hypertarget{class_c_r_u_dadmin_p_d_o_a62e2e537ded1658daab4890c47e65cac}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!real\-Delete@{real\-Delete}}
+\index{real\-Delete@{real\-Delete}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{real\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}real\-Delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a62e2e537ded1658daab4890c47e65cac}
+Removes a record from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_ac591b2f363dc25c0c4fb3908a66fc510}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!Select\-Specific\-Record@{Select\-Specific\-Record}}
+\index{Select\-Specific\-Record@{Select\-Specific\-Record}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{Select\-Specific\-Record}]{\setlength{\rightskip}{0pt plus 5cm}Select\-Specific\-Record (
+\begin{DoxyParamCaption}
+\item[{}]{\$criteria\-Field, }
+\item[{}]{\$criteria\-Value, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_ac591b2f363dc25c0c4fb3908a66fc510}
+Selects a specific record from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$criteria\-Field} & the specific field used for the criteria to select the record \\
+\hline
+string & {\em \$criteria\-Value} & the specific value for the field to select the record \\
+\hline
+string & {\em \$fields} & the fields to retrieve from the query \\
+\hline
+string & {\em \$extras} & any extra stuff for the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a6c93c8a03666211ecc629f533d87fede}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!un\-Delete@{un\-Delete}}
+\index{un\-Delete@{un\-Delete}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{un\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}un\-Delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a6c93c8a03666211ecc629f533d87fede}
+Reinstates/ undeletes a record that was previously marked as deleted
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be reinstated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_c_r_u_dadmin_p_d_o_a1d8c1067487068c15fdf6bf9a1c9cad5}{\index{C\-R\-U\-Dadmin\-P\-D\-O@{C\-R\-U\-Dadmin\-P\-D\-O}!update@{update}}
+\index{update@{update}!CRUDadminPDO@{C\-R\-U\-Dadmin\-P\-D\-O}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}update (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_c_r_u_dadmin_p_d_o_a1d8c1067487068c15fdf6bf9a1c9cad5}
+Updates a database record
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & associative array of data to be updated \\
+\hline
+int & {\em \$id} & primary key I\-D of the record to be updated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-R\-U\-Dadmin\-P\-D\-O.\-class.\-php\end{DoxyCompactItemize}

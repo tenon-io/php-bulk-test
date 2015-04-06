@@ -1,0 +1,277 @@
+\hypertarget{classg_form_utils}{\section{g\-Form\-Utils Class Reference}
+\label{classg_form_utils}\index{g\-Form\-Utils@{g\-Form\-Utils}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg_form_utils_a9ace0e4b691466c8d2234fb8daa8bd8a}{get\-Bool\-To\-String} (\$val)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classg_form_utils_af879bc65f8bf1a8bf4961dbf98e12a43}{detect\-\_\-abuse} (\$val, \$bad\-\_\-strings, \$badstrs=false, \$newlines=false, \$bogusmail=false)
+\item 
+static \hyperlink{classg_form_utils_a5a536c160f2f6973bb35877fcb7af7a3}{check\-\_\-date} (\$date)
+\item 
+static \hyperlink{classg_form_utils_a30204d03faad7f4a6e3934a93b18e3b7}{validyear} (\$year)
+\item 
+static \hyperlink{classg_form_utils_ae43c8dc80d220c74426b6945d09b3d9f}{date\-\_\-not\-\_\-past} (\$month, \$day, \$year, \$strict=true)
+\item 
+static \hyperlink{classg_form_utils_a4e91969eaabe690ada15574f1e56121a}{check\-\_\-array\-\_\-keys} (\$array, \$rkeys)
+\item 
+static \hyperlink{classg_form_utils_a41fe8b8a7326496b9b98358fd231d89e}{Mail\-Val} (\$Addr, \$Level, \$Timeout=15000)
+\item 
+static \hyperlink{classg_form_utils_af11831fa6be865c1221fb0262204a0ec}{is\-\_\-valid\-\_\-ip} (\$ip)
+\item 
+static \hyperlink{classg_form_utils_a929b9f12ce7ee01a3ac51dc1a647fedf}{g\-Form\-Email} (\$recipient, \$sender, \$subject, \$message)
+\item 
+static \hyperlink{classg_form_utils_a8c49bf0ddcfe9dbaae3143996ab93e13}{array\-To\-Data\-List} (\$array, \$id)
+\item 
+static \hyperlink{classg_form_utils_ab791012972e76d999b6a4263e1eea2d5}{is\-Date\-Between} (\$x, \$start, \$end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class contains a number of methods used to work with the \hyperlink{classg_form}{g\-Form} class to assist in presentation and validation of forms. This separate file was created to keep the class file clean. Needless to say, this file needs to be called as an include in the same file which includes the main class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classg_form_utils_a8c49bf0ddcfe9dbaae3143996ab93e13}{\index{g\-Form\-Utils@{g\-Form\-Utils}!array\-To\-Data\-List@{array\-To\-Data\-List}}
+\index{array\-To\-Data\-List@{array\-To\-Data\-List}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{array\-To\-Data\-List}]{\setlength{\rightskip}{0pt plus 5cm}static array\-To\-Data\-List (
+\begin{DoxyParamCaption}
+\item[{}]{\$array, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a8c49bf0ddcfe9dbaae3143996ab93e13}
+creates a datalist element and all its options
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a4e91969eaabe690ada15574f1e56121a}{\index{g\-Form\-Utils@{g\-Form\-Utils}!check\-\_\-array\-\_\-keys@{check\-\_\-array\-\_\-keys}}
+\index{check\-\_\-array\-\_\-keys@{check\-\_\-array\-\_\-keys}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{check\-\_\-array\-\_\-keys}]{\setlength{\rightskip}{0pt plus 5cm}static check\-\_\-array\-\_\-keys (
+\begin{DoxyParamCaption}
+\item[{}]{\$array, }
+\item[{}]{\$rkeys}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a4e91969eaabe690ada15574f1e56121a}
+checks whether an array of keys matches the keys of an array in other words, given a list of keys that {\itshape should} be in the array, are they there?
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & the array to check \\
+\hline
+array & {\em \$rkeys} & the required keys to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a5a536c160f2f6973bb35877fcb7af7a3}{\index{g\-Form\-Utils@{g\-Form\-Utils}!check\-\_\-date@{check\-\_\-date}}
+\index{check\-\_\-date@{check\-\_\-date}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{check\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}static check\-\_\-date (
+\begin{DoxyParamCaption}
+\item[{}]{\$date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a5a536c160f2f6973bb35877fcb7af7a3}
+checks whether a date is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$date} & must be in M-\/\-D-\/\-Y format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if valid, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_ae43c8dc80d220c74426b6945d09b3d9f}{\index{g\-Form\-Utils@{g\-Form\-Utils}!date\-\_\-not\-\_\-past@{date\-\_\-not\-\_\-past}}
+\index{date\-\_\-not\-\_\-past@{date\-\_\-not\-\_\-past}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{date\-\_\-not\-\_\-past}]{\setlength{\rightskip}{0pt plus 5cm}static date\-\_\-not\-\_\-past (
+\begin{DoxyParamCaption}
+\item[{}]{\$month, }
+\item[{}]{\$day, }
+\item[{}]{\$year, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_ae43c8dc80d220c74426b6945d09b3d9f}
+checks whether a date occurs in the past
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$month} & the month to be validated \\
+\hline
+int & {\em \$day} & the day to be validated \\
+\hline
+int & {\em \$year} & the year to be validated \\
+\hline
+bool & {\em \$strict} & whether to include a strict validation that the date supplied actually exists Defaults to T\-R\-U\-E\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_af879bc65f8bf1a8bf4961dbf98e12a43}{\index{g\-Form\-Utils@{g\-Form\-Utils}!detect\-\_\-abuse@{detect\-\_\-abuse}}
+\index{detect\-\_\-abuse@{detect\-\_\-abuse}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{detect\-\_\-abuse}]{\setlength{\rightskip}{0pt plus 5cm}static detect\-\_\-abuse (
+\begin{DoxyParamCaption}
+\item[{}]{\$val, }
+\item[{}]{\$bad\-\_\-strings, }
+\item[{}]{\$badstrs = {\ttfamily false}, }
+\item[{}]{\$newlines = {\ttfamily false}, }
+\item[{}]{\$bogusmail = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_af879bc65f8bf1a8bf4961dbf98e12a43}
+detects multiple forms of abuse in form submissions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$val} & \\
+\hline
+array & {\em \$bad\-\_\-strings} & \\
+\hline
+bool & {\em \$badstrs} & \\
+\hline
+bool & {\em \$newlines} & \\
+\hline
+bool & {\em \$bogusmail} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a9ace0e4b691466c8d2234fb8daa8bd8a}{\index{g\-Form\-Utils@{g\-Form\-Utils}!get\-Bool\-To\-String@{get\-Bool\-To\-String}}
+\index{get\-Bool\-To\-String@{get\-Bool\-To\-String}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{get\-Bool\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}get\-Bool\-To\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classg_form_utils_a9ace0e4b691466c8d2234fb8daa8bd8a}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a929b9f12ce7ee01a3ac51dc1a647fedf}{\index{g\-Form\-Utils@{g\-Form\-Utils}!g\-Form\-Email@{g\-Form\-Email}}
+\index{g\-Form\-Email@{g\-Form\-Email}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{g\-Form\-Email}]{\setlength{\rightskip}{0pt plus 5cm}static g\-Form\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$recipient, }
+\item[{}]{\$sender, }
+\item[{}]{\$subject, }
+\item[{}]{\$message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a929b9f12ce7ee01a3ac51dc1a647fedf}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$recipient} & \\
+\hline
+string & {\em \$sender} & \\
+\hline
+string & {\em \$subject} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_af11831fa6be865c1221fb0262204a0ec}{\index{g\-Form\-Utils@{g\-Form\-Utils}!is\-\_\-valid\-\_\-ip@{is\-\_\-valid\-\_\-ip}}
+\index{is\-\_\-valid\-\_\-ip@{is\-\_\-valid\-\_\-ip}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{is\-\_\-valid\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}static is\-\_\-valid\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_af11831fa6be865c1221fb0262204a0ec}
+uses regex check to see if I\-P address is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip} & the I\-P address we're validating\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_ab791012972e76d999b6a4263e1eea2d5}{\index{g\-Form\-Utils@{g\-Form\-Utils}!is\-Date\-Between@{is\-Date\-Between}}
+\index{is\-Date\-Between@{is\-Date\-Between}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{is\-Date\-Between}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Date\-Between (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$start, }
+\item[{}]{\$end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_ab791012972e76d999b6a4263e1eea2d5}
+Checks to see if a date is between a specified start and end date \-:G\-O\-T\-C\-H\-A Uses strtotime. You are responsible for understanding how strtotime works!
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$x} & \\
+\hline
+string & {\em \$start} & \\
+\hline
+string & {\em \$end} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a41fe8b8a7326496b9b98358fd231d89e}{\index{g\-Form\-Utils@{g\-Form\-Utils}!Mail\-Val@{Mail\-Val}}
+\index{Mail\-Val@{Mail\-Val}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{Mail\-Val}]{\setlength{\rightskip}{0pt plus 5cm}static Mail\-Val (
+\begin{DoxyParamCaption}
+\item[{}]{\$\-Addr, }
+\item[{}]{\$\-Level, }
+\item[{}]{\$\-Timeout = {\ttfamily 15000}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a41fe8b8a7326496b9b98358fd231d89e}
+function will validate e-\/mail addresses implement this function as 'Mail\-Val(\$\-Addr, \$\-Level)'
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]this function is old. T\-L\-Ds and C\-Cs may be out of date.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\-Addr} & the e-\/mail address to be validated \\
+\hline
+int & {\em \$\-Level} & level, between 1 and 5 in ascending order of oppressiveness \\
+\hline
+int & {\em \$\-Timeout} & length, in seconds, the function will execute before it times out\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+\hypertarget{classg_form_utils_a30204d03faad7f4a6e3934a93b18e3b7}{\index{g\-Form\-Utils@{g\-Form\-Utils}!validyear@{validyear}}
+\index{validyear@{validyear}!gFormUtils@{g\-Form\-Utils}}
+\subsubsection[{validyear}]{\setlength{\rightskip}{0pt plus 5cm}static validyear (
+\begin{DoxyParamCaption}
+\item[{}]{\$year}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classg_form_utils_a30204d03faad7f4a6e3934a93b18e3b7}
+checks whether a year is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & the year to be validated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+g\-Form\-Utils.\-class.\-php\end{DoxyCompactItemize}

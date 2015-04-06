@@ -1,0 +1,233 @@
+\hypertarget{classtemplate}{\section{template Class Reference}
+\label{classtemplate}\index{template@{template}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtemplate_a4d8e4a324efce73096d5af1d4c143fdd}{\-\_\-\-\_\-construct} (\$path, \$tags=null, \$defaults=null)
+\item 
+\hyperlink{classtemplate_a182cb7b16d045c4aa1cbf6e0cd845933}{set\-Tags} (\$tags=null)
+\item 
+\hyperlink{classtemplate_aa36766cc96e8ead6a654535cd826cc92}{\-\_\-\-\_\-get} (\$thing)
+\item 
+\hyperlink{classtemplate_a1e08cf354600b2e56e93bd4f59636937}{\-\_\-\-\_\-set} (\$thing, \$value)
+\item 
+\hyperlink{classtemplate_aaa4e95f27857ab78defda3e0c0b7039b}{load} (\$file)
+\item 
+\hyperlink{classtemplate_ac900283b8780520c328c6457e34177f4}{set\-Defaults} ()
+\item 
+\hyperlink{classtemplate_a38d99acc70a1d8fd8f94455743b2d237}{parse} ()
+\item 
+\hyperlink{classtemplate_ad35591d0bad37abfb2074d5290c80e04}{set\-Meta\-Tags} (\$array, \$return= 'string')
+\item 
+\hyperlink{classtemplate_a94dbaa873d4f3a4dda41f5faa42d171b}{set\-Assets} (\$path, \$type, \$return= 'string')
+\item 
+\hyperlink{classtemplate_a4ee397e5785979b27b9eae8af6a434e1}{get\-Static\-Content} (\$file)
+\item 
+\hyperlink{classtemplate_a391db4247f8ebd4bdd6bae8032b0b42f}{conditional\-Display} (\$condition, \$content, \$alternative= '')
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtemplate_a475a6a63b85186663d34151bcbd21590}{{\bfseries \$tags}}\label{classtemplate_a475a6a63b85186663d34151bcbd21590}
+
+\item 
+\hypertarget{classtemplate_aa3e9534005fd516d941f6a5569896e01}{{\bfseries \$template}}\label{classtemplate_aa3e9534005fd516d941f6a5569896e01}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class template 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtemplate_a4d8e4a324efce73096d5af1d4c143fdd}{\index{template@{template}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!template@{template}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$tags = {\ttfamily null}, }
+\item[{}]{\$defaults = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a4d8e4a324efce73096d5af1d4c143fdd}
+class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to folder where templates are located \\
+\hline
+array & {\em \$tags} & key=$>$val pairs of tags and their content \\
+\hline
+array & {\em \$defaults} & array of default values for template tags \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtemplate_aa36766cc96e8ead6a654535cd826cc92}{\index{template@{template}!\-\_\-\-\_\-get@{\-\_\-\-\_\-get}}
+\index{\-\_\-\-\_\-get@{\-\_\-\-\_\-get}!template@{template}}
+\subsubsection[{\-\_\-\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_aa36766cc96e8ead6a654535cd826cc92}
+getter
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$thing} & the thing we're getting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classtemplate_a1e08cf354600b2e56e93bd4f59636937}{\index{template@{template}!\-\_\-\-\_\-set@{\-\_\-\-\_\-set}}
+\index{\-\_\-\-\_\-set@{\-\_\-\-\_\-set}!template@{template}}
+\subsubsection[{\-\_\-\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a1e08cf354600b2e56e93bd4f59636937}
+setter
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$thing} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtemplate_a391db4247f8ebd4bdd6bae8032b0b42f}{\index{template@{template}!conditional\-Display@{conditional\-Display}}
+\index{conditional\-Display@{conditional\-Display}!template@{template}}
+\subsubsection[{conditional\-Display}]{\setlength{\rightskip}{0pt plus 5cm}conditional\-Display (
+\begin{DoxyParamCaption}
+\item[{}]{\$condition, }
+\item[{}]{\$content, }
+\item[{}]{\$alternative = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a391db4247f8ebd4bdd6bae8032b0b42f}
+returns content only if a specific condition is true. else, returns a blank string
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$condition} & \\
+\hline
+{\em \$content} & \\
+\hline
+{\em \$alternative} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classtemplate_a4ee397e5785979b27b9eae8af6a434e1}{\index{template@{template}!get\-Static\-Content@{get\-Static\-Content}}
+\index{get\-Static\-Content@{get\-Static\-Content}!template@{template}}
+\subsubsection[{get\-Static\-Content}]{\setlength{\rightskip}{0pt plus 5cm}get\-Static\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a4ee397e5785979b27b9eae8af6a434e1}
+Loads a file of static content into a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & full system path to the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classtemplate_aaa4e95f27857ab78defda3e0c0b7039b}{\index{template@{template}!load@{load}}
+\index{load@{load}!template@{template}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}load (
+\begin{DoxyParamCaption}
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_aaa4e95f27857ab78defda3e0c0b7039b}
+Loads a template file and turns it into a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & name of the template file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classtemplate_a38d99acc70a1d8fd8f94455743b2d237}{\index{template@{template}!parse@{parse}}
+\index{parse@{parse}!template@{template}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a38d99acc70a1d8fd8f94455743b2d237}
+parses the template file and replaces tags with their content \hypertarget{classtemplate_a94dbaa873d4f3a4dda41f5faa42d171b}{\index{template@{template}!set\-Assets@{set\-Assets}}
+\index{set\-Assets@{set\-Assets}!template@{template}}
+\subsubsection[{set\-Assets}]{\setlength{\rightskip}{0pt plus 5cm}set\-Assets (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$type, }
+\item[{}]{\$return = {\ttfamily 'string'}}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a94dbaa873d4f3a4dda41f5faa42d171b}
+Generates links to external C\-S\-S or Javascript assets
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$path} & path(s) to the assets \\
+\hline
+string & {\em \$type} & what type of assets these are. Options are only C\-S\-S or Javascript \\
+\hline
+string & {\em \$return} & what to return. Options are only 'string' or 'array'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$|$string 
+\end{DoxyReturn}
+\hypertarget{classtemplate_ac900283b8780520c328c6457e34177f4}{\index{template@{template}!set\-Defaults@{set\-Defaults}}
+\index{set\-Defaults@{set\-Defaults}!template@{template}}
+\subsubsection[{set\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}set\-Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_ac900283b8780520c328c6457e34177f4}
+sets missing tags to their default values \hypertarget{classtemplate_ad35591d0bad37abfb2074d5290c80e04}{\index{template@{template}!set\-Meta\-Tags@{set\-Meta\-Tags}}
+\index{set\-Meta\-Tags@{set\-Meta\-Tags}!template@{template}}
+\subsubsection[{set\-Meta\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}set\-Meta\-Tags (
+\begin{DoxyParamCaption}
+\item[{}]{\$array, }
+\item[{}]{\$return = {\ttfamily 'string'}}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_ad35591d0bad37abfb2074d5290c80e04}
+Generates meta tags
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+string & {\em \$return} & what to return. Options are only 'string' or 'array'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$|$string 
+\end{DoxyReturn}
+\hypertarget{classtemplate_a182cb7b16d045c4aa1cbf6e0cd845933}{\index{template@{template}!set\-Tags@{set\-Tags}}
+\index{set\-Tags@{set\-Tags}!template@{template}}
+\subsubsection[{set\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}set\-Tags (
+\begin{DoxyParamCaption}
+\item[{}]{\$tags = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classtemplate_a182cb7b16d045c4aa1cbf6e0cd845933}
+Sets the tags to be used to populate template data This can be used on the tags fed via constructor or new tags can be added, too
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tags} & associative array of key=$>$val pairs \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+template.\-class.\-php\end{DoxyCompactItemize}

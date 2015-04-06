@@ -1,0 +1,376 @@
+\hypertarget{classg_form_boot_strap}{\section{g\-Form\-Boot\-Strap Class Reference}
+\label{classg_form_boot_strap}\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}}
+}
+Inheritance diagram for g\-Form\-Boot\-Strap\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classg_form_boot_strap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classg_form_boot_strap_abd4079f66c2a04d81af8e7674b8777e0}{\-\_\-\-\_\-construct} (\$action= '', \$method= '', \$connection=null)
+\item 
+\hyperlink{classg_form_boot_strap_a1f4232ed79c9b88bc3c5b47b025e7744}{editbox} (\$label, \$varname, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_a6ea9943a48bcd8c586e3fe78b8c71562}{dropdown} (\$label, \$varname, \$value\-\_\-array, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_aeed35dae69403ccf2a93a69b5d7abe61}{dropdown\-\_\-val} (\$label, \$varname, \$value\-\_\-array, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_a726da47f5bccd3146ecf936b90a86f29}{state\-Dropdown} (\$label, \$varname, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$us\-\_\-only=false, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_a9d6a45eabcab3b8a17165663cec6e513}{date\-Drop\-Set} (\$label, \$settings, \$varname, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_ae6cae34e565f7fe86b944bcd8e88db60}{multi\-Select} (\$label, \$varname, \$value\-\_\-array, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_a75f5f558be1b3535a68aa45cc7b22339}{textarea} (\$label, \$varname, \$required=false, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null, \$post\-String= '')
+\item 
+\hyperlink{classg_form_boot_strap_a83c6bbcee34e89edaf5981a1eda2da2b}{checkbox\-Nested} (\$varname, \$value\-\_\-array, \$method=null, \$\hyperlink{classg_form_a0b9b6e6acd4a839fc7c2f26f96b5cfa8}{display}=\char`\"{}block\char`\"{}, \$input\-Attrs=null, \$wrapper\-Attrs=null, \$label\-Attrs=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg_form_boot_strap_aa698a3e72116e8e778be0e95d908ee30}{{\bfseries \$action}}\label{classg_form_boot_strap_aa698a3e72116e8e778be0e95d908ee30}
+
+\item 
+\hypertarget{classg_form_boot_strap_a12661b2fc0f57f97e30a1620889ce9c6}{{\bfseries \$method}}\label{classg_form_boot_strap_a12661b2fc0f57f97e30a1620889ce9c6}
+
+\item 
+\hypertarget{classg_form_boot_strap_a0d9c79b9b86b3f5891c6d3892f12c6a0}{{\bfseries \$connection}}\label{classg_form_boot_strap_a0d9c79b9b86b3f5891c6d3892f12c6a0}
+
+\item 
+\hypertarget{classg_form_boot_strap_a49c7011be9c979d9174c52a8b83e5d8e}{{\bfseries \$config}}\label{classg_form_boot_strap_a49c7011be9c979d9174c52a8b83e5d8e}
+
+\item 
+\hypertarget{classg_form_boot_strap_ab1e2044844933970d1f1463832c0a689}{{\bfseries \$presets}}\label{classg_form_boot_strap_ab1e2044844933970d1f1463832c0a689}
+
+\item 
+\hypertarget{classg_form_boot_strap_ae23174ae7472be28c3b4d1e11864da99}{{\bfseries \$valfailed}}\label{classg_form_boot_strap_ae23174ae7472be28c3b4d1e11864da99}
+
+\item 
+\hypertarget{classg_form_boot_strap_af7fa52ab3124672ea860fed81a169938}{{\bfseries \$valmessage}}\label{classg_form_boot_strap_af7fa52ab3124672ea860fed81a169938}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classg_form_boot_strap_a9d0ae9d0264ebd1aba5a9ca6c7385169}{{\bfseries \$\-\_\-output}}\label{classg_form_boot_strap_a9d0ae9d0264ebd1aba5a9ca6c7385169}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to present \& validate forms. Processing of the data is, for the most part, not handled by this class. A very simple processing to submit into a database is available via the process\-Simple method but anything more complex should be done elsewhere.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]create method to use multidimensional array in a S\-E\-L\-E\-C\-T element 
+
+create method to make nested checkboxes via nested O\-Ls 
+
+create method to make two-\/column checkbox options 
+
+prevent consumer idiocy by checking for 'value' as a key on \$input\-Attrs and stripping it\end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classg_form_boot_strap_abd4079f66c2a04d81af8e7674b8777e0}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$action = {\ttfamily ''}, }
+\item[{}]{\$method = {\ttfamily ''}, }
+\item[{}]{\$connection = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_abd4079f66c2a04d81af8e7674b8777e0}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$action} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classg_form_boot_strap_a83c6bbcee34e89edaf5981a1eda2da2b}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!checkbox\-Nested@{checkbox\-Nested}}
+\index{checkbox\-Nested@{checkbox\-Nested}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{checkbox\-Nested}]{\setlength{\rightskip}{0pt plus 5cm}checkbox\-Nested (
+\begin{DoxyParamCaption}
+\item[{}]{\$varname, }
+\item[{}]{\$value\-\_\-array, }
+\item[{}]{\$method = {\ttfamily null}, }
+\item[{}]{\$display = {\ttfamily \char`\"{}block\char`\"{}}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a83c6bbcee34e89edaf5981a1eda2da2b}
+C\-H\-E\-C\-K\-B\-O\-X E\-L\-E\-M\-E\-N\-T\-S -\/ N\-E\-S\-T\-E\-D creates a set of checkboxes as a nested list to denote hierarchy
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]I don't think this method is finished\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$varname} & \\
+\hline
+array & {\em \$value\-\_\-array} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+string & {\em \$display} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_a9d6a45eabcab3b8a17165663cec6e513}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!date\-Drop\-Set@{date\-Drop\-Set}}
+\index{date\-Drop\-Set@{date\-Drop\-Set}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{date\-Drop\-Set}]{\setlength{\rightskip}{0pt plus 5cm}date\-Drop\-Set (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$settings, }
+\item[{}]{\$varname, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a9d6a45eabcab3b8a17165663cec6e513}
+S\-E\-L\-E\-C\-T E\-L\-E\-M\-E\-N\-T -\/ D\-A\-T\-E This presents a S\-E\-T of dropdowns for date This is based on H\-T\-M\-L4 and does not do any of the new H\-T\-M\-L5 hotness this creates a set of three dropdowns for month, day, and year
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]there appears to be no way to add input\-Attrs to the elements\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & the text label (for the entire set \\
+\hline
+array & {\em \$settings} & array of settings with the following keys array \$daydrop settings for use in creating the day dropdown array \$monthdrop settings for use in creating the month dropdown array \$yeardrop settings for use in creating the year dropdown string \$varname name of this element set, for use in printing validation warnings string \$order pipe delimited list, used to order these elements M\-U\-S\-T be pipe-\/delimited and M\-U\-S\-T contain O\-N\-L\-Y the words \char`\"{}month\char`\"{}, \char`\"{}day\char`\"{}, and \char`\"{}year\char`\"{}, separated by pipes \\
+\hline
+ & {\em \$varname} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & array of attributes for the wrapper \\
+\hline
+array & {\em \$label\-Attrs} & array of attributes for the labels \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_a6ea9943a48bcd8c586e3fe78b8c71562}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!dropdown@{dropdown}}
+\index{dropdown@{dropdown}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{dropdown}]{\setlength{\rightskip}{0pt plus 5cm}dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$value\-\_\-array, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a6ea9943a48bcd8c586e3fe78b8c71562}
+S\-E\-L\-E\-C\-T E\-L\-E\-M\-E\-N\-T (normal) Prints an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$select$>$ element and all its related $<$option$>$ elements In this case, the $<$option$>$ elements utilize an array which has no associative keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+array & {\em \$value\-\_\-array} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_aeed35dae69403ccf2a93a69b5d7abe61}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!dropdown\-\_\-val@{dropdown\-\_\-val}}
+\index{dropdown\-\_\-val@{dropdown\-\_\-val}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{dropdown\-\_\-val}]{\setlength{\rightskip}{0pt plus 5cm}dropdown\-\_\-val (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$value\-\_\-array, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_aeed35dae69403ccf2a93a69b5d7abe61}
+S\-E\-L\-E\-C\-T E\-L\-E\-M\-E\-N\-T -\/ uses the pipe method for different values than labels uses an array like 'item1$|$1' and makes '$<$option value=\char`\"{}1\char`\"{}$>$item1$<$/option$>$' prints an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$select$>$ element, with all its related $<$options$>$ different from above in the manner which it handles the option values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+array & {\em \$value\-\_\-array} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_a1f4232ed79c9b88bc3c5b47b025e7744}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!editbox@{editbox}}
+\index{editbox@{editbox}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{editbox}]{\setlength{\rightskip}{0pt plus 5cm}editbox (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a1f4232ed79c9b88bc3c5b47b025e7744}
+creates an I\-N\-P\-U\-T element. If no 'type' value is supplied in input attrs, defaults to text
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+G\-O\-T\-C\-H\-A\-: this strips slashes and converts \hyperlink{class_h_t_m_l}{H\-T\-M\-L} entities for security and stability G\-O\-T\-C\-H\-A\-: setting the value attribute in the \$input\-Attrs param will cause bugs, so don't do that instead use the set\-Presets method to do that\hypertarget{classg_form_boot_strap_ae6cae34e565f7fe86b944bcd8e88db60}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!multi\-Select@{multi\-Select}}
+\index{multi\-Select@{multi\-Select}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{multi\-Select}]{\setlength{\rightskip}{0pt plus 5cm}multi\-Select (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$value\-\_\-array, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_ae6cae34e565f7fe86b944bcd8e88db60}
+M\-U\-L\-T\-I S\-E\-L\-E\-C\-T E\-L\-E\-M\-E\-N\-T Creates a multi-\/select element. Keep in mind, this kind of form element has inherent accessibility challenges so a series of checkboxes may be a better option
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+array & {\em \$value\-\_\-array} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_a726da47f5bccd3146ecf936b90a86f29}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!state\-Dropdown@{state\-Dropdown}}
+\index{state\-Dropdown@{state\-Dropdown}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{state\-Dropdown}]{\setlength{\rightskip}{0pt plus 5cm}state\-Dropdown (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$us\-\_\-only = {\ttfamily false}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a726da47f5bccd3146ecf936b90a86f29}
+S\-E\-L\-E\-C\-T E\-L\-E\-M\-E\-N\-T -\/ S\-T\-A\-T\-E creates a dropdown for states (U\-S States and Canadian Provinces are supported)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+bool & {\em \$us\-\_\-only} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classg_form_boot_strap_a75f5f558be1b3535a68aa45cc7b22339}{\index{g\-Form\-Boot\-Strap@{g\-Form\-Boot\-Strap}!textarea@{textarea}}
+\index{textarea@{textarea}!gFormBootStrap@{g\-Form\-Boot\-Strap}}
+\subsubsection[{textarea}]{\setlength{\rightskip}{0pt plus 5cm}textarea (
+\begin{DoxyParamCaption}
+\item[{}]{\$label, }
+\item[{}]{\$varname, }
+\item[{}]{\$required = {\ttfamily false}, }
+\item[{}]{\$input\-Attrs = {\ttfamily null}, }
+\item[{}]{\$wrapper\-Attrs = {\ttfamily null}, }
+\item[{}]{\$label\-Attrs = {\ttfamily null}, }
+\item[{}]{\$post\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classg_form_boot_strap_a75f5f558be1b3535a68aa45cc7b22339}
+T\-E\-X\-T\-A\-R\-E\-A E\-L\-E\-M\-E\-N\-T makes a T\-E\-X\-T\-A\-R\-E\-A element
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$label} & \\
+\hline
+string & {\em \$varname} & \\
+\hline
+bool & {\em \$required} & \\
+\hline
+array & {\em \$input\-Attrs} & \\
+\hline
+array & {\em \$wrapper\-Attrs} & \\
+\hline
+array & {\em \$label\-Attrs} & \\
+\hline
+string & {\em \$post\-String} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+g\-Form\-Boot\-Strap.\-class.\-php\end{DoxyCompactItemize}

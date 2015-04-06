@@ -1,0 +1,1539 @@
+\hypertarget{classdb_p_d_o}{\section{db\-P\-D\-O Class Reference}
+\label{classdb_p_d_o}\index{db\-P\-D\-O@{db\-P\-D\-O}}
+}
+Inheritance diagram for db\-P\-D\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.274854cm]{classdb_p_d_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdb_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\-\_\-\-\_\-construct} (\$db\-Name, \$user, \$pass, \$opts=null, \$db\-Type= 'mysql', \$host\-O\-Rpath= 'localhost', \$port= '')
+\item 
+\hyperlink{classdb_p_d_o_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classdb_p_d_o_a57eb4521bd6f86c09be488cf2dbbbce7}{conn} ()
+\item 
+\hyperlink{classdb_p_d_o_a2fd4e06444aa4ace4cab6d6950ba2bb2}{Close} ()
+\item 
+\hyperlink{classdb_p_d_o_a1a480f419105d0b00c2a789ebedbb765}{Raw\-Exec} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_ad859e8675db57294ba6a613bc4d14275}{Raw\-Query\-Fetch\-All} (\$query, \$mode=P\-D\-O\-::\-F\-E\-T\-C\-H\-\_\-\-A\-S\-S\-O\-C, \$false\-On\-Zero=true)
+\item 
+\hyperlink{classdb_p_d_o_a95a881be3b8672a22dc24cc44d375d69}{Raw\-Query} (\$query, \$mode=P\-D\-O\-::\-F\-E\-T\-C\-H\-\_\-\-B\-O\-T\-H, \$false\-On\-Zero=true)
+\item 
+\hyperlink{classdb_p_d_o_a3c670e6dfd1079f88da108bd17e6c3ed}{Create\-D\-B} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_aeb142d5976a4127f68c245aa387b9872}{Create\-Table} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_a66aa25c4b32911bb80636a76ae8b4085}{Drop\-D\-B} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_a950361852a54211a990d624310b72881}{Insert\-Data} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_a825363733f9f9c350717b67e8ce2c373}{Insert\-Array} (\$data, \$table)
+\item 
+\hyperlink{classdb_p_d_o_a8ad62f7b18a59b358aa4222db6faef9c}{Insert\-Prepared} (\$data, \$table)
+\item 
+\hyperlink{classdb_p_d_o_a9d533695a61e9f7f253e9d1e82fe1b8e}{Insert\-Multiple\-Prepared} (\$table, \$values)
+\item 
+\hyperlink{classdb_p_d_o_af69a5485cb48e8bc7008e986649365ca}{Insert\-Multiple} (\$table, \$values)
+\item 
+\hyperlink{classdb_p_d_o_a722b9874cb2622dcc9fcafbbac9c0463}{Update\-Array} (\$table, \$array, \$key\-Field, \$key\-Val, \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_a39d5d8136607cadcb4ce7435c05e0ae6}{Update\-Prepared} (\$data, \$table, \$key\-Field, \$key\-Val)
+\item 
+\hyperlink{classdb_p_d_o_a9d8e6bafc3a9a916619905149e942899}{Update\-Data} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_a000b483a85c314aec4a33cba9fe270fc}{Delete\-Data} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_a978067e18db2c66e6fc145666dc47704}{Delete\-Record} (\$table, \$field, \$val, \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_aff0a48ec6c7c9cd47d0b18641b75fad2}{Delete\-Prepared} (\$table, \$field, \$val, \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_a8dcdb949658f7e241d5668e82687bd39}{Select\-Data} (\$query, \$mode=P\-D\-O\-::\-F\-E\-T\-C\-H\-\_\-\-B\-O\-T\-H, \$false\-On\-Zero=true)
+\item 
+\hyperlink{classdb_p_d_o_a13df306ce8e6e3b54c598172d854a6e9}{Select\-Single\-Record} (\$query, \$mode=P\-D\-O\-::\-F\-E\-T\-C\-H\-\_\-\-B\-O\-T\-H)
+\item 
+\hyperlink{classdb_p_d_o_a0dd22b74a556f9f43ae53548cb7699ac}{Select\-Specific\-Record} (\$table, \$criteria\-Field, \$criteria\-Value, \$fields= '$\ast$', \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_a1634a82616e367dd602cebf65add9e09}{Select\-Prepared} (\$table, \$criteria, \$fields= '$\ast$', \$limit=null, \$order\-By=null, \$order\-Dir=null)
+\item 
+\hyperlink{classdb_p_d_o_a4d584dd1e4be28f2a7379052bb37ab88}{get\-Sum\-Field} (\$field, \$table, \$clause= '', \$label=null)
+\item 
+\hyperlink{classdb_p_d_o_a8b568e0243996807cf756d1ed3d6803a}{get\-Avg\-Field} (\$field, \$table, \$clause= '', \$label=null)
+\item 
+\hyperlink{classdb_p_d_o_aa3d3c4386260cf9ef621e8bebff62160}{get\-Max\-Field} (\$field, \$table, \$clause= '', \$label=null)
+\item 
+\hyperlink{classdb_p_d_o_ae2d5882188b4ac6bd24118262f5062c2}{get\-Min\-Field} (\$field, \$table, \$clause= '', \$label=null)
+\item 
+\hyperlink{classdb_p_d_o_a57fb58572b8b73754677fcc9206526e2}{Escape\-String} (\$string, \$strip\-Tags=false, \$param\-Type=P\-D\-O\-::\-P\-A\-R\-A\-M\-\_\-\-S\-T\-R)
+\item 
+\hyperlink{classdb_p_d_o_ae71f1ba634ecb883630cc61bb28966b4}{List\-Fields} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a0b1ca1da0e3fdadb229c29f71486c26e}{List\-Tables} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_a15bee2046e8b15d7728f265eb1621485}{Show\-Indexes} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_ae9e393a3d4e60be19df990f0beaddaab}{Optimize\-Database} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_ae8e5b15325e3167666acac5273ec4835}{Optimize\-Table} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a8c37ee47f954a63f9ae79633e645a42e}{Table\-Exists} (\$database, \$table)
+\item 
+\hyperlink{classdb_p_d_o_a095c4f83eff3e2ae70e62f87068e29f5}{Field\-Exists} (\$field, \$table)
+\item 
+\hyperlink{classdb_p_d_o_a7973975515944e55e52619515c83d264}{Record\-Exists} (\$table, \$fieldname, \$fieldvalue, \$extras= '')
+\item 
+\hyperlink{classdb_p_d_o_a42e74f8481b5c76fec062a9901889b98}{Get\-Item\-Count} (\$table, \$field\-\_\-name= '', \$id= '', \$extras= '')
+\item 
+\hyperlink{classdb_p_d_o_a1a3e5b8d48f48b0ff961abd48b7b2cc4}{S\-Q\-L\-Import} (\$file, \$sleep=3)
+\item 
+\hyperlink{classdb_p_d_o_a155f30fa0b581f7901ca65ff78e4a412}{Empty\-Table} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a582880c7d33ddecf23ef0bd4ab094e21}{Drop\-Table} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a0466176406e21bf25c58bceff61ac038}{Sanitize\-Values} (\$expected, \$teh\-Global)
+\item 
+\hyperlink{classdb_p_d_o_adedb766b7d1e207120f646511060653f}{Describe\-Table} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_ab0be4258c0386d6adc32394969b28faf}{Dump\-Describe} (\$data)
+\item 
+\hyperlink{classdb_p_d_o_a423b4500f65e4d8e0178081d8e40d587}{get\-Table\-Status} (\$table, \$key=null)
+\item 
+\hyperlink{classdb_p_d_o_aac90a12617acd0c0e029578edcdb2d4b}{Next\-I\-D} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a575dfedc21a3fa227430424864b2110c}{Multi\-Query} (\$array, \$sleep=false, \$sleep\-Num=null, \$sleep\-Time=null)
+\item 
+\hyperlink{classdb_p_d_o_ae6869777ce31414a8cb23a4e48dad288}{Multi\-Query\-Transaction} (\$queries)
+\item 
+\hyperlink{classdb_p_d_o_a90f6db25df3fb3cfaead3ed37df8961f}{Get\-D\-B\-Info} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_a7e074c1f9b58dadebbd0886cd5e51958}{Explain\-Query} (\$query)
+\item 
+\hyperlink{classdb_p_d_o_aa8ca4594bbf9d1d8a10e156add940923}{make\-Rand} (\$table, \$field\-\_\-name= '', \$id= '', \$extras= '')
+\item 
+\hyperlink{classdb_p_d_o_a96e5f76350e0a97c210fefb54a0a33f8}{get\-Latest\-Records} (\$table, \$order\-Field, \$order\-Dir= 'D\-E\-S\-C', \$limit=1, \$fields= '$\ast$', \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_a70ad2609f7efd4a68121f0d94b912402}{get\-Latest\-Single\-Record} (\$table, \$order\-Field, \$order\-Dir= 'D\-E\-S\-C', \$fields= '$\ast$', \$extras=null)
+\item 
+\hyperlink{classdb_p_d_o_a3d2a1ced1ef3cca4e002782b46ecc8e1}{get\-I\-D\-From\-Key} (\$table, \$id\-Field, \$key\-Field, \$key\-Val)
+\item 
+\hyperlink{classdb_p_d_o_adc7544a8840d5fd7e539f71fb8d83471}{I\-N\-Clause} (\$field, \$ids, \$escape=true)
+\item 
+\hyperlink{classdb_p_d_o_a49470b9344158c38642e83ecd35001a2}{generate\-Key} (\$table, \$field, \$length=8)
+\item 
+\hyperlink{classdb_p_d_o_a9a5b5961eaf94742e4e501d316dbec94}{get\-Primary\-Key} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a0e5d18a3b673b71c7021da0290e19c13}{show\-Create\-Table} (\$table)
+\item 
+\hyperlink{classdb_p_d_o_a2976cf4c2e337ae307e39192d1c123a6}{show\-Create\-Database} (\$database)
+\item 
+\hyperlink{classdb_p_d_o_a9811ce2a20086457e7d107f0cc7a9099}{find\-Duplicates} (\$table, \$fields= '$\ast$', \$group\-By=null)
+\item 
+\hyperlink{classdb_p_d_o_ae773562ecea3e4b041abb27f7b904fec}{get\-Enum\-Defaults} (\$table, \$field)
+\item 
+\hyperlink{classdb_p_d_o_af56bf70da4ade6315951e09ae9c19753}{url\-Domain\-String} (\$field)
+\item 
+\hyperlink{classdb_p_d_o_a7707469119f1b1246a59bb07d9600f25}{data\-To\-C\-S\-V} (\$query, \$file, \$mode= 'w', \$delimiter= ',', \$enclosure= '\char`\"{}') 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classdb_p_d_o_ad9aef582c0745cb1f7ef67ae6d9e7d1d}{make\-Query\-Or\-Loop} (\$field, \$array)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdb_p_d_o_a68f39949e76b64662a06cb56579d91c3}{{\bfseries \$db\-Name}}\label{classdb_p_d_o_a68f39949e76b64662a06cb56579d91c3}
+
+\item 
+\hypertarget{classdb_p_d_o_a598ca4e71b15a1313ec95f0df1027ca5}{{\bfseries \$user}}\label{classdb_p_d_o_a598ca4e71b15a1313ec95f0df1027ca5}
+
+\item 
+\hypertarget{classdb_p_d_o_a12ec2780b52bd1c54d38c2f981c0349f}{{\bfseries \$pass}}\label{classdb_p_d_o_a12ec2780b52bd1c54d38c2f981c0349f}
+
+\item 
+\hypertarget{classdb_p_d_o_a2fce6a9b8be45967a21c53a89d006eaf}{{\bfseries \$opts}}\label{classdb_p_d_o_a2fce6a9b8be45967a21c53a89d006eaf}
+
+\item 
+\hypertarget{classdb_p_d_o_ab21baaff54912c674f85ae3221aa83cd}{{\bfseries \$conn\-Str}}\label{classdb_p_d_o_ab21baaff54912c674f85ae3221aa83cd}
+
+\item 
+\hypertarget{classdb_p_d_o_a1fa3127fc82f96b1436d871ef02be319}{{\bfseries \$db}}\label{classdb_p_d_o_a1fa3127fc82f96b1436d871ef02be319}
+
+\item 
+\hypertarget{classdb_p_d_o_a63b68daf124fa00e6bcfce64fabbdbe1}{{\bfseries \$db\-Type}}\label{classdb_p_d_o_a63b68daf124fa00e6bcfce64fabbdbe1}
+
+\item 
+\hypertarget{classdb_p_d_o_aeca28083f6c3846a0a4dd1681a75c76e}{{\bfseries \$last\-Query}}\label{classdb_p_d_o_aeca28083f6c3846a0a4dd1681a75c76e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for performing basic database tasks with P\-D\-O.
+
+N\-O\-T\-E\-: Although this uses P\-D\-O, a handful of methods in this class will probably only work with My\-S\-Q\-L particularly those which retrieve information {\itshape about} tables such as get\-Primary\-Key, etc. All methods that Insert/ Read/ Update/ Delete data should be pretty database agnostic.
+
+N\-O\-T\-E\-: At the moment this class has O\-N\-L\-Y been tested on My\-S\-Q\-L
+
+T\-O S\-E\-T N\-A\-M\-E\-S, U\-S\-E O\-N T\-H\-E \$opts P\-A\-R\-A\-M O\-F T\-H\-E C\-O\-N\-S\-T\-R\-U\-C\-T\-O\-R\-: array(P\-D\-O\-::\-M\-Y\-S\-Q\-L\-\_\-\-A\-T\-T\-R\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-M\-A\-N\-D =$>$ 'S\-E\-T N\-A\-M\-E\-S \textbackslash{}'U\-T\-F8\textbackslash{}'') 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdb_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\index{db\-P\-D\-O@{db\-P\-D\-O}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$db\-Name, }
+\item[{}]{\$user, }
+\item[{}]{\$pass, }
+\item[{}]{\$opts = {\ttfamily null}, }
+\item[{}]{\$db\-Type = {\ttfamily 'mysql'}, }
+\item[{}]{\$host\-O\-Rpath = {\ttfamily 'localhost'}, }
+\item[{}]{\$port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}
+class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\-Name} & database name \\
+\hline
+string & {\em \$user} & database username \\
+\hline
+string & {\em \$pass} & database password \\
+\hline
+array & {\em \$opts} & connection options. \\
+\hline
+string & {\em \$db\-Type} & type of database -\/ must be one of the following\-: mysql, sqlite, pgsql, firebird, informix, oracle, odbc, dblib, ibm \\
+\hline
+string & {\em \$host\-O\-Rpath} & ip or name of host (in the case of mysql or pgsql) or file path to db (in case of sqlite, firebird) \\
+\hline
+string & {\em \$port} & additional param where you can specify the port\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em P\-D\-O\-Exception} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classdb_p_d_o_a421831a265621325e1fdd19aace0c758}{\index{db\-P\-D\-O@{db\-P\-D\-O}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables and closes the database handle 
+
+\subsection{Member Function Documentation}
+\hypertarget{classdb_p_d_o_a2fd4e06444aa4ace4cab6d6950ba2bb2}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Close@{Close}}
+\index{Close@{Close}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a2fd4e06444aa4ace4cab6d6950ba2bb2}
+Explicitly closes the database handle \hypertarget{classdb_p_d_o_a57eb4521bd6f86c09be488cf2dbbbce7}{\index{db\-P\-D\-O@{db\-P\-D\-O}!conn@{conn}}
+\index{conn@{conn}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{conn}]{\setlength{\rightskip}{0pt plus 5cm}conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a57eb4521bd6f86c09be488cf2dbbbce7}
+Connects to P\-D\-O \hypertarget{classdb_p_d_o_a3c670e6dfd1079f88da108bd17e6c3ed}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Create\-D\-B@{Create\-D\-B}}
+\index{Create\-D\-B@{Create\-D\-B}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Create\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}Create\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a3c670e6dfd1079f88da108bd17e6c3ed}
+Creates a database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & name of the database we're creating\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success, F\-A\-L\-S\-E otherwise 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_aeb142d5976a4127f68c245aa387b9872}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Create\-Table@{Create\-Table}}
+\index{Create\-Table@{Create\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Create\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Create\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_aeb142d5976a4127f68c245aa387b9872}
+Runs a generic P\-D\-O\-::exec on a query to create a table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the S\-Q\-L statement used to create the table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a7707469119f1b1246a59bb07d9600f25}{\index{db\-P\-D\-O@{db\-P\-D\-O}!data\-To\-C\-S\-V@{data\-To\-C\-S\-V}}
+\index{data\-To\-C\-S\-V@{data\-To\-C\-S\-V}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{data\-To\-C\-S\-V}]{\setlength{\rightskip}{0pt plus 5cm}data\-To\-C\-S\-V (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$file, }
+\item[{}]{\$mode = {\ttfamily 'w'}, }
+\item[{}]{\$delimiter = {\ttfamily ','}, }
+\item[{}]{\$enclosure = {\ttfamily '\char`\"{}'}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a7707469119f1b1246a59bb07d9600f25}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$query} & \\
+\hline
+ & {\em \$file} & \\
+\hline
+string & {\em \$mode} & \\
+\hline
+string & {\em \$delimiter} & \\
+\hline
+string & {\em \$enclosure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a000b483a85c314aec4a33cba9fe270fc}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Delete\-Data@{Delete\-Data}}
+\index{Delete\-Data@{Delete\-Data}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Delete\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Delete\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a000b483a85c314aec4a33cba9fe270fc}
+deletes data from the database using any arbitrary query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to delete the data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_aff0a48ec6c7c9cd47d0b18641b75fad2}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Delete\-Prepared@{Delete\-Prepared}}
+\index{Delete\-Prepared@{Delete\-Prepared}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Delete\-Prepared}]{\setlength{\rightskip}{0pt plus 5cm}Delete\-Prepared (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field, }
+\item[{}]{\$val, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_aff0a48ec6c7c9cd47d0b18641b75fad2}
+deletes a specific record from the database using a prepared statement
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're deleting a record from \\
+\hline
+string & {\em \$field} & the criteria field in the table \\
+\hline
+int | string & {\em \$val} & the criteria value for the record to be deleted \\
+\hline
+string & {\em \$extras} & any arbitrary extra criteria for the deletion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a978067e18db2c66e6fc145666dc47704}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Delete\-Record@{Delete\-Record}}
+\index{Delete\-Record@{Delete\-Record}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Delete\-Record}]{\setlength{\rightskip}{0pt plus 5cm}Delete\-Record (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field, }
+\item[{}]{\$val, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a978067e18db2c66e6fc145666dc47704}
+deletes a specific record from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're deleting a record from \\
+\hline
+string & {\em \$field} & the criteria field in the table \\
+\hline
+int | string & {\em \$val} & the criteria value for the record to be deleted \\
+\hline
+string & {\em \$extras} & any arbitrary extra criteria for the deletion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_adedb766b7d1e207120f646511060653f}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Describe\-Table@{Describe\-Table}}
+\index{Describe\-Table@{Describe\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Describe\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Describe\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_adedb766b7d1e207120f646511060653f}
+gets details about a table N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a66aa25c4b32911bb80636a76ae8b4085}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Drop\-D\-B@{Drop\-D\-B}}
+\index{Drop\-D\-B@{Drop\-D\-B}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Drop\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}Drop\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a66aa25c4b32911bb80636a76ae8b4085}
+Drops a database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & name of the database we're dropping\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success, F\-A\-L\-S\-E otherwise 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a582880c7d33ddecf23ef0bd4ab094e21}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Drop\-Table@{Drop\-Table}}
+\index{Drop\-Table@{Drop\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Drop\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Drop\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a582880c7d33ddecf23ef0bd4ab094e21}
+runs a simple S\-Q\-L query on a table to drop it
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the name of the table to drop\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success, F\-A\-L\-S\-E otherwise 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ab0be4258c0386d6adc32394969b28faf}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Dump\-Describe@{Dump\-Describe}}
+\index{Dump\-Describe@{Dump\-Describe}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Dump\-Describe}]{\setlength{\rightskip}{0pt plus 5cm}Dump\-Describe (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ab0be4258c0386d6adc32394969b28faf}
+prints a purdy formatted table using information gained from the Describe\-Table method (above)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & the data that comes from Describe\-Table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} snippet 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a155f30fa0b581f7901ca65ff78e4a412}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Empty\-Table@{Empty\-Table}}
+\index{Empty\-Table@{Empty\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Empty\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Empty\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a155f30fa0b581f7901ca65ff78e4a412}
+runs a simple S\-Q\-L truncate query on a table to empty it
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table to be truncated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success, F\-A\-L\-S\-E otherwise 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a57fb58572b8b73754677fcc9206526e2}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Escape\-String@{Escape\-String}}
+\index{Escape\-String@{Escape\-String}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Escape\-String}]{\setlength{\rightskip}{0pt plus 5cm}Escape\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$strip\-Tags = {\ttfamily false}, }
+\item[{}]{\$param\-Type = {\ttfamily PDO\-:\-:PARAM\-\_\-STR}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a57fb58572b8b73754677fcc9206526e2}
+replacement for P\-D\-O\-::quote, this escapes special characters. Also, P\-D\-O\-::quote adds quotes at the beginning and end of strings which is lame and unwanted, so we're not doing that
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & the string we're working with \\
+\hline
+bool & {\em \$strip\-Tags} & whether or not to strip tags from the input string \\
+\hline
+int & {\em \$param\-Type} & parameter type hint to provide to P\-D\-O. See \href{http://php.net/manual/en/pdo.constants.php}{\tt http\-://php.\-net/manual/en/pdo.\-constants.\-php} for more\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a7e074c1f9b58dadebbd0886cd5e51958}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Explain\-Query@{Explain\-Query}}
+\index{Explain\-Query@{Explain\-Query}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Explain\-Query}]{\setlength{\rightskip}{0pt plus 5cm}Explain\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a7e074c1f9b58dadebbd0886cd5e51958}
+S\-T\-A\-T\-U\-S\-: T\-E\-S\-T\-E\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a095c4f83eff3e2ae70e62f87068e29f5}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Field\-Exists@{Field\-Exists}}
+\index{Field\-Exists@{Field\-Exists}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Field\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}Field\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a095c4f83eff3e2ae70e62f87068e29f5}
+checks to see if a field exists in the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & the field we're looking for \\
+\hline
+string & {\em \$table} & the table we're looking into\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a9811ce2a20086457e7d107f0cc7a9099}{\index{db\-P\-D\-O@{db\-P\-D\-O}!find\-Duplicates@{find\-Duplicates}}
+\index{find\-Duplicates@{find\-Duplicates}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{find\-Duplicates}]{\setlength{\rightskip}{0pt plus 5cm}find\-Duplicates (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$group\-By = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a9811ce2a20086457e7d107f0cc7a9099}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$table} & \\
+\hline
+string & {\em \$fields} & \\
+\hline
+null & {\em \$group\-By} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$|$bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a49470b9344158c38642e83ecd35001a2}{\index{db\-P\-D\-O@{db\-P\-D\-O}!generate\-Key@{generate\-Key}}
+\index{generate\-Key@{generate\-Key}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{generate\-Key}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field, }
+\item[{}]{\$length = {\ttfamily 8}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a49470b9344158c38642e83ecd35001a2}
+Generates a random string for use as a key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$field} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a8b568e0243996807cf756d1ed3d6803a}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Avg\-Field@{get\-Avg\-Field}}
+\index{get\-Avg\-Field@{get\-Avg\-Field}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Avg\-Field}]{\setlength{\rightskip}{0pt plus 5cm}get\-Avg\-Field (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$table, }
+\item[{}]{\$clause = {\ttfamily ''}, }
+\item[{}]{\$label = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a8b568e0243996807cf756d1ed3d6803a}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$clause} & \\
+\hline
+string & {\em \$label} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a90f6db25df3fb3cfaead3ed37df8961f}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Get\-D\-B\-Info@{Get\-D\-B\-Info}}
+\index{Get\-D\-B\-Info@{Get\-D\-B\-Info}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Get\-D\-B\-Info}]{\setlength{\rightskip}{0pt plus 5cm}Get\-D\-B\-Info (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a90f6db25df3fb3cfaead3ed37df8961f}
+gets an array of information about a database N\-O\-T\-E\-: this is My\-S\-Q\-L specific
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & the database we're working with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae773562ecea3e4b041abb27f7b904fec}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Enum\-Defaults@{get\-Enum\-Defaults}}
+\index{get\-Enum\-Defaults@{get\-Enum\-Defaults}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Enum\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}get\-Enum\-Defaults (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae773562ecea3e4b041abb27f7b904fec}
+
+\begin{DoxyParams}{Parameters}
+{\em \$table} & \\
+\hline
+{\em \$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$|$bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a3d2a1ced1ef3cca4e002782b46ecc8e1}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-I\-D\-From\-Key@{get\-I\-D\-From\-Key}}
+\index{get\-I\-D\-From\-Key@{get\-I\-D\-From\-Key}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-I\-D\-From\-Key}]{\setlength{\rightskip}{0pt plus 5cm}get\-I\-D\-From\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$id\-Field, }
+\item[{}]{\$key\-Field, }
+\item[{}]{\$key\-Val}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a3d2a1ced1ef3cca4e002782b46ecc8e1}
+Gets the primary key I\-D from a key. Used when providing a key that isn't the P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$id\-Field} & \\
+\hline
+string & {\em \$key\-Field} & \\
+\hline
+string & {\em \$key\-Val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a42e74f8481b5c76fec062a9901889b98}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Get\-Item\-Count@{Get\-Item\-Count}}
+\index{Get\-Item\-Count@{Get\-Item\-Count}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Get\-Item\-Count}]{\setlength{\rightskip}{0pt plus 5cm}Get\-Item\-Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field\-\_\-name = {\ttfamily ''}, }
+\item[{}]{\$id = {\ttfamily ''}, }
+\item[{}]{\$extras = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a42e74f8481b5c76fec062a9901889b98}
+function to count the items in the table based on (optional) specific criteria
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$table} & \\
+\hline
+string & {\em \$field\-\_\-name} & \\
+\hline
+string & {\em \$id} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a96e5f76350e0a97c210fefb54a0a33f8}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Latest\-Records@{get\-Latest\-Records}}
+\index{get\-Latest\-Records@{get\-Latest\-Records}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Latest\-Records}]{\setlength{\rightskip}{0pt plus 5cm}get\-Latest\-Records (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$order\-Field, }
+\item[{}]{\$order\-Dir = {\ttfamily 'DESC'}, }
+\item[{}]{\$limit = {\ttfamily 1}, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a96e5f76350e0a97c210fefb54a0a33f8}
+retrieves the latest n records in the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$order\-Field} & the field used to order the results \\
+\hline
+string & {\em \$order\-Dir} & the direction to do the ordering. \\
+\hline
+int & {\em \$limit} & limit for the \# of results returned \\
+\hline
+string & {\em \$fields} & the fields to return \\
+\hline
+string & {\em \$extras} & any optional extras to be included in the query for determining results\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a70ad2609f7efd4a68121f0d94b912402}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Latest\-Single\-Record@{get\-Latest\-Single\-Record}}
+\index{get\-Latest\-Single\-Record@{get\-Latest\-Single\-Record}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Latest\-Single\-Record}]{\setlength{\rightskip}{0pt plus 5cm}get\-Latest\-Single\-Record (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$order\-Field, }
+\item[{}]{\$order\-Dir = {\ttfamily 'DESC'}, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a70ad2609f7efd4a68121f0d94b912402}
+retrieves the latest single record in the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$order\-Field} & the field used to order the results \\
+\hline
+string & {\em \$order\-Dir} & the direction to do the ordering. \\
+\hline
+string & {\em \$fields} & the fields to return \\
+\hline
+string & {\em \$extras} & any optional extras to be included in the query for determining results\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_aa3d3c4386260cf9ef621e8bebff62160}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Max\-Field@{get\-Max\-Field}}
+\index{get\-Max\-Field@{get\-Max\-Field}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Max\-Field}]{\setlength{\rightskip}{0pt plus 5cm}get\-Max\-Field (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$table, }
+\item[{}]{\$clause = {\ttfamily ''}, }
+\item[{}]{\$label = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_aa3d3c4386260cf9ef621e8bebff62160}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$clause} & \\
+\hline
+null & {\em \$label} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae2d5882188b4ac6bd24118262f5062c2}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Min\-Field@{get\-Min\-Field}}
+\index{get\-Min\-Field@{get\-Min\-Field}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Min\-Field}]{\setlength{\rightskip}{0pt plus 5cm}get\-Min\-Field (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$table, }
+\item[{}]{\$clause = {\ttfamily ''}, }
+\item[{}]{\$label = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae2d5882188b4ac6bd24118262f5062c2}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$clause} & \\
+\hline
+string & {\em \$label} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a9a5b5961eaf94742e4e501d316dbec94}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Primary\-Key@{get\-Primary\-Key}}
+\index{get\-Primary\-Key@{get\-Primary\-Key}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Primary\-Key}]{\setlength{\rightskip}{0pt plus 5cm}get\-Primary\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a9a5b5961eaf94742e4e501d316dbec94}
+gets the primary key of a table N\-O\-T\-E\-: this method is My\-S\-Q\-L specific
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're working with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a4d584dd1e4be28f2a7379052bb37ab88}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Sum\-Field@{get\-Sum\-Field}}
+\index{get\-Sum\-Field@{get\-Sum\-Field}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Sum\-Field}]{\setlength{\rightskip}{0pt plus 5cm}get\-Sum\-Field (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$table, }
+\item[{}]{\$clause = {\ttfamily ''}, }
+\item[{}]{\$label = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a4d584dd1e4be28f2a7379052bb37ab88}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$clause} & \\
+\hline
+string & {\em \$label} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a423b4500f65e4d8e0178081d8e40d587}{\index{db\-P\-D\-O@{db\-P\-D\-O}!get\-Table\-Status@{get\-Table\-Status}}
+\index{get\-Table\-Status@{get\-Table\-Status}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{get\-Table\-Status}]{\setlength{\rightskip}{0pt plus 5cm}get\-Table\-Status (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$key = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a423b4500f65e4d8e0178081d8e40d587}
+gets the table's status info
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+null & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_adc7544a8840d5fd7e539f71fb8d83471}{\index{db\-P\-D\-O@{db\-P\-D\-O}!I\-N\-Clause@{I\-N\-Clause}}
+\index{I\-N\-Clause@{I\-N\-Clause}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{I\-N\-Clause}]{\setlength{\rightskip}{0pt plus 5cm}I\-N\-Clause (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$ids, }
+\item[{}]{\$escape = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_adc7544a8840d5fd7e539f71fb8d83471}
+Creates a S\-Q\-L 'I\-N' Clause
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & the field part of the clause \\
+\hline
+array & {\em \$ids} & the I\-Ds for the I\-N clause \\
+\hline
+bool & {\em \$escape} & whether or not to escape the values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a825363733f9f9c350717b67e8ce2c373}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Insert\-Array@{Insert\-Array}}
+\index{Insert\-Array@{Insert\-Array}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Insert\-Array}]{\setlength{\rightskip}{0pt plus 5cm}Insert\-Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a825363733f9f9c350717b67e8ce2c373}
+Inserts a new record using an associative array of values
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a950361852a54211a990d624310b72881}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Insert\-Data@{Insert\-Data}}
+\index{Insert\-Data@{Insert\-Data}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Insert\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Insert\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a950361852a54211a990d624310b72881}
+inserts data into the database using any arbitrary query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to insert the data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure, or the value of the primary key (T\-R\-U\-E if primary key value is 0) 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_af69a5485cb48e8bc7008e986649365ca}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Insert\-Multiple@{Insert\-Multiple}}
+\index{Insert\-Multiple@{Insert\-Multiple}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Insert\-Multiple}]{\setlength{\rightskip}{0pt plus 5cm}Insert\-Multiple (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$values}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_af69a5485cb48e8bc7008e986649365ca}
+Allows the insert of multiple records into the same table
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$table} & \\
+\hline
+{\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a9d533695a61e9f7f253e9d1e82fe1b8e}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Insert\-Multiple\-Prepared@{Insert\-Multiple\-Prepared}}
+\index{Insert\-Multiple\-Prepared@{Insert\-Multiple\-Prepared}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Insert\-Multiple\-Prepared}]{\setlength{\rightskip}{0pt plus 5cm}Insert\-Multiple\-Prepared (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$values}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a9d533695a61e9f7f253e9d1e82fe1b8e}
+Uses prepared statement to insert multiple new records using a multidimensional associative array Borrowed from elsewhere. Props to whoever it was (I forgot)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're inserting data into \\
+\hline
+array & {\em \$values} & the array of values to be inserted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a8ad62f7b18a59b358aa4222db6faef9c}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Insert\-Prepared@{Insert\-Prepared}}
+\index{Insert\-Prepared@{Insert\-Prepared}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Insert\-Prepared}]{\setlength{\rightskip}{0pt plus 5cm}Insert\-Prepared (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a8ad62f7b18a59b358aa4222db6faef9c}
+Like \char`\"{}\-Insert\-Array\char`\"{}, this method inserts an associative array using a prepared statement N\-O\-T\-E\-: this method is preferred over Insert\-Array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & the array of key=$>$value pairs to be inserted \\
+\hline
+string & {\em \$table} & the table into which we'll be performing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae71f1ba634ecb883630cc61bb28966b4}{\index{db\-P\-D\-O@{db\-P\-D\-O}!List\-Fields@{List\-Fields}}
+\index{List\-Fields@{List\-Fields}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{List\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}List\-Fields (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae71f1ba634ecb883630cc61bb28966b4}
+lists all fields in the table N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're looking into\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure or an array of field names on success 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a0b1ca1da0e3fdadb229c29f71486c26e}{\index{db\-P\-D\-O@{db\-P\-D\-O}!List\-Tables@{List\-Tables}}
+\index{List\-Tables@{List\-Tables}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{List\-Tables}]{\setlength{\rightskip}{0pt plus 5cm}List\-Tables (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a0b1ca1da0e3fdadb229c29f71486c26e}
+lists all tables in the database N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & the database we're looking into\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure or an array of tables on success 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ad9aef582c0745cb1f7ef67ae6d9e7d1d}{\index{db\-P\-D\-O@{db\-P\-D\-O}!make\-Query\-Or\-Loop@{make\-Query\-Or\-Loop}}
+\index{make\-Query\-Or\-Loop@{make\-Query\-Or\-Loop}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{make\-Query\-Or\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}static make\-Query\-Or\-Loop (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classdb_p_d_o_ad9aef582c0745cb1f7ef67ae6d9e7d1d}
+Loops through an array of options to build a query with them as \char`\"{} \$field='\$item1' O\-R \$field='\$item2'\char`\"{} etc. This is preferred over the S\-Q\-L 'I\-N' syntax mostly because this method can be extended in sub-\/classes
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_aa8ca4594bbf9d1d8a10e156add940923}{\index{db\-P\-D\-O@{db\-P\-D\-O}!make\-Rand@{make\-Rand}}
+\index{make\-Rand@{make\-Rand}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{make\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}make\-Rand (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$field\-\_\-name = {\ttfamily ''}, }
+\item[{}]{\$id = {\ttfamily ''}, }
+\item[{}]{\$extras = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_aa8ca4594bbf9d1d8a10e156add940923}
+gets a random integer based on \# of results. this can be used instead of R\-A\-N\-D() This is the preferred over R\-A\-N\-D() because of its portability beyond My\-S\-Q\-L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$field\-\_\-name} & \\
+\hline
+int | string & {\em \$id} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a575dfedc21a3fa227430424864b2110c}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Multi\-Query@{Multi\-Query}}
+\index{Multi\-Query@{Multi\-Query}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Multi\-Query}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$array, }
+\item[{}]{\$sleep = {\ttfamily false}, }
+\item[{}]{\$sleep\-Num = {\ttfamily null}, }
+\item[{}]{\$sleep\-Time = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a575dfedc21a3fa227430424864b2110c}
+submits multiple queries to the database. Primarily used for disparate queries. Inserting multiple values for essentially the same query is the domain of prepared statements. See Insert\-Multiple for a way to do that
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & the array of queries \\
+\hline
+bool & {\em \$sleep} & whether or not to sleep every so often (to reduce some load) \\
+\hline
+int & {\em \$sleep\-Num} & how many iterations to run before sleeping \\
+\hline
+int & {\em \$sleep\-Time} & how long to sleep\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae6869777ce31414a8cb23a4e48dad288}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Multi\-Query\-Transaction@{Multi\-Query\-Transaction}}
+\index{Multi\-Query\-Transaction@{Multi\-Query\-Transaction}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Multi\-Query\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}Multi\-Query\-Transaction (
+\begin{DoxyParamCaption}
+\item[{}]{\$queries}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae6869777ce31414a8cb23a4e48dad288}
+Like above\-: submits multiple queries to the database. Primarily used for disparate queries. Inserting multiple values for essentially the same query is the domain of prepared statements. See Insert\-Multiple for a way to do that This version performs this work as a transaction N\-O\-T\-E\-: This method will return true, even for My\-I\-S\-A\-M tables (which do not support transactions)
+
+modify to check whether a transaction is already running first. See\-: \href{http://www.php.net/manual/en/pdo.begintransaction.php#81022}{\tt http\-://www.\-php.\-net/manual/en/pdo.\-begintransaction.\-php\#81022}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$queries} & the array of queries\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_aac90a12617acd0c0e029578edcdb2d4b}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Next\-I\-D@{Next\-I\-D}}
+\index{Next\-I\-D@{Next\-I\-D}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Next\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}Next\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_aac90a12617acd0c0e029578edcdb2d4b}
+gets the next autoincrementing id from a table N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae9e393a3d4e60be19df990f0beaddaab}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Optimize\-Database@{Optimize\-Database}}
+\index{Optimize\-Database@{Optimize\-Database}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Optimize\-Database}]{\setlength{\rightskip}{0pt plus 5cm}Optimize\-Database (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae9e393a3d4e60be19df990f0beaddaab}
+optimizes all tables in the database N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & the database we're working with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ae8e5b15325e3167666acac5273ec4835}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Optimize\-Table@{Optimize\-Table}}
+\index{Optimize\-Table@{Optimize\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Optimize\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Optimize\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ae8e5b15325e3167666acac5273ec4835}
+optimizes a specified table N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the database we're optimizing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a1a480f419105d0b00c2a789ebedbb765}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Raw\-Exec@{Raw\-Exec}}
+\index{Raw\-Exec@{Raw\-Exec}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Raw\-Exec}]{\setlength{\rightskip}{0pt plus 5cm}Raw\-Exec (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a1a480f419105d0b00c2a789ebedbb765}
+Performs a raw P\-D\-O\-::exec() on a query. Really meant for queries that don't return results
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to be run\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns the number of rows that were modified or deleted by the S\-Q\-L statement you issued. If no rows were affected, returns 0 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a95a881be3b8672a22dc24cc44d375d69}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Raw\-Query@{Raw\-Query}}
+\index{Raw\-Query@{Raw\-Query}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Raw\-Query}]{\setlength{\rightskip}{0pt plus 5cm}Raw\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$mode = {\ttfamily PDO\-:\-:FETCH\-\_\-BOTH}, }
+\item[{}]{\$false\-On\-Zero = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a95a881be3b8672a22dc24cc44d375d69}
+performs a P\-D\-O\-Statement\-::query and fetch\-All to run a query that returns results
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to insert the data \\
+\hline
+int & {\em \$mode} & this is the type of array to be returned. \\
+\hline
+bool & {\em \$false\-On\-Zero} & whether or not to return F\-A\-L\-S\-E when 0 results are returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$ array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_ad859e8675db57294ba6a613bc4d14275}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Raw\-Query\-Fetch\-All@{Raw\-Query\-Fetch\-All}}
+\index{Raw\-Query\-Fetch\-All@{Raw\-Query\-Fetch\-All}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Raw\-Query\-Fetch\-All}]{\setlength{\rightskip}{0pt plus 5cm}Raw\-Query\-Fetch\-All (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$mode = {\ttfamily PDO\-:\-:FETCH\-\_\-ASSOC}, }
+\item[{}]{\$false\-On\-Zero = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_ad859e8675db57294ba6a613bc4d14275}
+performs a P\-D\-O\-Statement\-::query and fetch\-All to run a query that returns results
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to insert the data \\
+\hline
+int & {\em \$mode} & this is the type of array to be returned. \\
+\hline
+bool & {\em \$false\-On\-Zero} & whether or not to return F\-A\-L\-S\-E when 0 results are returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$ array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a7973975515944e55e52619515c83d264}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Record\-Exists@{Record\-Exists}}
+\index{Record\-Exists@{Record\-Exists}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Record\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}Record\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$fieldname, }
+\item[{}]{\$fieldvalue, }
+\item[{}]{\$extras = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a7973975515944e55e52619515c83d264}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$table} & \\
+\hline
+ & {\em \$fieldname} & \\
+\hline
+ & {\em \$fieldvalue} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a0466176406e21bf25c58bceff61ac038}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Sanitize\-Values@{Sanitize\-Values}}
+\index{Sanitize\-Values@{Sanitize\-Values}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Sanitize\-Values}]{\setlength{\rightskip}{0pt plus 5cm}Sanitize\-Values (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected, }
+\item[{}]{\$teh\-Global}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a0466176406e21bf25c58bceff61ac038}
+loops through a superglobal array to sanitize variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$expected} & an array of expected key names \\
+\hline
+string & {\em \$teh\-Global} & indicator of which global we're working with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the \$output variable is populated with sanitized values 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a8dcdb949658f7e241d5668e82687bd39}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Select\-Data@{Select\-Data}}
+\index{Select\-Data@{Select\-Data}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Select\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Select\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$mode = {\ttfamily PDO\-:\-:FETCH\-\_\-BOTH}, }
+\item[{}]{\$false\-On\-Zero = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a8dcdb949658f7e241d5668e82687bd39}
+selects data from the database using any arbitrary query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to insert the data \\
+\hline
+int | string & {\em \$mode} & this is the type of array to be returned. \\
+\hline
+bool & {\em \$false\-On\-Zero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure, or the array of results on success 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a1634a82616e367dd602cebf65add9e09}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Select\-Prepared@{Select\-Prepared}}
+\index{Select\-Prepared@{Select\-Prepared}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Select\-Prepared}]{\setlength{\rightskip}{0pt plus 5cm}Select\-Prepared (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$criteria, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$limit = {\ttfamily null}, }
+\item[{}]{\$order\-By = {\ttfamily null}, }
+\item[{}]{\$order\-Dir = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a1634a82616e367dd602cebf65add9e09}
+Selects data from database using prepared statements. N\-O\-T\-E\-: This is the preferred method of retrieving data N\-O\-T\-E\-: This method does not work with L\-I\-K\-E statements
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table from which the data will come \\
+\hline
+array & {\em \$criteria} & array of key=$>$val pairs for selection criteria \\
+\hline
+string & {\em \$fields} & the fields to retrieve from the database \\
+\hline
+int & {\em \$limit} & limit to the \# of results to return \\
+\hline
+string & {\em \$order\-By} & the field to order the results by \\
+\hline
+string & {\em \$order\-Dir} & the direction to order the results\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a13df306ce8e6e3b54c598172d854a6e9}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Select\-Single\-Record@{Select\-Single\-Record}}
+\index{Select\-Single\-Record@{Select\-Single\-Record}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Select\-Single\-Record}]{\setlength{\rightskip}{0pt plus 5cm}Select\-Single\-Record (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$mode = {\ttfamily PDO\-:\-:FETCH\-\_\-BOTH}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a13df306ce8e6e3b54c598172d854a6e9}
+selects one single record from the database using any arbitrary query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to select the item \\
+\hline
+int & {\em \$mode} & the fetch mode for the selection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure, or the single result on success 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a0dd22b74a556f9f43ae53548cb7699ac}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Select\-Specific\-Record@{Select\-Specific\-Record}}
+\index{Select\-Specific\-Record@{Select\-Specific\-Record}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Select\-Specific\-Record}]{\setlength{\rightskip}{0pt plus 5cm}Select\-Specific\-Record (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$criteria\-Field, }
+\item[{}]{\$criteria\-Value, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a0dd22b74a556f9f43ae53548cb7699ac}
+Selects a specific record from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table to select from \\
+\hline
+string & {\em \$criteria\-Field} & the specific field used for the criteria to select the record \\
+\hline
+string & {\em \$criteria\-Value} & the specific value for the field to select the record \\
+\hline
+string & {\em \$fields} & the fields to retrieve from the query \\
+\hline
+string & {\em \$extras} & any extra stuff for the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a2976cf4c2e337ae307e39192d1c123a6}{\index{db\-P\-D\-O@{db\-P\-D\-O}!show\-Create\-Database@{show\-Create\-Database}}
+\index{show\-Create\-Database@{show\-Create\-Database}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{show\-Create\-Database}]{\setlength{\rightskip}{0pt plus 5cm}show\-Create\-Database (
+\begin{DoxyParamCaption}
+\item[{}]{\$database}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a2976cf4c2e337ae307e39192d1c123a6}
+Runs mysql-\/specific S\-H\-O\-W C\-R\-E\-A\-T\-E D\-A\-T\-A\-B\-A\-S\-E query and shoots back the result
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$database} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a0e5d18a3b673b71c7021da0290e19c13}{\index{db\-P\-D\-O@{db\-P\-D\-O}!show\-Create\-Table@{show\-Create\-Table}}
+\index{show\-Create\-Table@{show\-Create\-Table}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{show\-Create\-Table}]{\setlength{\rightskip}{0pt plus 5cm}show\-Create\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a0e5d18a3b673b71c7021da0290e19c13}
+Runs mysql-\/specific S\-H\-O\-W C\-R\-E\-A\-T\-E T\-A\-B\-L\-E query and shoots back the result
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a15bee2046e8b15d7728f265eb1621485}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Show\-Indexes@{Show\-Indexes}}
+\index{Show\-Indexes@{Show\-Indexes}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Show\-Indexes}]{\setlength{\rightskip}{0pt plus 5cm}Show\-Indexes (
+\begin{DoxyParamCaption}
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a15bee2046e8b15d7728f265eb1621485}
+shows the indexes for a particular table N\-O\-T\-E\-: This is My\-S\-Q\-L specific.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table we're looking ag\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed returns F\-A\-L\-S\-E on failure or an array of tables on success 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a1a3e5b8d48f48b0ff961abd48b7b2cc4}{\index{db\-P\-D\-O@{db\-P\-D\-O}!S\-Q\-L\-Import@{S\-Q\-L\-Import}}
+\index{S\-Q\-L\-Import@{S\-Q\-L\-Import}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{S\-Q\-L\-Import}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-L\-Import (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$sleep = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a1a3e5b8d48f48b0ff961abd48b7b2cc4}
+imports a text file of S\-Q\-L statements into the database I\-M\-P\-O\-R\-T\-A\-N\-T! All S\-Q\-L statements must be on their own line and C\-A\-N\-N\-O\-T contain multiple lines D\-O\-E\-S N\-O\-T check for file existence before proceeding. This is your responsibility
+
+make a version of this which uses transactions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the name/ path of the file to import \\
+\hline
+int & {\em \$sleep} & number of seconds to sleep between queries. Necessary when doing a huge import\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a8c37ee47f954a63f9ae79633e645a42e}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Table\-Exists@{Table\-Exists}}
+\index{Table\-Exists@{Table\-Exists}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Table\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}Table\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$database, }
+\item[{}]{\$table}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a8c37ee47f954a63f9ae79633e645a42e}
+checks whether a table exists or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$database} & the database to look in \\
+\hline
+string & {\em \$table} & the table to look for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a722b9874cb2622dcc9fcafbbac9c0463}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Update\-Array@{Update\-Array}}
+\index{Update\-Array@{Update\-Array}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Update\-Array}]{\setlength{\rightskip}{0pt plus 5cm}Update\-Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$array, }
+\item[{}]{\$key\-Field, }
+\item[{}]{\$key\-Val, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a722b9874cb2622dcc9fcafbbac9c0463}
+Updates a single record using an associative array of values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+array & {\em \$array} & \\
+\hline
+string & {\em \$key\-Field} & \\
+\hline
+string & {\em \$key\-Val} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a9d8e6bafc3a9a916619905149e942899}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Update\-Data@{Update\-Data}}
+\index{Update\-Data@{Update\-Data}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Update\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Update\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a9d8e6bafc3a9a916619905149e942899}
+updates data in the database using any arbitrary query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to update the data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_a39d5d8136607cadcb4ce7435c05e0ae6}{\index{db\-P\-D\-O@{db\-P\-D\-O}!Update\-Prepared@{Update\-Prepared}}
+\index{Update\-Prepared@{Update\-Prepared}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{Update\-Prepared}]{\setlength{\rightskip}{0pt plus 5cm}Update\-Prepared (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$table, }
+\item[{}]{\$key\-Field, }
+\item[{}]{\$key\-Val}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_a39d5d8136607cadcb4ce7435c05e0ae6}
+Like \char`\"{}\-Update\-Array\char`\"{}, this method updates a table using an associative array using a prepared statement N\-O\-T\-E\-: this method is preferred
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & the array of key=$>$value pairs to be updated \\
+\hline
+string & {\em \$table} & the table into which we'll be performing \\
+\hline
+ & {\em \$key\-Field} & \\
+\hline
+ & {\em \$key\-Val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classdb_p_d_o_af56bf70da4ade6315951e09ae9c19753}{\index{db\-P\-D\-O@{db\-P\-D\-O}!url\-Domain\-String@{url\-Domain\-String}}
+\index{url\-Domain\-String@{url\-Domain\-String}!dbPDO@{db\-P\-D\-O}}
+\subsubsection[{url\-Domain\-String}]{\setlength{\rightskip}{0pt plus 5cm}url\-Domain\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$field}
+\end{DoxyParamCaption}
+)}}\label{classdb_p_d_o_af56bf70da4ade6315951e09ae9c19753}
+Returns a useful string to be used in S\-Q\-L queries for finding the domain portion from a U\-R\-L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+db\-P\-D\-O.\-class.\-php\end{DoxyCompactItemize}

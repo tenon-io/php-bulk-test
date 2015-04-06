@@ -1,0 +1,121 @@
+\hypertarget{class_benchmark}{\section{Benchmark Class Reference}
+\label{class_benchmark}\index{Benchmark@{Benchmark}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_af7d99cdaac06dc7b47d681b4cfbb06bc}{\-\_\-\-\_\-construct} (\$start=true, \$connection=null)
+\item 
+\hyperlink{class_benchmark_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hypertarget{class_benchmark_af8fa59992209e36dccb3eefb0f75531f}{{\bfseries start} ()}\label{class_benchmark_af8fa59992209e36dccb3eefb0f75531f}
+
+\item 
+\hypertarget{class_benchmark_a8b6fc76a620d7557d06e9a11a9ffb509}{{\bfseries stop} ()}\label{class_benchmark_a8b6fc76a620d7557d06e9a11a9ffb509}
+
+\item 
+\hyperlink{class_benchmark_aa836be07a8d7f803a8f6acc965acf2a3}{display} (\$decimal\-\_\-place=8)
+\item 
+\hyperlink{class_benchmark_ae0a10b5f75fa87d91e692d4f276ac7ae}{logto\-D\-B} (\$table, \$start\-Field=null, \$end\-Field=null, \$total\-Field=null, \$date\-Field=null)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_benchmark_a73a034a7a0fbdd2c93f23fb6c9946ee9}{{\bfseries \$start\-\_\-time}}\label{class_benchmark_a73a034a7a0fbdd2c93f23fb6c9946ee9}
+
+\item 
+\hypertarget{class_benchmark_a53df77622d4c20adefa70db294377d7b}{{\bfseries \$end\-\_\-time}}\label{class_benchmark_a53df77622d4c20adefa70db294377d7b}
+
+\item 
+\hypertarget{class_benchmark_a2d8dc53e1ba1a00dd213589f7a5f4377}{{\bfseries \$execution\-\_\-time}}\label{class_benchmark_a2d8dc53e1ba1a00dd213589f7a5f4377}
+
+\item 
+\hypertarget{class_benchmark_a1fa3127fc82f96b1436d871ef02be319}{{\bfseries \$db}}\label{class_benchmark_a1fa3127fc82f96b1436d871ef02be319}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+provides a way to perform timings of how long things take
+
+U\-S\-A\-G\-E E\-X\-A\-M\-P\-L\-E
+
+\$\-T = new benchmark();
+
+\$\-T-\/$>$start(); // ... do whatever that must be timed ... \$\-T-\/$>$stop(); echo \char`\"{}\-Load time took\-: \char`\"{} . \$\-T-\/$>$\hyperlink{class_benchmark_aa836be07a8d7f803a8f6acc965acf2a3}{display()} . \char`\"{}s\char`\"{}; 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_benchmark_af7d99cdaac06dc7b47d681b4cfbb06bc}{\index{Benchmark@{Benchmark}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!Benchmark@{Benchmark}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily true}, }
+\item[{}]{\$connection = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_af7d99cdaac06dc7b47d681b4cfbb06bc}
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$start} & whether or not to atomatically start the timer when the object is created \\
+\hline
+array & {\em \$connection} & database connection details \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_benchmark_a421831a265621325e1fdd19aace0c758}{\index{Benchmark@{Benchmark}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!Benchmark@{Benchmark}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_benchmark_aa836be07a8d7f803a8f6acc965acf2a3}{\index{Benchmark@{Benchmark}!display@{display}}
+\index{display@{display}!Benchmark@{Benchmark}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}display (
+\begin{DoxyParamCaption}
+\item[{}]{\$decimal\-\_\-place = {\ttfamily 8}}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aa836be07a8d7f803a8f6acc965acf2a3}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$decimal\-\_\-place} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_benchmark_ae0a10b5f75fa87d91e692d4f276ac7ae}{\index{Benchmark@{Benchmark}!logto\-D\-B@{logto\-D\-B}}
+\index{logto\-D\-B@{logto\-D\-B}!Benchmark@{Benchmark}}
+\subsubsection[{logto\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}logto\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$start\-Field = {\ttfamily null}, }
+\item[{}]{\$end\-Field = {\ttfamily null}, }
+\item[{}]{\$total\-Field = {\ttfamily null}, }
+\item[{}]{\$date\-Field = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_ae0a10b5f75fa87d91e692d4f276ac7ae}
+Logs the benchmark information to database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$start\-Field} & \\
+\hline
+string & {\em \$end\-Field} & \\
+\hline
+string & {\em \$total\-Field} & \\
+\hline
+string & {\em \$date\-Field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Benchmark.\-class.\-php\end{DoxyCompactItemize}

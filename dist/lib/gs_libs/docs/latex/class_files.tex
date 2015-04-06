@@ -1,0 +1,813 @@
+\hypertarget{class_files}{\section{Files Class Reference}
+\label{class_files}\index{Files@{Files}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_files_ac196be8fefb7dec34812964068ae7a66}{change\-\_\-perms} (\$file, \$perms, \$strict=true)
+\item 
+\hyperlink{class_files_a96eead56a73178e8ebb8da558e079486}{copyfile} (\$infile, \$outfile, \$delete\-\_\-infile=false, \$allow\-\_\-overwrite=false)
+\item 
+\hyperlink{class_files_a491ab39a3965deee22808d2188d073c2}{filegetcontents} (\$file, \$method=\char`\"{}string\char`\"{}, \$strict=true)
+\item 
+\hyperlink{class_files_a6fcd6647509d9b0dc63b921959fee7e6}{fileputcontents} (\$file, \$data, \$strict=true)
+\item 
+\hyperlink{class_files_a5ac9023a2b098dba4d757d5e4cc8ea33}{file\-\_\-atime} (\$file, \$format=\char`\"{}F d Y H\-:i\-:s\char`\"{}, \$strict=true)
+\item 
+\hyperlink{class_files_a631ce075c1f227e707ee59366847c016}{file\-\_\-mtime} (\$file, \$format=\char`\"{}F d Y H\-:i\-:s\char`\"{}, \$strict=true)
+\item 
+\hyperlink{class_files_a5c1ecf5a42eea0ed22c376b15d91a339}{check\-\_\-perms} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_ad2e2b31a53f63b865a0836bb244a92d7}{get\-\_\-filesize} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_a691c4abd483a933fd272f072d71b6b73}{lock\-\_\-file} (\$file, \$mode=\char`\"{}L\-O\-C\-K\-\_\-\-E\-X\char`\"{}, \$strict=true)
+\item 
+\hyperlink{class_files_af78749dfb9df77b042c7c08eac0cfb40}{file\-\_\-open} (\$file, \$mode, \$strict=true)
+\item 
+\hyperlink{class_files_a301e528476292dd5e72a811bcd03aa49}{get\-\_\-pathinfo} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_aa9692869f71d1ade22a78f287d97d69b}{touchfile} (\$file, \$keep\-\_\-mtime=false, \$strict=true)
+\item 
+\hyperlink{class_files_a5c75ce3bef85b8f80b5fb1cab1adb74e}{file\-\_\-delete} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_a20c948d332a2b62b3034057bf0378e1c}{makedirectory} (\$path, \$mode=\char`\"{}0777\char`\"{}, \$recursive=false, \$context=null)
+\item 
+\hyperlink{class_files_a7adf34c81569b20f6c1d519aae8d3e3a}{delete\-\_\-dircontents} (\$directory, \$strict=true)
+\item 
+\hyperlink{class_files_ac4ed0d6da3bb43e2318db1cc2b89f2c8}{create\-\_\-gzip} (\$infile, \$outfile, \$binary=false, \$strict=true)
+\item 
+\hyperlink{class_files_a5e3b84ff275d2b6734ebf8a54185e826}{write\-\_\-new\-\_\-file} (\$file, \$data, \$binary=false, \$strict=true)
+\item 
+\hyperlink{class_files_a3517ed9d2d1e629c78466b1506a77ee3}{append\-\_\-file} (\$file, \$data, \$mode=\char`\"{}a\char`\"{}, \$binary=false)
+\item 
+\hyperlink{class_files_a8972483d65d7765f4d29056eb67e5fed}{output\-\_\-file\-\_\-contents} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_a38a434ec020e56cb27fc8f8f57e8de10}{find\-\_\-extension} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_acadbd94e60dcb4bdeb54add445447703}{get\-\_\-dir\-\_\-files\-\_\-array} (\$dir)
+\item 
+\hyperlink{class_files_a4cb83eb84ebfcfa560cdea7817d7e6f4}{process\-\_\-file\-\_\-size} (\$size)
+\item 
+\hyperlink{class_files_a247859f95e43b6147d06fef867e536ae}{get\-\_\-file\-\_\-stats} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_ab31492186c42f455b28098ae96eafa9d}{get\-\_\-directory\-\_\-size} (\$path)
+\item 
+\hyperlink{class_files_a977ddd0bab2c2480fa67dd5757cb3e70}{truncate\-\_\-file} (\$file, \$strict=true)
+\item 
+\hyperlink{class_files_aaa776e1a87ac9719bcd2e3dcbcd77b78}{count\-\_\-lines} (\$filepath)
+\item 
+\hyperlink{class_files_af7d3806a8ea348bbc3d62910cc4367f2}{copy\-\_\-remote\-\_\-file} (\$url, \$dirname, \$return\-\_\-method=null, \$strict=true)
+\item 
+\hyperlink{class_files_a827216a16a49bdb08a2371ed47da498f}{list\-Directory\-By\-Date} (\$path)
+\item 
+\hyperlink{class_files_ab5895b75a3b2abdddf1cb351a8c6b58b}{rrmdir} (\$path)
+\item 
+\hyperlink{class_files_a0e50a400e9fd53290dc4c0123974198a}{get\-\_\-zip\-\_\-files\-\_\-array} (\$path\-\_\-to\-\_\-zip, \$destination, \$fullpath=true, \$dumpzip=false)
+\item 
+\hyperlink{class_files_a712e3adfc98fb9a916d736b215ba3cb8}{directory\-To\-Array} (\$directory, \$recursive=true)
+\item 
+\hyperlink{class_files_a8f1046c32417d89d113cbd1d880ae42e}{get\-File\-Data} (\$file)
+\item 
+\hyperlink{class_files_aa91629fe26118aca9c700514bea78869}{C\-S\-V\-\_\-to\-\_\-table} (\$file, \$t\-Extras)
+\item 
+\hyperlink{class_files_aaa533c6267b5bd113bd34679dc52bef4}{get\-Remote\-File\-M\-I\-M\-E\-Type} (\$url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This function library contains custom functions related to dealing with files and the file system including files themselves, directories, and file uploads.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]N\-E\-E\-D\-E\-D F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\end{DoxyRefDesc}
+\begin{DoxyVerb}   IMPROVEMENTS TO EXISTING FUNCTIONALITY:
+   - readfile - Outputs a file
+   - realpath - Returns canonicalized absolute pathname
+   - rename - Renames a file or directory
+   - rmdir - Removes directory
+   - stat - Gives information about a file
+   - file - Reads entire file into an array
+   - fstat - Gets information about a file using an open file pointer
+   - fwrite - Binary-safe file write
+   - fread - Binary-safe file read
+   - is_readable - Tells whether the filename is readable
+   - is_writable - Tells whether the filename is writable
+   - mkdir - Makes directory
+   - is_dir - Tells whether the filename is a directory
+               needs clearstatcache() after execution
+   - is_executable - Tells whether the filename is executable
+               needs clearstatcache() after execution
+   - is_file � Tells whether the filename is a regular file
+               needs clearstatcache() after execution
+
+   NEW FUNCTIONALITY
+   - Handle file uploads
+   - Read contents of a directory into an array
+   - Images: Thumbnail Creation
+   - Bulk thumbnail creation
+   - Extract Zip/GZip
+   - Auto Image Gallery
+   - Watermark image with GD
+   - Clean up file names of bad characters
+   - Parse CSV/ Tab-Separated/ Pipe Separated Files\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_files_a3517ed9d2d1e629c78466b1506a77ee3}{\index{Files@{Files}!append\-\_\-file@{append\-\_\-file}}
+\index{append\-\_\-file@{append\-\_\-file}!Files@{Files}}
+\subsubsection[{append\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}append\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$data, }
+\item[{}]{\$mode = {\ttfamily \char`\"{}a\char`\"{}}, }
+\item[{}]{\$binary = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a3517ed9d2d1e629c78466b1506a77ee3}
+appends data to a file that already exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+string & {\em \$data} & the content of the new file \\
+\hline
+string & {\em \$mode} & how the file will be entered. \$mode reference\-: \char`\"{}r\char`\"{} -\/ read only \char`\"{}r+\char`\"{} -\/ read and write if the file exists already \char`\"{}w\char`\"{} -\/ write only. creates file of doesn't exist -\/ O\-V\-E\-R\-W\-R\-I\-T\-E\-S E\-X\-I\-S\-T\-I\-N\-G F\-I\-L\-E C\-O\-N\-T\-E\-N\-T\-S \char`\"{}w+\char`\"{} -\/ read and write. creates file if it doesn't exist-\/ O\-V\-E\-R\-W\-R\-I\-T\-E\-S E\-X\-I\-S\-T\-I\-N\-G F\-I\-L\-E C\-O\-N\-T\-E\-N\-T\-S \char`\"{}a\char`\"{} -\/ write only to the end of the file. creates file if it doesn't exist \char`\"{}a+\char`\"{} -\/ read and write. creates file if it doesn't exist \char`\"{}x\char`\"{} -\/ writing only. creates file if it doesn't exist. R\-E\-T\-U\-R\-N\-S F\-A\-L\-S\-E if it does exist already \char`\"{}x+\char`\"{} -\/ read and write. creates file if it doesn't exist. R\-E\-T\-U\-R\-N\-S F\-A\-L\-S\-E if it does exist already \\
+\hline
+bool & {\em \$binary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success 
+\end{DoxyReturn}
+\hypertarget{class_files_ac196be8fefb7dec34812964068ae7a66}{\index{Files@{Files}!change\-\_\-perms@{change\-\_\-perms}}
+\index{change\-\_\-perms@{change\-\_\-perms}!Files@{Files}}
+\subsubsection[{change\-\_\-perms}]{\setlength{\rightskip}{0pt plus 5cm}change\-\_\-perms (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$perms, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_ac196be8fefb7dec34812964068ae7a66}
+changes file (or directory) permissions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+int & {\em \$perms} & the new permissions. M\-U\-S\-T B\-E O\-C\-T\-A\-L!!! \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true, on success 
+\end{DoxyReturn}
+\hypertarget{class_files_a5c1ecf5a42eea0ed22c376b15d91a339}{\index{Files@{Files}!check\-\_\-perms@{check\-\_\-perms}}
+\index{check\-\_\-perms@{check\-\_\-perms}!Files@{Files}}
+\subsubsection[{check\-\_\-perms}]{\setlength{\rightskip}{0pt plus 5cm}check\-\_\-perms (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a5c1ecf5a42eea0ed22c376b15d91a339}
+returns the octal value for permissins on the specified file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the permissions are returned 
+\end{DoxyReturn}
+\hypertarget{class_files_af7d3806a8ea348bbc3d62910cc4367f2}{\index{Files@{Files}!copy\-\_\-remote\-\_\-file@{copy\-\_\-remote\-\_\-file}}
+\index{copy\-\_\-remote\-\_\-file@{copy\-\_\-remote\-\_\-file}!Files@{Files}}
+\subsubsection[{copy\-\_\-remote\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}copy\-\_\-remote\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$dirname, }
+\item[{}]{\$return\-\_\-method = {\ttfamily null}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_af7d3806a8ea348bbc3d62910cc4367f2}
+copies a remote file to the server U\-S\-A\-G\-E E\-X\-A\-M\-P\-L\-E\-: copy\-File(\char`\"{}http\-://test-\/server.\-com/file/movie.\-mpg\char`\"{}, \char`\"{}myfolder/\char`\"{});
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & U\-R\-L to the file \\
+\hline
+string & {\em \$dirname} & the directory to put this into. Must be C\-H\-M\-O\-D 777 \\
+\hline
+null & {\em \$return\-\_\-method} & \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a96eead56a73178e8ebb8da558e079486}{\index{Files@{Files}!copyfile@{copyfile}}
+\index{copyfile@{copyfile}!Files@{Files}}
+\subsubsection[{copyfile}]{\setlength{\rightskip}{0pt plus 5cm}copyfile (
+\begin{DoxyParamCaption}
+\item[{}]{\$infile, }
+\item[{}]{\$outfile, }
+\item[{}]{\$delete\-\_\-infile = {\ttfamily false}, }
+\item[{}]{\$allow\-\_\-overwrite = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a96eead56a73178e8ebb8da558e079486}
+copies file from one location to another
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$infile} & the full path \& name of the file being copied \\
+\hline
+string & {\em \$outfile} & the full path \& name of the new destination \\
+\hline
+bool & {\em \$delete\-\_\-infile} & \\
+\hline
+bool & {\em \$allow\-\_\-overwrite} & whether an existing file of the same name as \$outfile should be overwritten \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_files_aaa776e1a87ac9719bcd2e3dcbcd77b78}{\index{Files@{Files}!count\-\_\-lines@{count\-\_\-lines}}
+\index{count\-\_\-lines@{count\-\_\-lines}!Files@{Files}}
+\subsubsection[{count\-\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}count\-\_\-lines (
+\begin{DoxyParamCaption}
+\item[{}]{\$filepath}
+\end{DoxyParamCaption}
+)}}\label{class_files_aaa776e1a87ac9719bcd2e3dcbcd77b78}
+counts the total number of lines in a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & the full path to the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_files_ac4ed0d6da3bb43e2318db1cc2b89f2c8}{\index{Files@{Files}!create\-\_\-gzip@{create\-\_\-gzip}}
+\index{create\-\_\-gzip@{create\-\_\-gzip}!Files@{Files}}
+\subsubsection[{create\-\_\-gzip}]{\setlength{\rightskip}{0pt plus 5cm}create\-\_\-gzip (
+\begin{DoxyParamCaption}
+\item[{}]{\$infile, }
+\item[{}]{\$outfile, }
+\item[{}]{\$binary = {\ttfamily false}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_ac4ed0d6da3bb43e2318db1cc2b89f2c8}
+creates a gzipped file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$infile} & \\
+\hline
+string & {\em \$outfile} & \\
+\hline
+bool & {\em \$binary} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success 
+\end{DoxyReturn}
+\hypertarget{class_files_aa91629fe26118aca9c700514bea78869}{\index{Files@{Files}!C\-S\-V\-\_\-to\-\_\-table@{C\-S\-V\-\_\-to\-\_\-table}}
+\index{C\-S\-V\-\_\-to\-\_\-table@{C\-S\-V\-\_\-to\-\_\-table}!Files@{Files}}
+\subsubsection[{C\-S\-V\-\_\-to\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}C\-S\-V\-\_\-to\-\_\-table (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$t\-Extras}
+\end{DoxyParamCaption}
+)}}\label{class_files_aa91629fe26118aca9c700514bea78869}
+makes an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} table out of a C\-S\-V file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+string & {\em \$t\-Extras} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_files_a7adf34c81569b20f6c1d519aae8d3e3a}{\index{Files@{Files}!delete\-\_\-dircontents@{delete\-\_\-dircontents}}
+\index{delete\-\_\-dircontents@{delete\-\_\-dircontents}!Files@{Files}}
+\subsubsection[{delete\-\_\-dircontents}]{\setlength{\rightskip}{0pt plus 5cm}delete\-\_\-dircontents (
+\begin{DoxyParamCaption}
+\item[{}]{\$directory, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a7adf34c81569b20f6c1d519aae8d3e3a}
+deletes all contents of a directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & the full path of the directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the directory's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a712e3adfc98fb9a916d736b215ba3cb8}{\index{Files@{Files}!directory\-To\-Array@{directory\-To\-Array}}
+\index{directory\-To\-Array@{directory\-To\-Array}!Files@{Files}}
+\subsubsection[{directory\-To\-Array}]{\setlength{\rightskip}{0pt plus 5cm}directory\-To\-Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$directory, }
+\item[{}]{\$recursive = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a712e3adfc98fb9a916d736b215ba3cb8}
+
+\begin{DoxyParams}{Parameters}
+{\em \$directory} & \\
+\hline
+{\em \$recursive} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_files_a5ac9023a2b098dba4d757d5e4cc8ea33}{\index{Files@{Files}!file\-\_\-atime@{file\-\_\-atime}}
+\index{file\-\_\-atime@{file\-\_\-atime}!Files@{Files}}
+\subsubsection[{file\-\_\-atime}]{\setlength{\rightskip}{0pt plus 5cm}file\-\_\-atime (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$format = {\ttfamily \char`\"{}F~d~Y~H\-:i\-:s\char`\"{}}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a5ac9023a2b098dba4d757d5e4cc8ea33}
+returns the last time file was accessed
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file we are working with \\
+\hline
+string & {\em \$format} & the format for the return value must be a valid format for date() \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed, false on failure, else string with the last accessed time, formatted as desired 
+\end{DoxyReturn}
+\hypertarget{class_files_a5c75ce3bef85b8f80b5fb1cab1adb74e}{\index{Files@{Files}!file\-\_\-delete@{file\-\_\-delete}}
+\index{file\-\_\-delete@{file\-\_\-delete}!Files@{Files}}
+\subsubsection[{file\-\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}file\-\_\-delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a5c75ce3bef85b8f80b5fb1cab1adb74e}
+if a file exists, delete it
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a631ce075c1f227e707ee59366847c016}{\index{Files@{Files}!file\-\_\-mtime@{file\-\_\-mtime}}
+\index{file\-\_\-mtime@{file\-\_\-mtime}!Files@{Files}}
+\subsubsection[{file\-\_\-mtime}]{\setlength{\rightskip}{0pt plus 5cm}file\-\_\-mtime (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$format = {\ttfamily \char`\"{}F~d~Y~H\-:i\-:s\char`\"{}}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a631ce075c1f227e707ee59366847c016}
+returns the last time file was modified
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file we are working with \\
+\hline
+string & {\em \$format} & \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the last modified time, formatted as desired 
+\end{DoxyReturn}
+\hypertarget{class_files_af78749dfb9df77b042c7c08eac0cfb40}{\index{Files@{Files}!file\-\_\-open@{file\-\_\-open}}
+\index{file\-\_\-open@{file\-\_\-open}!Files@{Files}}
+\subsubsection[{file\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}file\-\_\-open (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$mode, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_af78749dfb9df77b042c7c08eac0cfb40}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+ & {\em \$mode} & \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a491ab39a3965deee22808d2188d073c2}{\index{Files@{Files}!filegetcontents@{filegetcontents}}
+\index{filegetcontents@{filegetcontents}!Files@{Files}}
+\subsubsection[{filegetcontents}]{\setlength{\rightskip}{0pt plus 5cm}filegetcontents (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$method = {\ttfamily \char`\"{}string\char`\"{}}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a491ab39a3965deee22808d2188d073c2}
+provides improved functionality to P\-H\-P's native file\-\_\-get\-\_\-contents function
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file we are working with \\
+\hline
+string & {\em \$method} & do we return an array, or a string? Options are, \char`\"{}array\char`\"{} or \char`\"{}string\char`\"{} \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string or array, depending upon the \$method param the \$output variable is populated with the file's contents 
+\end{DoxyReturn}
+\hypertarget{class_files_a6fcd6647509d9b0dc63b921959fee7e6}{\index{Files@{Files}!fileputcontents@{fileputcontents}}
+\index{fileputcontents@{fileputcontents}!Files@{Files}}
+\subsubsection[{fileputcontents}]{\setlength{\rightskip}{0pt plus 5cm}fileputcontents (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$data, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a6fcd6647509d9b0dc63b921959fee7e6}
+provides improved functionality to P\-H\-P's native file\-\_\-put\-\_\-contents function
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file we are working with \\
+\hline
+string & {\em \$data} & \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed false on failure 
+\end{DoxyReturn}
+\hypertarget{class_files_a38a434ec020e56cb27fc8f8f57e8de10}{\index{Files@{Files}!find\-\_\-extension@{find\-\_\-extension}}
+\index{find\-\_\-extension@{find\-\_\-extension}!Files@{Files}}
+\subsubsection[{find\-\_\-extension}]{\setlength{\rightskip}{0pt plus 5cm}find\-\_\-extension (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a38a434ec020e56cb27fc8f8f57e8de10}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$file} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_files_acadbd94e60dcb4bdeb54add445447703}{\index{Files@{Files}!get\-\_\-dir\-\_\-files\-\_\-array@{get\-\_\-dir\-\_\-files\-\_\-array}}
+\index{get\-\_\-dir\-\_\-files\-\_\-array@{get\-\_\-dir\-\_\-files\-\_\-array}!Files@{Files}}
+\subsubsection[{get\-\_\-dir\-\_\-files\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-dir\-\_\-files\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir}
+\end{DoxyParamCaption}
+)}}\label{class_files_acadbd94e60dcb4bdeb54add445447703}
+
+\begin{DoxyParams}{Parameters}
+{\em \$dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_files_ab31492186c42f455b28098ae96eafa9d}{\index{Files@{Files}!get\-\_\-directory\-\_\-size@{get\-\_\-directory\-\_\-size}}
+\index{get\-\_\-directory\-\_\-size@{get\-\_\-directory\-\_\-size}!Files@{Files}}
+\subsubsection[{get\-\_\-directory\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-directory\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{class_files_ab31492186c42f455b28098ae96eafa9d}
+
+\begin{DoxyParams}{Parameters}
+{\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with the following keys\-: size -\/ the data size of the directory and its contents count -\/ the total number of files in the directory dircount -\/ the number of sub directories 
+\end{DoxyReturn}
+\hypertarget{class_files_a247859f95e43b6147d06fef867e536ae}{\index{Files@{Files}!get\-\_\-file\-\_\-stats@{get\-\_\-file\-\_\-stats}}
+\index{get\-\_\-file\-\_\-stats@{get\-\_\-file\-\_\-stats}!Files@{Files}}
+\subsubsection[{get\-\_\-file\-\_\-stats}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-file\-\_\-stats (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a247859f95e43b6147d06fef867e536ae}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$file} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$|$bool 
+\end{DoxyReturn}
+\hypertarget{class_files_ad2e2b31a53f63b865a0836bb244a92d7}{\index{Files@{Files}!get\-\_\-filesize@{get\-\_\-filesize}}
+\index{get\-\_\-filesize@{get\-\_\-filesize}!Files@{Files}}
+\subsubsection[{get\-\_\-filesize}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-filesize (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_ad2e2b31a53f63b865a0836bb244a92d7}
+gets the size, in bytes, of a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the size of the file is returned, in bytes 
+\end{DoxyReturn}
+\hypertarget{class_files_a301e528476292dd5e72a811bcd03aa49}{\index{Files@{Files}!get\-\_\-pathinfo@{get\-\_\-pathinfo}}
+\index{get\-\_\-pathinfo@{get\-\_\-pathinfo}!Files@{Files}}
+\subsubsection[{get\-\_\-pathinfo}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-pathinfo (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a301e528476292dd5e72a811bcd03aa49}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+get an improved pathinfo array with the following keys dirname =$>$ /var/www/html basename =$>$ example.\-html extension =$>$ html basename\-W\-E =$>$ example (as in, basename without extension) \begin{DoxyReturn}{Returns}
+bool$|$mixed 
+\end{DoxyReturn}
+\hypertarget{class_files_a0e50a400e9fd53290dc4c0123974198a}{\index{Files@{Files}!get\-\_\-zip\-\_\-files\-\_\-array@{get\-\_\-zip\-\_\-files\-\_\-array}}
+\index{get\-\_\-zip\-\_\-files\-\_\-array@{get\-\_\-zip\-\_\-files\-\_\-array}!Files@{Files}}
+\subsubsection[{get\-\_\-zip\-\_\-files\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-zip\-\_\-files\-\_\-array (
+\begin{DoxyParamCaption}
+\item[{}]{\$path\-\_\-to\-\_\-zip, }
+\item[{}]{\$destination, }
+\item[{}]{\$fullpath = {\ttfamily true}, }
+\item[{}]{\$dumpzip = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a0e50a400e9fd53290dc4c0123974198a}
+lists the contents of a zip file
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$path\-\_\-to\-\_\-zip} & \\
+\hline
+ & {\em \$destination} & \\
+\hline
+bool & {\em \$fullpath} & \\
+\hline
+bool & {\em \$dumpzip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a8f1046c32417d89d113cbd1d880ae42e}{\index{Files@{Files}!get\-File\-Data@{get\-File\-Data}}
+\index{get\-File\-Data@{get\-File\-Data}!Files@{Files}}
+\subsubsection[{get\-File\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-File\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{class_files_a8f1046c32417d89d113cbd1d880ae42e}
+opens a file, reads it, returns the data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the file to be read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_files_aaa533c6267b5bd113bd34679dc52bef4}{\index{Files@{Files}!get\-Remote\-File\-M\-I\-M\-E\-Type@{get\-Remote\-File\-M\-I\-M\-E\-Type}}
+\index{get\-Remote\-File\-M\-I\-M\-E\-Type@{get\-Remote\-File\-M\-I\-M\-E\-Type}!Files@{Files}}
+\subsubsection[{get\-Remote\-File\-M\-I\-M\-E\-Type}]{\setlength{\rightskip}{0pt plus 5cm}get\-Remote\-File\-M\-I\-M\-E\-Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}}\label{class_files_aaa533c6267b5bd113bd34679dc52bef4}
+Connects to a remote file and retrieves the M\-I\-M\-E type of that file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & full U\-R\-L to the remote file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string returns the M\-I\-M\-E of the file 
+\end{DoxyReturn}
+\hypertarget{class_files_a827216a16a49bdb08a2371ed47da498f}{\index{Files@{Files}!list\-Directory\-By\-Date@{list\-Directory\-By\-Date}}
+\index{list\-Directory\-By\-Date@{list\-Directory\-By\-Date}!Files@{Files}}
+\subsubsection[{list\-Directory\-By\-Date}]{\setlength{\rightskip}{0pt plus 5cm}list\-Directory\-By\-Date (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{class_files_a827216a16a49bdb08a2371ed47da498f}
+lists directory contents arranged by date
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path for the directory we're working with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_files_a691c4abd483a933fd272f072d71b6b73}{\index{Files@{Files}!lock\-\_\-file@{lock\-\_\-file}}
+\index{lock\-\_\-file@{lock\-\_\-file}!Files@{Files}}
+\subsubsection[{lock\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}lock\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$mode = {\ttfamily \char`\"{}LOCK\-\_\-EX\char`\"{}}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a691c4abd483a933fd272f072d71b6b73}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+string & {\em \$mode} & the mode to use when locking To acquire a shared lock (reader), set operation to L\-O\-C\-K\-\_\-\-S\-H To acquire an exclusive lock (writer), set operation to L\-O\-C\-K\-\_\-\-E\-X To release a lock (shared or exclusive), set operation to L\-O\-C\-K\-\_\-\-U\-N If you don't want flock() to block while locking, add L\-O\-C\-K\-\_\-\-N\-B \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_files_a20c948d332a2b62b3034057bf0378e1c}{\index{Files@{Files}!makedirectory@{makedirectory}}
+\index{makedirectory@{makedirectory}!Files@{Files}}
+\subsubsection[{makedirectory}]{\setlength{\rightskip}{0pt plus 5cm}makedirectory (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$mode = {\ttfamily \char`\"{}0777\char`\"{}}, }
+\item[{}]{\$recursive = {\ttfamily false}, }
+\item[{}]{\$context = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a20c948d332a2b62b3034057bf0378e1c}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & the full path of the directory we are working with \\
+\hline
+string & {\em \$mode} & the mode to create the directory in \\
+\hline
+bool & {\em \$recursive} & whether to make this creation recursive (meaning whether to create the directory and all other directories needed in order to make this one) \\
+\hline
+string & {\em \$context} & any special \char`\"{}context\char`\"{} wrapper\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a8972483d65d7765f4d29056eb67e5fed}{\index{Files@{Files}!output\-\_\-file\-\_\-contents@{output\-\_\-file\-\_\-contents}}
+\index{output\-\_\-file\-\_\-contents@{output\-\_\-file\-\_\-contents}!Files@{Files}}
+\subsubsection[{output\-\_\-file\-\_\-contents}]{\setlength{\rightskip}{0pt plus 5cm}output\-\_\-file\-\_\-contents (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a8972483d65d7765f4d29056eb67e5fed}
+returns a string of the file contents there is an important difference between this function and other file reading functions in this library\-: this one is intended to output text files (\hyperlink{class_h_t_m_l}{H\-T\-M\-L}, C\-S\-S, etc) with special characters converted, ready for output to the screen, kind of like a quick \& dirty source viewer
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the file's data 
+\end{DoxyReturn}
+\hypertarget{class_files_a4cb83eb84ebfcfa560cdea7817d7e6f4}{\index{Files@{Files}!process\-\_\-file\-\_\-size@{process\-\_\-file\-\_\-size}}
+\index{process\-\_\-file\-\_\-size@{process\-\_\-file\-\_\-size}!Files@{Files}}
+\subsubsection[{process\-\_\-file\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}process\-\_\-file\-\_\-size (
+\begin{DoxyParamCaption}
+\item[{}]{\$size}
+\end{DoxyParamCaption}
+)}}\label{class_files_a4cb83eb84ebfcfa560cdea7817d7e6f4}
+
+\begin{DoxyParams}{Parameters}
+{\em \$size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_files_ab5895b75a3b2abdddf1cb351a8c6b58b}{\index{Files@{Files}!rrmdir@{rrmdir}}
+\index{rrmdir@{rrmdir}!Files@{Files}}
+\subsubsection[{rrmdir}]{\setlength{\rightskip}{0pt plus 5cm}rrmdir (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{class_files_ab5895b75a3b2abdddf1cb351a8c6b58b}
+
+\begin{DoxyParams}{Parameters}
+{\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_aa9692869f71d1ade22a78f287d97d69b}{\index{Files@{Files}!touchfile@{touchfile}}
+\index{touchfile@{touchfile}!Files@{Files}}
+\subsubsection[{touchfile}]{\setlength{\rightskip}{0pt plus 5cm}touchfile (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$keep\-\_\-mtime = {\ttfamily false}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_aa9692869f71d1ade22a78f287d97d69b}
+\char`\"{}touches\char`\"{} a file, updating its access time and (optionally) its last modified time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$keep\-\_\-mtime} & whether to maintain the lastmodified time of the file \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_files_a977ddd0bab2c2480fa67dd5757cb3e70}{\index{Files@{Files}!truncate\-\_\-file@{truncate\-\_\-file}}
+\index{truncate\-\_\-file@{truncate\-\_\-file}!Files@{Files}}
+\subsubsection[{truncate\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}truncate\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a977ddd0bab2c2480fa67dd5757cb3e70}
+takes a file and erases all the data in it
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success 
+\end{DoxyReturn}
+\hypertarget{class_files_a5e3b84ff275d2b6734ebf8a54185e826}{\index{Files@{Files}!write\-\_\-new\-\_\-file@{write\-\_\-new\-\_\-file}}
+\index{write\-\_\-new\-\_\-file@{write\-\_\-new\-\_\-file}!Files@{Files}}
+\subsubsection[{write\-\_\-new\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}write\-\_\-new\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$data, }
+\item[{}]{\$binary = {\ttfamily false}, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_files_a5e3b84ff275d2b6734ebf8a54185e826}
+creates a new file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & the full path of the file or directory we are working with \\
+\hline
+string & {\em \$data} & the content of the new file \\
+\hline
+bool & {\em \$binary} & \\
+\hline
+bool & {\em \$strict} & whether to perform an explicit check for the file's existence first.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\-R\-U\-E on success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Files.\-class.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,352 @@
+\hypertarget{classsimple_table}{\section{simple\-Table Class Reference}
+\label{classsimple_table}\index{simple\-Table@{simple\-Table}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsimple_table_a6c9ec5f57e3a9f2b5e9be12e9535fbd4}{\-\_\-\-\_\-construct} (\$default\-\_\-cell\-\_\-emptychars= '', \$alternate=true, \$altclass= 'odd\-\_\-row')
+\item 
+\hyperlink{classsimple_table_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classsimple_table_a846403917c32311cf3d6a4168c2270cf}{loop\-\_\-attributes} (\$attrs=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classsimple_table_ae4ebee8bff57e01ccda5c08bd842c6ee}{tbl\-\_\-open} (\$attrs=null, \$caption=null, \$cap\-\_\-attrs=null)
+\item 
+\hyperlink{classsimple_table_a7cc27ba70ada221c62b29567936bc4bd}{colgroup} (\$data= '', \$attrs=null)
+\item 
+\hyperlink{classsimple_table_af5144d356c43f2d682fae92ec404ec09}{col} (\$attrs=null)
+\item 
+\hyperlink{classsimple_table_a2e783d81dd081e73d196ef0c11f3c62d}{tbl\-\_\-head} (\$data, \$attrs=null)
+\item 
+\hyperlink{classsimple_table_a960b0a5714263a08c400b715afbbb526}{assemble\-\_\-headers} (\$headrowdata)
+\item 
+\hyperlink{classsimple_table_a51225e4e6848623331be597a806de439}{tbl\-\_\-row} (\$data, \$attrs=null)
+\item 
+\hyperlink{classsimple_table_a31e7c9b05a29c57fc00804183ce3e832}{tbl\-\_\-cell} (\$data, \$type=\char`\"{}T\-D\char`\"{}, \$attrs=null)
+\item 
+\hyperlink{classsimple_table_a3831c39c25c0542d2dd8452a62b67f68}{tbl\-\_\-body} (\$data, \$attrs=null)
+\item 
+\hyperlink{classsimple_table_a756c74b48b38b58e8e1a8bea60593961}{tbl\-\_\-foot} (\$data, \$attrs=null)
+\item 
+\hyperlink{classsimple_table_a9e5c9a1c37d8b5c41f2dfeeca978ee5e}{assemble\-\_\-rows} (\$data)
+\item 
+\hyperlink{classsimple_table_a25674bc8e9cf30d3a569412f4a831f94}{tbl\-\_\-close} ()
+\item 
+\hyperlink{classsimple_table_a9edf4f2db25b0415fc7c2c0b1309285d}{display} (\$table\-\_\-data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the creation of simple data tables 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsimple_table_a6c9ec5f57e3a9f2b5e9be12e9535fbd4}{\index{simple\-Table@{simple\-Table}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!simpleTable@{simple\-Table}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$default\-\_\-cell\-\_\-emptychars = {\ttfamily ''}, }
+\item[{}]{\$alternate = {\ttfamily true}, }
+\item[{}]{\$altclass = {\ttfamily 'odd\-\_\-row'}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a6c9ec5f57e3a9f2b5e9be12e9535fbd4}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$default\-\_\-cell\-\_\-emptychars} & \\
+\hline
+bool & {\em \$alternate} & \\
+\hline
+string & {\em \$altclass} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsimple_table_a421831a265621325e1fdd19aace0c758}{\index{simple\-Table@{simple\-Table}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!simpleTable@{simple\-Table}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsimple_table_a960b0a5714263a08c400b715afbbb526}{\index{simple\-Table@{simple\-Table}!assemble\-\_\-headers@{assemble\-\_\-headers}}
+\index{assemble\-\_\-headers@{assemble\-\_\-headers}!simpleTable@{simple\-Table}}
+\subsubsection[{assemble\-\_\-headers}]{\setlength{\rightskip}{0pt plus 5cm}assemble\-\_\-headers (
+\begin{DoxyParamCaption}
+\item[{}]{\$headrowdata}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a960b0a5714263a08c400b715afbbb526}
+generates the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} for the table header row
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headrowdata} & array of data for the headers\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\hypertarget{classsimple_table_a9e5c9a1c37d8b5c41f2dfeeca978ee5e}{\index{simple\-Table@{simple\-Table}!assemble\-\_\-rows@{assemble\-\_\-rows}}
+\index{assemble\-\_\-rows@{assemble\-\_\-rows}!simpleTable@{simple\-Table}}
+\subsubsection[{assemble\-\_\-rows}]{\setlength{\rightskip}{0pt plus 5cm}assemble\-\_\-rows (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a9e5c9a1c37d8b5c41f2dfeeca978ee5e}
+loops throu an array of data assembling each row
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\hypertarget{classsimple_table_af5144d356c43f2d682fae92ec404ec09}{\index{simple\-Table@{simple\-Table}!col@{col}}
+\index{col@{col}!simpleTable@{simple\-Table}}
+\subsubsection[{col}]{\setlength{\rightskip}{0pt plus 5cm}col (
+\begin{DoxyParamCaption}
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_af5144d356c43f2d682fae92ec404ec09}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$col$>$ element and its attributes
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & array of attributes for $<$col$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$col$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) span N\-U\-M\-B\-E\-R 1 -- C\-O\-L attributes affect N columns -- width Multi\-Length; -- column width specification -- halign -- horizontal alignment in cells -- valign -- vertical alignment in cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a7cc27ba70ada221c62b29567936bc4bd}{\index{simple\-Table@{simple\-Table}!colgroup@{colgroup}}
+\index{colgroup@{colgroup}!simpleTable@{simple\-Table}}
+\subsubsection[{colgroup}]{\setlength{\rightskip}{0pt plus 5cm}colgroup (
+\begin{DoxyParamCaption}
+\item[{}]{\$data = {\ttfamily ''}, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a7cc27ba70ada221c62b29567936bc4bd}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$colgroup$>$ element and its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & the data to be entered between the opening and closing $<$colgroup$>$ elements \\
+\hline
+array & {\em \$attrs} & array of attributes for $<$colgroup$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$colgroup$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) span N\-U\-M\-B\-E\-R 1 -- default number of columns in group -- width Multi\-Length; -- default width for enclosed C\-O\-Ls -- halign -- horizontal alignment in cells -- valign -- vertical alignment in cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a9edf4f2db25b0415fc7c2c0b1309285d}{\index{simple\-Table@{simple\-Table}!display@{display}}
+\index{display@{display}!simpleTable@{simple\-Table}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}display (
+\begin{DoxyParamCaption}
+\item[{}]{\$table\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a9edf4f2db25b0415fc7c2c0b1309285d}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table\-\_\-data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classsimple_table_a846403917c32311cf3d6a4168c2270cf}{\index{simple\-Table@{simple\-Table}!loop\-\_\-attributes@{loop\-\_\-attributes}}
+\index{loop\-\_\-attributes@{loop\-\_\-attributes}!simpleTable@{simple\-Table}}
+\subsubsection[{loop\-\_\-attributes}]{\setlength{\rightskip}{0pt plus 5cm}loop\-\_\-attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$attrs = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a846403917c32311cf3d6a4168c2270cf}
+C\-O\-R\-E A\-T\-T\-R\-I\-B\-U\-T\-E\-S -\/ this section is just reference info for use with the class A\-T\-T\-R\-I\-B\-U\-T\-E V\-A\-L\-U\-E T\-Y\-P\-E D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N id I\-D -- document-\/wide unique id -- class C\-D\-A\-T\-A -- space-\/separated list of classes -- style Style\-Sheet; -- associated style info -- title Text; -- advisory title --
+
+I18\-N (Internationalization) A\-T\-T\-R\-I\-B\-U\-T\-E V\-A\-L\-U\-E T\-Y\-P\-E D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N lang Language\-Code; -- I\-S\-O language code -- dir (ltr$|$rtl) -- direction for weak/neutral text --"
+
+E\-V\-E\-N\-T H\-A\-N\-D\-L\-E\-R\-S A\-T\-T\-R\-I\-B\-U\-T\-E V\-A\-L\-U\-E T\-Y\-P\-E D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N onclick Script; -- a pointer button was clicked -- ondblclick Script; -- a pointer button was double clicked-- onmousedown Script; -- a pointer button was pressed down -- onmouseup Script; -- a pointer button was released -- onmouseover Script; -- a pointer was moved onto -- onmousemove Script; -- a pointer was moved within -- onmouseout Script; -- a pointer was moved away -- onkeypress Script; -- a key was pressed and released -- onkeydown Script; -- a key was pressed down -- onkeyup Script; -- a key was released --"
+
+returns a string of attributes
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$attrs} & attributes, most often an array, can also be a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\hypertarget{classsimple_table_a3831c39c25c0542d2dd8452a62b67f68}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-body@{tbl\-\_\-body}}
+\index{tbl\-\_\-body@{tbl\-\_\-body}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-body (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a3831c39c25c0542d2dd8452a62b67f68}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$tbody$>$ element and its data
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & the data to be inserted into the $<$tbody$>$ \\
+\hline
+array & {\em \$attrs} & array of attributes for \begin{TabularC}{0}
+\hline
+\end{TabularC}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} \\
+\hline
+\end{DoxyParams}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$tbody$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) halign -- horizontal alignment in cells -- valign -- vertical alignment in cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a31e7c9b05a29c57fc00804183ce3e832}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-cell@{tbl\-\_\-cell}}
+\index{tbl\-\_\-cell@{tbl\-\_\-cell}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-cell}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-cell (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$type = {\ttfamily \char`\"{}TD\char`\"{}}, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a31e7c9b05a29c57fc00804183ce3e832}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+
+or 
+
+element and its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & the data to be inserted into the cell \\
+\hline
+string & {\em \$type} & whether this is a \\
+\hline
+\end{DoxyParams}
+
+
+or 
+
+cell 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & array of attributes for \begin{TabularC}{0}
+\hline
+\end{TabularC}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} \\
+\hline
+\end{DoxyParams}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the 
+
+or 
+
+element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) abbr Text; -- abbreviation for header cell -- axis C\-D\-A\-T\-A -- comma-\/separated list of related headers-- headers I\-D\-R\-E\-F\-S -- list of id's for header cells -- scope Scope; -- scope covered by header cells -- rowspan N\-U\-M\-B\-E\-R 1 -- number of rows spanned by cell -- colspan N\-U\-M\-B\-E\-R 1 -- number of cols spanned by cell -- halign -- horizontal alignment in cells -- valign -- vertical alignment in cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a25674bc8e9cf30d3a569412f4a831f94}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-close@{tbl\-\_\-close}}
+\index{tbl\-\_\-close@{tbl\-\_\-close}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a25674bc8e9cf30d3a569412f4a831f94}
+closes the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+
+element
+
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\hypertarget{classsimple_table_a756c74b48b38b58e8e1a8bea60593961}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-foot@{tbl\-\_\-foot}}
+\index{tbl\-\_\-foot@{tbl\-\_\-foot}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-foot}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-foot (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a756c74b48b38b58e8e1a8bea60593961}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$tfoot$>$ element and its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & the data to be inserted into the $<$tfoot$>$ \\
+\hline
+array & {\em \$attrs} & array of attributes for \begin{TabularC}{0}
+\hline
+\end{TabularC}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} \\
+\hline
+\end{DoxyParams}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$tbody$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) halign -- horizontal alignment in cells -- valign -- vertical alignment in cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a2e783d81dd081e73d196ef0c11f3c62d}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-head@{tbl\-\_\-head}}
+\index{tbl\-\_\-head@{tbl\-\_\-head}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-head}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-head (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a2e783d81dd081e73d196ef0c11f3c62d}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} $<$thead$>$ element and its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & the data to be inserted into the $<$thead$>$ \\
+\hline
+array & {\em \$attrs} & array of attributes for $<$thead$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$thead$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document)
+
+These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_ae4ebee8bff57e01ccda5c08bd842c6ee}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-open@{tbl\-\_\-open}}
+\index{tbl\-\_\-open@{tbl\-\_\-open}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-open (
+\begin{DoxyParamCaption}
+\item[{}]{\$attrs = {\ttfamily null}, }
+\item[{}]{\$caption = {\ttfamily null}, }
+\item[{}]{\$cap\-\_\-attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_ae4ebee8bff57e01ccda5c08bd842c6ee}
+begins an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} table
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & array of attributes for \begin{TabularC}{0}
+\hline
+\end{TabularC}
+string \$caption text for the  element \\
+\hline
+array & {\em \$cap\-\_\-attrs} & array of attributes for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+\end{DoxyReturn}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the \begin{TabularC}{0}
+\hline
+\end{TabularC}
+. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) summary Text; -- purpose/structure for speech output-- width Length; -- table width -- border Pixels; -- controls frame width around table -- frame T\-Frame; -- which parts of frame to render -- rules T\-Rules; -- rulings between rows and cols -- cellspacing Length; -- spacing between cells -- cellpadding Length; -- spacing within cells -- These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};\hypertarget{classsimple_table_a51225e4e6848623331be597a806de439}{\index{simple\-Table@{simple\-Table}!tbl\-\_\-row@{tbl\-\_\-row}}
+\index{tbl\-\_\-row@{tbl\-\_\-row}!simpleTable@{simple\-Table}}
+\subsubsection[{tbl\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}tbl\-\_\-row (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classsimple_table_a51225e4e6848623331be597a806de439}
+generates an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} 
+
+element and its contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & the data to be inserted into the \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & array of attributes for \begin{TabularC}{0}
+\hline
+\end{TabularC}
+string the \$output variable is populated with the generated \hyperlink{class_h_t_m_l}{H\-T\-M\-L} \\
+\hline
+\end{DoxyParams}
+\$attrs is an array of any of the possible attributes valid in the \hyperlink{class_h_t_m_l}{H\-T\-M\-L} spec for the $<$thead$>$ element. I name them here just for reference\-: (In addition to the attributes listed below, this element can use any of the attributes listed at the head of this document) These attributes must be arranged like\-: \$attrs\mbox{[}'attribute'\mbox{]} = \char`\"{}value\char`\"{};
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+simple\-Table.\-class.\-php\end{DoxyCompactItemize}

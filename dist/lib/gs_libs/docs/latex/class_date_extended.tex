@@ -1,0 +1,274 @@
+\hypertarget{class_date_extended}{\section{Date\-Extended Class Reference}
+\label{class_date_extended}\index{Date\-Extended@{Date\-Extended}}
+}
+Inheritance diagram for Date\-Extended\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_date_extended}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_extended_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\item 
+\hyperlink{class_date_extended_ada04f8e683d2603d135fed9735e7ac99}{to\-Locale\-String} (\$long=false)
+\item 
+\hyperlink{class_date_extended_ad317baad95611ed5bb440a1ae0cbfca2}{get\-Clock\-Time} (\$twelve=true, \$uppercase\-A\-M\-P\-M=true, \$include\-Seconds=true, \$separator= '\-:')
+\item 
+\hyperlink{class_date_extended_adaa8912e7d6d6cefc74f16d1fc3e90ff}{get\-Day\-Full\-Name} ()
+\item 
+\hyperlink{class_date_extended_af60af39137441e44c6f5a48f6f6b35c7}{get\-Day\-Short\-Name} ()
+\item 
+\hyperlink{class_date_extended_a3d0fd2603e0e354a82599f4a4b64cdad}{get\-Days\-In\-Month} ()
+\item 
+\hyperlink{class_date_extended_a8ac07f5f64946195cf0eaefcce96d39c}{get\-Difference} (\hyperlink{class_date}{Date} \$date)
+\item 
+\hyperlink{class_date_extended_a8dcc7afa935fa9c20954ccc656ca1ec5}{get\-Month\-Full\-Name} ()
+\item 
+\hyperlink{class_date_extended_aa70331c580e7d796b142e67e3304be86}{get\-Month\-Short\-Name} ()
+\item 
+\hyperlink{class_date_extended_a6d4bef2c3db8a02c0557a4057bb50c43}{get\-Ordinal\-Date} ()
+\item 
+\hyperlink{class_date_extended_a5194835a8aba09ca0fe088498c23baab}{get\-Time\-Zone\-Name} ()
+\item 
+\hyperlink{class_date_extended_a0b13223a7fbee1de8db426e2d0b9af5e}{get\-I\-S\-O\-Week} ()
+\item 
+\hyperlink{class_date_extended_a3fb1e151cce42ceb23c43b46b3cb2f23}{is\-D\-S\-T} ()
+\item 
+\hyperlink{class_date_extended_a5287579ec8477780491f07569d88f7be}{is\-Week\-Day} ()
+\item 
+\hyperlink{class_date_extended_ab787217b18254240b44acd4b860760a1}{to\-I\-S\-O\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_date_extended_aad30ef308c5cb133adaf4607a15562c4}{is\-Leap\-Year} (\$year)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_date_extended}{Date\-Extended} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_extended_a095c5d389db211932136b53f25f39685}{\index{Date\-Extended@{Date\-Extended}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!DateExtended@{Date\-Extended}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a095c5d389db211932136b53f25f39685}
+class constructor\-: passes whatever arguments it receives back to the parent class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_extended_ad317baad95611ed5bb440a1ae0cbfca2}{\index{Date\-Extended@{Date\-Extended}!get\-Clock\-Time@{get\-Clock\-Time}}
+\index{get\-Clock\-Time@{get\-Clock\-Time}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Clock\-Time}]{\setlength{\rightskip}{0pt plus 5cm}get\-Clock\-Time (
+\begin{DoxyParamCaption}
+\item[{}]{\$twelve = {\ttfamily true}, }
+\item[{}]{\$uppercase\-A\-M\-P\-M = {\ttfamily true}, }
+\item[{}]{\$include\-Seconds = {\ttfamily true}, }
+\item[{}]{\$separator = {\ttfamily '\-:'}}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_ad317baad95611ed5bb440a1ae0cbfca2}
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$twelve} & \\
+\hline
+bool & {\em \$uppercase\-A\-M\-P\-M} & \\
+\hline
+bool & {\em \$include\-Seconds} & \\
+\hline
+string & {\em \$separator} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_adaa8912e7d6d6cefc74f16d1fc3e90ff}{\index{Date\-Extended@{Date\-Extended}!get\-Day\-Full\-Name@{get\-Day\-Full\-Name}}
+\index{get\-Day\-Full\-Name@{get\-Day\-Full\-Name}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Day\-Full\-Name}]{\setlength{\rightskip}{0pt plus 5cm}get\-Day\-Full\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_adaa8912e7d6d6cefc74f16d1fc3e90ff}
+returns full English name of day of week // (e.\-g. Sunday, Monday, etc.)
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_af60af39137441e44c6f5a48f6f6b35c7}{\index{Date\-Extended@{Date\-Extended}!get\-Day\-Short\-Name@{get\-Day\-Short\-Name}}
+\index{get\-Day\-Short\-Name@{get\-Day\-Short\-Name}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Day\-Short\-Name}]{\setlength{\rightskip}{0pt plus 5cm}get\-Day\-Short\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_af60af39137441e44c6f5a48f6f6b35c7}
+returns 3-\/letter abbreviation for day of week
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a3d0fd2603e0e354a82599f4a4b64cdad}{\index{Date\-Extended@{Date\-Extended}!get\-Days\-In\-Month@{get\-Days\-In\-Month}}
+\index{get\-Days\-In\-Month@{get\-Days\-In\-Month}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Days\-In\-Month}]{\setlength{\rightskip}{0pt plus 5cm}get\-Days\-In\-Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a3d0fd2603e0e354a82599f4a4b64cdad}
+returns number of days in current month
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a8ac07f5f64946195cf0eaefcce96d39c}{\index{Date\-Extended@{Date\-Extended}!get\-Difference@{get\-Difference}}
+\index{get\-Difference@{get\-Difference}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}get\-Difference (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{\$date}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a8ac07f5f64946195cf0eaefcce96d39c}
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_date}{Date} & {\em \$date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a0b13223a7fbee1de8db426e2d0b9af5e}{\index{Date\-Extended@{Date\-Extended}!get\-I\-S\-O\-Week@{get\-I\-S\-O\-Week}}
+\index{get\-I\-S\-O\-Week@{get\-I\-S\-O\-Week}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-I\-S\-O\-Week}]{\setlength{\rightskip}{0pt plus 5cm}get\-I\-S\-O\-Week (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a0b13223a7fbee1de8db426e2d0b9af5e}
+returns I\-S\-O week number
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a8dcc7afa935fa9c20954ccc656ca1ec5}{\index{Date\-Extended@{Date\-Extended}!get\-Month\-Full\-Name@{get\-Month\-Full\-Name}}
+\index{get\-Month\-Full\-Name@{get\-Month\-Full\-Name}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Month\-Full\-Name}]{\setlength{\rightskip}{0pt plus 5cm}get\-Month\-Full\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a8dcc7afa935fa9c20954ccc656ca1ec5}
+returns full English name of month (January, February, etc.)
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_aa70331c580e7d796b142e67e3304be86}{\index{Date\-Extended@{Date\-Extended}!get\-Month\-Short\-Name@{get\-Month\-Short\-Name}}
+\index{get\-Month\-Short\-Name@{get\-Month\-Short\-Name}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Month\-Short\-Name}]{\setlength{\rightskip}{0pt plus 5cm}get\-Month\-Short\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_aa70331c580e7d796b142e67e3304be86}
+returns 3-\/letter abbreviation for month (Jan, Feb, etc.)
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a6d4bef2c3db8a02c0557a4057bb50c43}{\index{Date\-Extended@{Date\-Extended}!get\-Ordinal\-Date@{get\-Ordinal\-Date}}
+\index{get\-Ordinal\-Date@{get\-Ordinal\-Date}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Ordinal\-Date}]{\setlength{\rightskip}{0pt plus 5cm}get\-Ordinal\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a6d4bef2c3db8a02c0557a4057bb50c43}
+returns day of the month with an ordinal suffix basically a wrapper for date('j\-S')
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a5194835a8aba09ca0fe088498c23baab}{\index{Date\-Extended@{Date\-Extended}!get\-Time\-Zone\-Name@{get\-Time\-Zone\-Name}}
+\index{get\-Time\-Zone\-Name@{get\-Time\-Zone\-Name}!DateExtended@{Date\-Extended}}
+\subsubsection[{get\-Time\-Zone\-Name}]{\setlength{\rightskip}{0pt plus 5cm}get\-Time\-Zone\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a5194835a8aba09ca0fe088498c23baab}
+returns name or abbreviation of current time zone
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a3fb1e151cce42ceb23c43b46b3cb2f23}{\index{Date\-Extended@{Date\-Extended}!is\-D\-S\-T@{is\-D\-S\-T}}
+\index{is\-D\-S\-T@{is\-D\-S\-T}!DateExtended@{Date\-Extended}}
+\subsubsection[{is\-D\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}is\-D\-S\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a3fb1e151cce42ceb23c43b46b3cb2f23}
+returns T\-R\-U\-E if current date/ time is D\-S\-T
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_aad30ef308c5cb133adaf4607a15562c4}{\index{Date\-Extended@{Date\-Extended}!is\-Leap\-Year@{is\-Leap\-Year}}
+\index{is\-Leap\-Year@{is\-Leap\-Year}!DateExtended@{Date\-Extended}}
+\subsubsection[{is\-Leap\-Year}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Leap\-Year (
+\begin{DoxyParamCaption}
+\item[{}]{\$year}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_date_extended_aad30ef308c5cb133adaf4607a15562c4}
+takes a 4-\/digit year and returns T\-R\-U\-E or F\-A\-L\-S\-E depending upon whether the year is a leap year
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_a5287579ec8477780491f07569d88f7be}{\index{Date\-Extended@{Date\-Extended}!is\-Week\-Day@{is\-Week\-Day}}
+\index{is\-Week\-Day@{is\-Week\-Day}!DateExtended@{Date\-Extended}}
+\subsubsection[{is\-Week\-Day}]{\setlength{\rightskip}{0pt plus 5cm}is\-Week\-Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_a5287579ec8477780491f07569d88f7be}
+returns T\-R\-U\-E if day is a weekday (Mon-\/\-Fri)
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_ab787217b18254240b44acd4b860760a1}{\index{Date\-Extended@{Date\-Extended}!to\-I\-S\-O\-String@{to\-I\-S\-O\-String}}
+\index{to\-I\-S\-O\-String@{to\-I\-S\-O\-String}!DateExtended@{Date\-Extended}}
+\subsubsection[{to\-I\-S\-O\-String}]{\setlength{\rightskip}{0pt plus 5cm}to\-I\-S\-O\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_ab787217b18254240b44acd4b860760a1}
+returns I\-S\-O representation of date and time e.\-g., 2005-\/03-\/26\-T18\-:59\-:07+10\-:00
+
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+\hypertarget{class_date_extended_ada04f8e683d2603d135fed9735e7ac99}{\index{Date\-Extended@{Date\-Extended}!to\-Locale\-String@{to\-Locale\-String}}
+\index{to\-Locale\-String@{to\-Locale\-String}!DateExtended@{Date\-Extended}}
+\subsubsection[{to\-Locale\-String}]{\setlength{\rightskip}{0pt plus 5cm}to\-Locale\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$long = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_date_extended_ada04f8e683d2603d135fed9735e7ac99}
+overrides the parent classes method of the same name
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$long} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Date\-Extended.\-class.\-php\end{DoxyCompactItemize}

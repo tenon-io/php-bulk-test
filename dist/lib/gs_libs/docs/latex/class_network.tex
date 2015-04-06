@@ -1,0 +1,498 @@
+\hypertarget{class_network}{\section{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_network_af3fdd43c8a859ddccce91ba8a5e3346c}{getip} ()
+\item 
+static \hyperlink{class_network_a6c04bacdc24d4b3d2ed7c9ea4a29210f}{url\-Validate} (\$link, \$strict=true)
+\item 
+static \hyperlink{class_network_ae99ae2dab82ab327e8b6d938c261d672}{get\-\_\-http\-\_\-response\-\_\-code} (\$the\-U\-R\-L, \$ua=null)
+\item 
+static \hyperlink{class_network_a3e56c11338f02530cb36a57c153f80f2}{ping\-Domain} (\$domain, \$port=80)
+\item 
+static \hyperlink{class_network_a01edf5e6ea88a99a0997a17336842c60}{check\-Back\-Link} (\$remote\-\_\-url, \$your\-\_\-link)
+\item 
+static \hyperlink{class_network_af4640ff629ddc87eff9b904a13ace30e}{get\-\_\-whois\-\_\-abuse} (\$ip)
+\item 
+static \hyperlink{class_network_a6ba7727d77c0f2a9e722716d6c012e3d}{detect\-\_\-lang} (\$default=\char`\"{}en\char`\"{})
+\item 
+static \hyperlink{class_network_a711272266c8ce0089919059fb05ea42b}{get\-Full\-Self} ()
+\item 
+static \hyperlink{class_network_a090adb44a65abba5099270e1a41e14a9}{get\-This\-Domain} ()
+\item 
+static \hyperlink{class_network_adef9087d8bcbbb414c4b74a5f6e769fe}{sendto\-W\-W\-W} (\$domain)
+\item 
+static \hyperlink{class_network_a87c49a4ee57ae0671cee0a2314be0053}{send\-Bots\-To\-W\-W\-W} (\$bots\-File, \$wwwdomain)
+\item 
+static \hyperlink{class_network_ab835c3be436302d527c0041f89b3e4f6}{get\-Host} (\$Address, \$return\-Scheme=true)
+\item 
+static \hyperlink{class_network_af11831fa6be865c1221fb0262204a0ec}{is\-\_\-valid\-\_\-ip} (\$ip)
+\end{DoxyCompactItemize}
+\subsection*{Add\-To\-Query}
+\label{_amgrp470e8b3abfc0b6b72e16f865369d0267}%
+ Returns the a string that is either \$uri if you pass it or the current uri with the variable name \$var\-Name equal to the value urlencode(\$var\-Val) It replaces a current value if it find it or adds the variable and value pair if they are new. \begin{DoxyAuthor}{Author}
+corey at eyewantmedia dot com on P\-H\-P.\-net
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$var\-Name} & \\
+\hline
+string & {\em \$var\-Val} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_network_a7e452bbbb695f9e3100a3059fa939a20}{static {\bfseries Add\-To\-Query} (\$var\-Name, \$var\-Val, \$uri=null)}\label{class_network_a7e452bbbb695f9e3100a3059fa939a20}
+
+\item 
+static \hyperlink{class_network_a52151d81f0dd35f6dbc69ef1c94a63f7}{Change\-Query} (\$action, \$var=null, \$uri=null)
+\item 
+static \hyperlink{class_network_ac7da5e3342590c09fdeb907a5de600cb}{mobile\-Redirect} (\$location)
+\item 
+static \hyperlink{class_network_a6bb7f12deffb5a1e9c970dc1c697bb3f}{force\-H\-T\-T\-P\-S} (\$wwwdomain)
+\item 
+static \hyperlink{class_network_a1a22503081fadd2ba467a70c150a4102}{expand\-Short\-Url} (\$url)
+\item 
+static \hyperlink{class_network_a471180dc7fe39582e25570faad01dde9}{error\-Document} (\$type)
+\item 
+static \hyperlink{class_network_a4303d3ec6dee99507f2e2d8991953d0f}{get\-Remote\-Mime\-Type} (\$url, \$use\-Curl=true)
+\item 
+static \hyperlink{class_network_ad68b8b65413b0cf48335753a20fc43c1}{get\-Remote\-U\-R\-L\-Content} (\$url, \$follow\-Redirects=false, \$print\-Info=false)
+\item 
+\hyperlink{class_network_a19530257aa3dc9488f09efa1ecc19f0c}{g\-Email} (\$recipient, \$subject, \$message, \$sender\-Email, \$sender\-Name= '')
+\item 
+\hyperlink{class_network_add3d4dea5b985a43062b2cbe28a9817b}{create\-T\-L\-D} (\$cache\-\_\-filename, \$max\-\_\-tl=2)
+\item 
+\hyperlink{class_network_adf67c141af9917cc7b443782f26de58b}{get\-Host\-Domain} (\$path\-To\-Cache, \$dom= '', \$fast=false)
+\item 
+\hyperlink{class_network_ac3ed92301a76e6f8c4785814876e2c24}{sql\-Domain\-Substring} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Function library for dealing with server/ network stuff 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_network_a52151d81f0dd35f6dbc69ef1c94a63f7}{\index{Network@{Network}!Change\-Query@{Change\-Query}}
+\index{Change\-Query@{Change\-Query}!Network@{Network}}
+\subsubsection[{Change\-Query}]{\setlength{\rightskip}{0pt plus 5cm}static Change\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$action, }
+\item[{}]{\$var = {\ttfamily null}, }
+\item[{}]{\$uri = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a52151d81f0dd35f6dbc69ef1c94a63f7}
+Edit the Query portion of an url
+
+\begin{DoxyAuthor}{Author}
+greg dot linton at gmail dot com
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$action} & ethier a \char`\"{}+\char`\"{} or a \char`\"{}-\/\char`\"{} depending on what action you want to perform \\
+\hline
+mixed & {\em \$var} & array (+) or string (-\/) \\
+\hline
+string & {\em \$uri} & the U\-R\-L to use. if this is left out, it uses \$current\-\_\-url\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string E\-X\-A\-M\-P\-L\-E \$url = Change\-Query(\char`\"{}-\/\char`\"{},\char`\"{}sort\char`\"{}, \$url); removes the \char`\"{}sort\char`\"{} variable from the U\-R\-L string 
+\end{DoxyReturn}
+\hypertarget{class_network_a01edf5e6ea88a99a0997a17336842c60}{\index{Network@{Network}!check\-Back\-Link@{check\-Back\-Link}}
+\index{check\-Back\-Link@{check\-Back\-Link}!Network@{Network}}
+\subsubsection[{check\-Back\-Link}]{\setlength{\rightskip}{0pt plus 5cm}static check\-Back\-Link (
+\begin{DoxyParamCaption}
+\item[{}]{\$remote\-\_\-url, }
+\item[{}]{\$your\-\_\-link}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a01edf5e6ea88a99a0997a17336842c60}
+check to see if someone has reciprocated a link exchange
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\-\_\-url} & the U\-R\-L to look at \\
+\hline
+string & {\em \$your\-\_\-link} & the U\-R\-L of your site\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_network_add3d4dea5b985a43062b2cbe28a9817b}{\index{Network@{Network}!create\-T\-L\-D@{create\-T\-L\-D}}
+\index{create\-T\-L\-D@{create\-T\-L\-D}!Network@{Network}}
+\subsubsection[{create\-T\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}create\-T\-L\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$cache\-\_\-filename, }
+\item[{}]{\$max\-\_\-tl = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{class_network_add3d4dea5b985a43062b2cbe28a9817b}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$cache\-\_\-filename} & \\
+\hline
+int & {\em \$max\-\_\-tl} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classg_exception}{g\-Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_network_a6ba7727d77c0f2a9e722716d6c012e3d}{\index{Network@{Network}!detect\-\_\-lang@{detect\-\_\-lang}}
+\index{detect\-\_\-lang@{detect\-\_\-lang}!Network@{Network}}
+\subsubsection[{detect\-\_\-lang}]{\setlength{\rightskip}{0pt plus 5cm}static detect\-\_\-lang (
+\begin{DoxyParamCaption}
+\item[{}]{\$default = {\ttfamily \char`\"{}en\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a6ba7727d77c0f2a9e722716d6c012e3d}
+Function to detect user's language setting
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$default} & default language setting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the language setting 
+\end{DoxyReturn}
+\hypertarget{class_network_a471180dc7fe39582e25570faad01dde9}{\index{Network@{Network}!error\-Document@{error\-Document}}
+\index{error\-Document@{error\-Document}!Network@{Network}}
+\subsubsection[{error\-Document}]{\setlength{\rightskip}{0pt plus 5cm}static error\-Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a471180dc7fe39582e25570faad01dde9}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_network_a1a22503081fadd2ba467a70c150a4102}{\index{Network@{Network}!expand\-Short\-Url@{expand\-Short\-Url}}
+\index{expand\-Short\-Url@{expand\-Short\-Url}!Network@{Network}}
+\subsubsection[{expand\-Short\-Url}]{\setlength{\rightskip}{0pt plus 5cm}static expand\-Short\-Url (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a1a22503081fadd2ba467a70c150a4102}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_a6bb7f12deffb5a1e9c970dc1c697bb3f}{\index{Network@{Network}!force\-H\-T\-T\-P\-S@{force\-H\-T\-T\-P\-S}}
+\index{force\-H\-T\-T\-P\-S@{force\-H\-T\-T\-P\-S}!Network@{Network}}
+\subsubsection[{force\-H\-T\-T\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}static force\-H\-T\-T\-P\-S (
+\begin{DoxyParamCaption}
+\item[{}]{\$wwwdomain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a6bb7f12deffb5a1e9c970dc1c697bb3f}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wwwdomain} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_network_a19530257aa3dc9488f09efa1ecc19f0c}{\index{Network@{Network}!g\-Email@{g\-Email}}
+\index{g\-Email@{g\-Email}!Network@{Network}}
+\subsubsection[{g\-Email}]{\setlength{\rightskip}{0pt plus 5cm}g\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$recipient, }
+\item[{}]{\$subject, }
+\item[{}]{\$message, }
+\item[{}]{\$sender\-Email, }
+\item[{}]{\$sender\-Name = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_network_a19530257aa3dc9488f09efa1ecc19f0c}
+Sends a plaintext e-\/mail with headers predefined
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$recipient} & email address of message recipient \\
+\hline
+string & {\em \$subject} & subject of the email message \\
+\hline
+string & {\em \$message} & email message body \\
+\hline
+string & {\em \$sender\-Email} & email address of the message sender \\
+\hline
+string & {\em \$sender\-Name} & name of the message sender\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_network_ae99ae2dab82ab327e8b6d938c261d672}{\index{Network@{Network}!get\-\_\-http\-\_\-response\-\_\-code@{get\-\_\-http\-\_\-response\-\_\-code}}
+\index{get\-\_\-http\-\_\-response\-\_\-code@{get\-\_\-http\-\_\-response\-\_\-code}!Network@{Network}}
+\subsubsection[{get\-\_\-http\-\_\-response\-\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}static get\-\_\-http\-\_\-response\-\_\-code (
+\begin{DoxyParamCaption}
+\item[{}]{\$the\-U\-R\-L, }
+\item[{}]{\$ua = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_ae99ae2dab82ab327e8b6d938c261d672}
+
+\begin{DoxyParams}{Parameters}
+{\em \$the\-U\-R\-L} & \\
+\hline
+{\em \$ua} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_af4640ff629ddc87eff9b904a13ace30e}{\index{Network@{Network}!get\-\_\-whois\-\_\-abuse@{get\-\_\-whois\-\_\-abuse}}
+\index{get\-\_\-whois\-\_\-abuse@{get\-\_\-whois\-\_\-abuse}!Network@{Network}}
+\subsubsection[{get\-\_\-whois\-\_\-abuse}]{\setlength{\rightskip}{0pt plus 5cm}static get\-\_\-whois\-\_\-abuse (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_af4640ff629ddc87eff9b904a13ace30e}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_a711272266c8ce0089919059fb05ea42b}{\index{Network@{Network}!get\-Full\-Self@{get\-Full\-Self}}
+\index{get\-Full\-Self@{get\-Full\-Self}!Network@{Network}}
+\subsubsection[{get\-Full\-Self}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Full\-Self (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a711272266c8ce0089919059fb05ea42b}
+gets the full U\-R\-L of the current page
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_ab835c3be436302d527c0041f89b3e4f6}{\index{Network@{Network}!get\-Host@{get\-Host}}
+\index{get\-Host@{get\-Host}!Network@{Network}}
+\subsubsection[{get\-Host}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Host (
+\begin{DoxyParamCaption}
+\item[{}]{\$\-Address, }
+\item[{}]{\$return\-Scheme = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_ab835c3be436302d527c0041f89b3e4f6}
+parses an U\-R\-L to get the host.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\-Address} & U\-R\-L to parse \\
+\hline
+bool & {\em \$return\-Scheme} & whether or not to include the protocol scheme with the host\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_adf67c141af9917cc7b443782f26de58b}{\index{Network@{Network}!get\-Host\-Domain@{get\-Host\-Domain}}
+\index{get\-Host\-Domain@{get\-Host\-Domain}!Network@{Network}}
+\subsubsection[{get\-Host\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}get\-Host\-Domain (
+\begin{DoxyParamCaption}
+\item[{}]{\$path\-To\-Cache, }
+\item[{}]{\$dom = {\ttfamily ''}, }
+\item[{}]{\$fast = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_network_adf67c141af9917cc7b443782f26de58b}
+if (!file\-\_\-exists('cache/tlds/all.\-txt')) \{// feel free to refresh by interval create\-T\-L\-D('cache/tlds/all.\-txt'); \} echo '
+\begin{DoxyPre}';
+foreach ($urls as $url) \{
+echo $url . ':' . var\_export(getHost($url), true) . "\(\backslash\)n";
+\}
+echo $\_SERVER['SERVER\_NAME'] . ':' . var\_export(\hyperlink{class_network_ab835c3be436302d527c0041f89b3e4f6}{getHost()}, true) . "\(\backslash\)n";
+echo '\end{DoxyPre}
+'; \hypertarget{class_network_af3fdd43c8a859ddccce91ba8a5e3346c}{\index{Network@{Network}!getip@{getip}}
+\index{getip@{getip}!Network@{Network}}
+\subsubsection[{getip}]{\setlength{\rightskip}{0pt plus 5cm}static getip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_af3fdd43c8a859ddccce91ba8a5e3346c}
+Function to get the user's I\-P address
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_a4303d3ec6dee99507f2e2d8991953d0f}{\index{Network@{Network}!get\-Remote\-Mime\-Type@{get\-Remote\-Mime\-Type}}
+\index{get\-Remote\-Mime\-Type@{get\-Remote\-Mime\-Type}!Network@{Network}}
+\subsubsection[{get\-Remote\-Mime\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Remote\-Mime\-Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$use\-Curl = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a4303d3ec6dee99507f2e2d8991953d0f}
+Retrieves the M\-I\-M\-E type of a remote U\-R\-L.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$url} & \\
+\hline
+bool & {\em \$use\-Curl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$mixed 
+\end{DoxyReturn}
+\hypertarget{class_network_ad68b8b65413b0cf48335753a20fc43c1}{\index{Network@{Network}!get\-Remote\-U\-R\-L\-Content@{get\-Remote\-U\-R\-L\-Content}}
+\index{get\-Remote\-U\-R\-L\-Content@{get\-Remote\-U\-R\-L\-Content}!Network@{Network}}
+\subsubsection[{get\-Remote\-U\-R\-L\-Content}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Remote\-U\-R\-L\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$follow\-Redirects = {\ttfamily false}, }
+\item[{}]{\$print\-Info = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_ad68b8b65413b0cf48335753a20fc43c1}
+gets the content from a remote U\-R\-L. Meant for grabbing web page content.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$url} & \\
+\hline
+bool & {\em \$follow\-Redirects} & \\
+\hline
+bool & {\em \$print\-Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$mixed 
+\end{DoxyReturn}
+\hypertarget{class_network_a090adb44a65abba5099270e1a41e14a9}{\index{Network@{Network}!get\-This\-Domain@{get\-This\-Domain}}
+\index{get\-This\-Domain@{get\-This\-Domain}!Network@{Network}}
+\subsubsection[{get\-This\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}static get\-This\-Domain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a090adb44a65abba5099270e1a41e14a9}
+gets the domain of the current page
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_network_af11831fa6be865c1221fb0262204a0ec}{\index{Network@{Network}!is\-\_\-valid\-\_\-ip@{is\-\_\-valid\-\_\-ip}}
+\index{is\-\_\-valid\-\_\-ip@{is\-\_\-valid\-\_\-ip}!Network@{Network}}
+\subsubsection[{is\-\_\-valid\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}static is\-\_\-valid\-\_\-ip (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_af11831fa6be865c1221fb0262204a0ec}
+regex check to see if I\-P address is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip} & the I\-P address we're validating\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_network_ac7da5e3342590c09fdeb907a5de600cb}{\index{Network@{Network}!mobile\-Redirect@{mobile\-Redirect}}
+\index{mobile\-Redirect@{mobile\-Redirect}!Network@{Network}}
+\subsubsection[{mobile\-Redirect}]{\setlength{\rightskip}{0pt plus 5cm}static mobile\-Redirect (
+\begin{DoxyParamCaption}
+\item[{}]{\$location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_ac7da5e3342590c09fdeb907a5de600cb}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$location} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_network_a3e56c11338f02530cb36a57c153f80f2}{\index{Network@{Network}!ping\-Domain@{ping\-Domain}}
+\index{ping\-Domain@{ping\-Domain}!Network@{Network}}
+\subsubsection[{ping\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}static ping\-Domain (
+\begin{DoxyParamCaption}
+\item[{}]{\$domain, }
+\item[{}]{\$port = {\ttfamily 80}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a3e56c11338f02530cb36a57c153f80f2}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$domain} & \\
+\hline
+int & {\em \$port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float$|$int$|$mixed 
+\end{DoxyReturn}
+\hypertarget{class_network_a87c49a4ee57ae0671cee0a2314be0053}{\index{Network@{Network}!send\-Bots\-To\-W\-W\-W@{send\-Bots\-To\-W\-W\-W}}
+\index{send\-Bots\-To\-W\-W\-W@{send\-Bots\-To\-W\-W\-W}!Network@{Network}}
+\subsubsection[{send\-Bots\-To\-W\-W\-W}]{\setlength{\rightskip}{0pt plus 5cm}static send\-Bots\-To\-W\-W\-W (
+\begin{DoxyParamCaption}
+\item[{}]{\$bots\-File, }
+\item[{}]{\$wwwdomain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a87c49a4ee57ae0671cee0a2314be0053}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bots\-File} & \\
+\hline
+ & {\em \$wwwdomain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{class_network_adef9087d8bcbbb414c4b74a5f6e769fe}{\index{Network@{Network}!sendto\-W\-W\-W@{sendto\-W\-W\-W}}
+\index{sendto\-W\-W\-W@{sendto\-W\-W\-W}!Network@{Network}}
+\subsubsection[{sendto\-W\-W\-W}]{\setlength{\rightskip}{0pt plus 5cm}static sendto\-W\-W\-W (
+\begin{DoxyParamCaption}
+\item[{}]{\$domain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_adef9087d8bcbbb414c4b74a5f6e769fe}
+redirects users to 'www' version of pages
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_network_ac3ed92301a76e6f8c4785814876e2c24}{\index{Network@{Network}!sql\-Domain\-Substring@{sql\-Domain\-Substring}}
+\index{sql\-Domain\-Substring@{sql\-Domain\-Substring}!Network@{Network}}
+\subsubsection[{sql\-Domain\-Substring}]{\setlength{\rightskip}{0pt plus 5cm}sql\-Domain\-Substring (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_network_ac3ed92301a76e6f8c4785814876e2c24}
+This simple function just returns the part of a query that can be used to retrieve the domain from an url in My\-S\-Q\-L \hypertarget{class_network_a6c04bacdc24d4b3d2ed7c9ea4a29210f}{\index{Network@{Network}!url\-Validate@{url\-Validate}}
+\index{url\-Validate@{url\-Validate}!Network@{Network}}
+\subsubsection[{url\-Validate}]{\setlength{\rightskip}{0pt plus 5cm}static url\-Validate (
+\begin{DoxyParamCaption}
+\item[{}]{\$link, }
+\item[{}]{\$strict = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_network_a6c04bacdc24d4b3d2ed7c9ea4a29210f}
+validates whether or not an U\-R\-L is good
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$link} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Network.\-class.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{classemail_template}{\section{email\-Template Class Reference}
+\label{classemail_template}\index{email\-Template@{email\-Template}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classemail_template_a4d8e4a324efce73096d5af1d4c143fdd}{\-\_\-\-\_\-construct} (\$path, \$tags=null, \$defaults=null)
+\item 
+\hyperlink{classemail_template_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classemail_template_a182cb7b16d045c4aa1cbf6e0cd845933}{set\-Tags} (\$tags=null)
+\item 
+\hyperlink{classemail_template_a66517013fef49505b145d9f8bccfa6d3}{clear\-Tags} ()
+\item 
+\hyperlink{classemail_template_aa36766cc96e8ead6a654535cd826cc92}{\-\_\-\-\_\-get} (\$thing)
+\item 
+\hyperlink{classemail_template_a1e08cf354600b2e56e93bd4f59636937}{\-\_\-\-\_\-set} (\$thing, \$value)
+\item 
+\hyperlink{classemail_template_aaa4e95f27857ab78defda3e0c0b7039b}{load} (\$file)
+\item 
+\hyperlink{classemail_template_aa13d0535d22492ba710e3419a7b92ac1}{unload} ()
+\item 
+\hyperlink{classemail_template_ac900283b8780520c328c6457e34177f4}{set\-Defaults} ()
+\item 
+\hyperlink{classemail_template_a38d99acc70a1d8fd8f94455743b2d237}{parse} ()
+\item 
+\hyperlink{classemail_template_a7be7ce516e2b409907f824e06957b923}{send} (\$to, \$subj, \$s\-Email, \$s\-Name)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classemail_template_a475a6a63b85186663d34151bcbd21590}{{\bfseries \$tags}}\label{classemail_template_a475a6a63b85186663d34151bcbd21590}
+
+\item 
+\hypertarget{classemail_template_aa3e9534005fd516d941f6a5569896e01}{{\bfseries \$template}}\label{classemail_template_aa3e9534005fd516d941f6a5569896e01}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classemail_template_a0a4baf0b22973c07685c3981f0d17fc4}{{\bfseries \$path}}\label{classemail_template_a0a4baf0b22973c07685c3981f0d17fc4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classemail_template}{email\-Template} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classemail_template_a4d8e4a324efce73096d5af1d4c143fdd}{\index{email\-Template@{email\-Template}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!emailTemplate@{email\-Template}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$tags = {\ttfamily null}, }
+\item[{}]{\$defaults = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a4d8e4a324efce73096d5af1d4c143fdd}
+class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to folder where templates are located \\
+\hline
+array & {\em \$tags} & key=$>$val pairs of tags and their content \\
+\hline
+array & {\em \$defaults} & array of default values for template tags \\
+\hline
+\end{DoxyParams}
+\hypertarget{classemail_template_a421831a265621325e1fdd19aace0c758}{\index{email\-Template@{email\-Template}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!emailTemplate@{email\-Template}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a421831a265621325e1fdd19aace0c758}
+Destructor. Un-\/sets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{classemail_template_aa36766cc96e8ead6a654535cd826cc92}{\index{email\-Template@{email\-Template}!\-\_\-\-\_\-get@{\-\_\-\-\_\-get}}
+\index{\-\_\-\-\_\-get@{\-\_\-\-\_\-get}!emailTemplate@{email\-Template}}
+\subsubsection[{\-\_\-\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_aa36766cc96e8ead6a654535cd826cc92}
+getter
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$thing} & the thing we're getting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classemail_template_a1e08cf354600b2e56e93bd4f59636937}{\index{email\-Template@{email\-Template}!\-\_\-\-\_\-set@{\-\_\-\-\_\-set}}
+\index{\-\_\-\-\_\-set@{\-\_\-\-\_\-set}!emailTemplate@{email\-Template}}
+\subsubsection[{\-\_\-\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a1e08cf354600b2e56e93bd4f59636937}
+setter
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$thing} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classemail_template_a66517013fef49505b145d9f8bccfa6d3}{\index{email\-Template@{email\-Template}!clear\-Tags@{clear\-Tags}}
+\index{clear\-Tags@{clear\-Tags}!emailTemplate@{email\-Template}}
+\subsubsection[{clear\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}clear\-Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a66517013fef49505b145d9f8bccfa6d3}
+wipes out the tags array so we can set them to new values \hypertarget{classemail_template_aaa4e95f27857ab78defda3e0c0b7039b}{\index{email\-Template@{email\-Template}!load@{load}}
+\index{load@{load}!emailTemplate@{email\-Template}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}load (
+\begin{DoxyParamCaption}
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_aaa4e95f27857ab78defda3e0c0b7039b}
+Loads a template file and turns it into a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & name of the template file \\
+\hline
+\end{DoxyParams}
+\hypertarget{classemail_template_a38d99acc70a1d8fd8f94455743b2d237}{\index{email\-Template@{email\-Template}!parse@{parse}}
+\index{parse@{parse}!emailTemplate@{email\-Template}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a38d99acc70a1d8fd8f94455743b2d237}
+parses the template file and replaces tags with their content \hypertarget{classemail_template_a7be7ce516e2b409907f824e06957b923}{\index{email\-Template@{email\-Template}!send@{send}}
+\index{send@{send}!emailTemplate@{email\-Template}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$to, }
+\item[{}]{\$subj, }
+\item[{}]{\$s\-Email, }
+\item[{}]{\$s\-Name}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a7be7ce516e2b409907f824e06957b923}
+Sends the email
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$to} & who is getting the email \\
+\hline
+string & {\em \$subj} & the email subject \\
+\hline
+string & {\em \$s\-Email} & sender email \\
+\hline
+string & {\em \$s\-Name} & sender name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classemail_template_ac900283b8780520c328c6457e34177f4}{\index{email\-Template@{email\-Template}!set\-Defaults@{set\-Defaults}}
+\index{set\-Defaults@{set\-Defaults}!emailTemplate@{email\-Template}}
+\subsubsection[{set\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}set\-Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_ac900283b8780520c328c6457e34177f4}
+sets missing tags to their default values \hypertarget{classemail_template_a182cb7b16d045c4aa1cbf6e0cd845933}{\index{email\-Template@{email\-Template}!set\-Tags@{set\-Tags}}
+\index{set\-Tags@{set\-Tags}!emailTemplate@{email\-Template}}
+\subsubsection[{set\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}set\-Tags (
+\begin{DoxyParamCaption}
+\item[{}]{\$tags = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_a182cb7b16d045c4aa1cbf6e0cd845933}
+Sets the tags to be used to populate template data This can be used on the tags fed via constructor or new tags can be added, too
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tags} & associative array of key=$>$val pairs\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classemail_template_aa13d0535d22492ba710e3419a7b92ac1}{\index{email\-Template@{email\-Template}!unload@{unload}}
+\index{unload@{unload}!emailTemplate@{email\-Template}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}unload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classemail_template_aa13d0535d22492ba710e3419a7b92ac1}
+function to unset the template file so we can reset it to something else 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+email\-Template.\-class.\-php\end{DoxyCompactItemize}

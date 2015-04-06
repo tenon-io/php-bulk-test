@@ -1,0 +1,221 @@
+\hypertarget{classclean_globals}{\section{clean\-Globals Class Reference}
+\label{classclean_globals}\index{clean\-Globals@{clean\-Globals}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclean_globals_a678376d6667cc0ec002adc25c86324c6}{clean\-Server} (\$expected)
+\item 
+\hyperlink{classclean_globals_a4e9a5b5055856ca666f84da4550bc533}{clean\-Get} (\$expected)
+\item 
+\hyperlink{classclean_globals_aa6304e8f875ab7d52e9222d73d65da69}{clean\-Post} (\$expected)
+\item 
+\hyperlink{classclean_globals_a2b45eb2bd13a3eef64305dea35cefc59}{clean\-Files} (\$expected)
+\item 
+\hyperlink{classclean_globals_a2b88fa5021c3ec111cdc0959291113e6}{clean\-Request} (\$expected)
+\item 
+\hyperlink{classclean_globals_a346b419ac285dd18d4a8f775b5220b30}{clean\-Session} (\$expected)
+\item 
+\hyperlink{classclean_globals_ab385235e1928fab7592f28558fb7315a}{clean\-Env} (\$expected)
+\item 
+\hyperlink{classclean_globals_a6f6791263b17958348708e199f34e2c7}{clean\-Cookie} (\$expected)
+\item 
+\hyperlink{classclean_globals_aa605f284eb4737350d6fcfc06f2906e2}{smar\-Trim} (\$val)
+\item 
+\hyperlink{classclean_globals_a3c055f32b320c6382ff6137969712d58}{dump\-Globals} (\$type= 'A\-L\-L')
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is meant to provide a way to do some basic security check so that the only variables passed through global means are those which we want.
+
+It might seem a pain-\/in-\/the-\/ass to do this, but the reality is, if you don't know where your data is coming from, then you're probably at risk for all kinds of nasty issues down the road -\/ especially from a security standpoint.
+
+U\-S\-A\-G\-E E\-X\-A\-M\-P\-L\-E // The array of keys we expect \$expected = array('one', 'two', 'three', 'four');
+
+// Instantiate a new \hyperlink{classclean_globals}{clean\-Globals} object \$clean\-Globals = new clean\-Globals();
+
+// clean the \$\-\_\-\-G\-E\-T array, keeping only those // keys we expected to receive. \$clean\-Globals-\/$>$clean\-Get(\$expected);
+
+//\-Alternately, you can call the method statically (this is the preferred approach)\-: \hyperlink{classclean_globals_a4e9a5b5055856ca666f84da4550bc533}{clean\-Globals\-::clean\-Get}(\$expected); // The class methods are declared as public to facilitate either approach
+
+End result\-: Given the array 'one', 'two', 'three', 'four' If the \$\-\_\-\-G\-E\-T array had also received keys of 'foo' and 'bar' those keys (and their values, obviously) would be stripped from the array
+
+$\ast$$\ast$$\ast$\-C\-A\-U\-T\-I\-O\-N!!!!$\ast$$\ast$$\ast$ The power of this class is also a potential source of bugs! These methods W\-I\-L\-L unset any key which is not in your 'expected' array! This means you may chase your tail wondering why a superglobal isn't showing up
+
+Also note\-: While this certainly enhances security, you must still validate, filter, and escape input as normal to ensure security. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classclean_globals_a6f6791263b17958348708e199f34e2c7}{\index{clean\-Globals@{clean\-Globals}!clean\-Cookie@{clean\-Cookie}}
+\index{clean\-Cookie@{clean\-Cookie}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Cookie}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a6f6791263b17958348708e199f34e2c7}
+\$\-\_\-\-C\-O\-O\-K\-I\-E\-: H\-T\-T\-P Cookies
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_ab385235e1928fab7592f28558fb7315a}{\index{clean\-Globals@{clean\-Globals}!clean\-Env@{clean\-Env}}
+\index{clean\-Env@{clean\-Env}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Env}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Env (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_ab385235e1928fab7592f28558fb7315a}
+\$\-\_\-\-E\-N\-V\-: Environment variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a2b45eb2bd13a3eef64305dea35cefc59}{\index{clean\-Globals@{clean\-Globals}!clean\-Files@{clean\-Files}}
+\index{clean\-Files@{clean\-Files}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Files}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Files (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a2b45eb2bd13a3eef64305dea35cefc59}
+\$\-\_\-\-F\-I\-L\-E\-S\-: H\-T\-T\-P File Upload variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a4e9a5b5055856ca666f84da4550bc533}{\index{clean\-Globals@{clean\-Globals}!clean\-Get@{clean\-Get}}
+\index{clean\-Get@{clean\-Get}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Get}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Get (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a4e9a5b5055856ca666f84da4550bc533}
+\$\-\_\-\-G\-E\-T\-: H\-T\-T\-P G\-E\-T variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_aa6304e8f875ab7d52e9222d73d65da69}{\index{clean\-Globals@{clean\-Globals}!clean\-Post@{clean\-Post}}
+\index{clean\-Post@{clean\-Post}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Post}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_aa6304e8f875ab7d52e9222d73d65da69}
+\$\-\_\-\-P\-O\-S\-T\-: H\-T\-T\-P P\-O\-S\-T variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a2b88fa5021c3ec111cdc0959291113e6}{\index{clean\-Globals@{clean\-Globals}!clean\-Request@{clean\-Request}}
+\index{clean\-Request@{clean\-Request}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Request}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a2b88fa5021c3ec111cdc0959291113e6}
+\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-: H\-T\-T\-P Request variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a678376d6667cc0ec002adc25c86324c6}{\index{clean\-Globals@{clean\-Globals}!clean\-Server@{clean\-Server}}
+\index{clean\-Server@{clean\-Server}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Server}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Server (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a678376d6667cc0ec002adc25c86324c6}
+\$\-\_\-\-S\-E\-R\-V\-E\-R\-: Server and execution environment information
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a346b419ac285dd18d4a8f775b5220b30}{\index{clean\-Globals@{clean\-Globals}!clean\-Session@{clean\-Session}}
+\index{clean\-Session@{clean\-Session}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{clean\-Session}]{\setlength{\rightskip}{0pt plus 5cm}clean\-Session (
+\begin{DoxyParamCaption}
+\item[{}]{\$expected}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a346b419ac285dd18d4a8f775b5220b30}
+\$\-\_\-\-S\-E\-S\-S\-I\-O\-N\-: Session variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$expected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_a3c055f32b320c6382ff6137969712d58}{\index{clean\-Globals@{clean\-Globals}!dump\-Globals@{dump\-Globals}}
+\index{dump\-Globals@{dump\-Globals}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{dump\-Globals}]{\setlength{\rightskip}{0pt plus 5cm}dump\-Globals (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'ALL'}}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_a3c055f32b320c6382ff6137969712d58}
+utility function to dump out superglobals so we can see what's going on using the type of 'A\-L\-L' will dump all superglobals. Otherwise a comma-\/delimited list of which superglobals to dump can be used. For instance 'cookie,session' would dump all cookie and session superglobals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & which superglobals to dump\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classclean_globals_aa605f284eb4737350d6fcfc06f2906e2}{\index{clean\-Globals@{clean\-Globals}!smar\-Trim@{smar\-Trim}}
+\index{smar\-Trim@{smar\-Trim}!cleanGlobals@{clean\-Globals}}
+\subsubsection[{smar\-Trim}]{\setlength{\rightskip}{0pt plus 5cm}smar\-Trim (
+\begin{DoxyParamCaption}
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classclean_globals_aa605f284eb4737350d6fcfc06f2906e2}
+
+\begin{DoxyParams}[1]{Parameters}
+string |  array & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$|$ array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+clean\-Globals.\-class.\-php\end{DoxyCompactItemize}

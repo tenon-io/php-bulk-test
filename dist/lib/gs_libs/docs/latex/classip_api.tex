@@ -1,0 +1,123 @@
+\hypertarget{classip_api}{\section{ip\-Api Class Reference}
+\label{classip_api}\index{ip\-Api@{ip\-Api}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classip_api_a68c955b7f95b2bae74fe11c3b1347be5}{\-\_\-\-\_\-construct} (\$db\-Info=null, \$db\-Table= 'ip\-Info')
+\item 
+\hyperlink{classip_api_a649701a5d2cd6760b96955b3929575ca}{get\-Ip\-Info\-From\-D\-B} (\$ip)
+\item 
+\hyperlink{classip_api_a686b062a4ea72799099b8151970829de}{get\-Ip\-Info} (\$ip, \$get\-Local=true, \$print\-Info=false)
+\item 
+\hyperlink{classip_api_a9826f5ea66ee734dc7235094c0833c68}{ip\-Exists} (\$ip)
+\item 
+\hyperlink{classip_api_a57a840fd314080f4b67086edbfdb995a}{log\-To\-D\-B} (\$data)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classip_api_adfd23e5286c56c7632ecb55887dd2555}{{\bfseries \$db\-Table}}\label{classip_api_adfd23e5286c56c7632ecb55887dd2555}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classip_api_ae55a59ebe41af641d66d9cfd81cf959f}{{\bfseries \$api\-U\-R\-L}}\label{classip_api_ae55a59ebe41af641d66d9cfd81cf959f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classip_api}{ip\-Api} Queries \href{http://ip-api.com/}{\tt http\-://ip-\/api.\-com/} for info on an I\-P address 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classip_api_a68c955b7f95b2bae74fe11c3b1347be5}{\index{ip\-Api@{ip\-Api}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!ipApi@{ip\-Api}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$db\-Info = {\ttfamily null}, }
+\item[{}]{\$db\-Table = {\ttfamily 'ipInfo'}}
+\end{DoxyParamCaption}
+)}}\label{classip_api_a68c955b7f95b2bae74fe11c3b1347be5}
+
+\begin{DoxyParams}[1]{Parameters}
+null & {\em \$db\-Info} & \\
+\hline
+string & {\em \$db\-Table} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classip_api_a686b062a4ea72799099b8151970829de}{\index{ip\-Api@{ip\-Api}!get\-Ip\-Info@{get\-Ip\-Info}}
+\index{get\-Ip\-Info@{get\-Ip\-Info}!ipApi@{ip\-Api}}
+\subsubsection[{get\-Ip\-Info}]{\setlength{\rightskip}{0pt plus 5cm}get\-Ip\-Info (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip, }
+\item[{}]{\$get\-Local = {\ttfamily true}, }
+\item[{}]{\$print\-Info = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classip_api_a686b062a4ea72799099b8151970829de}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$ip} & \\
+\hline
+bool & {\em \$get\-Local} & \\
+\hline
+bool & {\em \$print\-Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed$|$string 
+\end{DoxyReturn}
+\hypertarget{classip_api_a649701a5d2cd6760b96955b3929575ca}{\index{ip\-Api@{ip\-Api}!get\-Ip\-Info\-From\-D\-B@{get\-Ip\-Info\-From\-D\-B}}
+\index{get\-Ip\-Info\-From\-D\-B@{get\-Ip\-Info\-From\-D\-B}!ipApi@{ip\-Api}}
+\subsubsection[{get\-Ip\-Info\-From\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}get\-Ip\-Info\-From\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)}}\label{classip_api_a649701a5d2cd6760b96955b3929575ca}
+
+\begin{DoxyParams}{Parameters}
+{\em \$ip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classip_api_a9826f5ea66ee734dc7235094c0833c68}{\index{ip\-Api@{ip\-Api}!ip\-Exists@{ip\-Exists}}
+\index{ip\-Exists@{ip\-Exists}!ipApi@{ip\-Api}}
+\subsubsection[{ip\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}ip\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)}}\label{classip_api_a9826f5ea66ee734dc7235094c0833c68}
+
+\begin{DoxyParams}{Parameters}
+{\em \$ip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classip_api_a57a840fd314080f4b67086edbfdb995a}{\index{ip\-Api@{ip\-Api}!log\-To\-D\-B@{log\-To\-D\-B}}
+\index{log\-To\-D\-B@{log\-To\-D\-B}!ipApi@{ip\-Api}}
+\subsubsection[{log\-To\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}log\-To\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classip_api_a57a840fd314080f4b67086edbfdb995a}
+
+\begin{DoxyParams}{Parameters}
+{\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$|$mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+ip\-Api.\-class.\-php\end{DoxyCompactItemize}

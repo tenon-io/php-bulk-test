@@ -1,0 +1,499 @@
+\hypertarget{classauth}{\section{auth Class Reference}
+\label{classauth}\index{auth@{auth}}
+}
+Inheritance diagram for auth\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classauth}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classauth_a155afedbdfa01f1c0b813ca97642cdab}{\-\_\-\-\_\-construct} (\$connection)
+\item 
+\hyperlink{classauth_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classauth_a057f051ca656f78a79ca981dacebc88e}{config} (\$array)
+\item 
+\hyperlink{classauth_abefcaaea9deeedca260806646f382650}{non\-Auth\-Redirect} (\$where=null)
+\item 
+\hyperlink{classauth_ade192e4edd6743dadc62568b3c3b327b}{enforce\-U\-A} ()
+\item 
+\hyperlink{classauth_a4cffe19c1fe9a685eb6ad5b68af3d1de}{check\-Authorization} ()
+\item 
+\hyperlink{classauth_a139e1cf575e5e172ed7acf2cd46980a0}{set\-Token\-Key} ()
+\item 
+\hyperlink{classauth_a7e8d84a35b081d65271e0d428e36ef77}{get\-User\-Record\-By\-I\-D} (\$id, \$fields= '$\ast$', \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_aa3f0ae9f886b6ef02ae06d035830ee01}{user\-Exists\-By\-Login} (\$un, \$pw, \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_a93442c1443d04d0366326b3903857eb2}{user\-Exists\-By\-I\-D} (\$id, \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_ae954498fbd4e427531d238a83a74eeb0}{user\-Exists\-By\-Key} (\$key, \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_acb1c0f779213ec93f3853170a8bfb132}{user\-Is\-Banned} (\$id)
+\item 
+\hyperlink{classauth_a33bdd79e5da367ebddd4cfbdbbfc7cff}{is\-Logged\-In} ()
+\item 
+\hypertarget{classauth_a082405d89acd6835c3a7c7a08a7adbab}{{\bfseries logout} ()}\label{classauth_a082405d89acd6835c3a7c7a08a7adbab}
+
+\item 
+\hyperlink{classauth_a993edc9ce2684d94413789e743699f69}{user\-Is\-Confirmed} (\$un, \$pw, \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_af52cf47d75b041a556ba0e81deb360b9}{set\-Remember\-Me} (\$id)
+\item 
+\hyperlink{classauth_a09c027ddb57e88464c0c299bcec2bbe9}{generate\-Remember\-Key} (\$user\-Key, \$expire)
+\item 
+\hyperlink{classauth_aad6c1472b13774bc969706be59e18e76}{reauthenticate\-User} (\$user\-Key, \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_aba494ca171bd656b333cbb9ea412b05e}{process\-Login} (\$un, \$pw)
+\item 
+\hyperlink{classauth_a99dff94a4c66e53cb8aef3e5968a364f}{check\-Remember\-Me} ()
+\item 
+\hyperlink{classauth_a329bef105cd79e4930ce041851c46f8b}{delete\-Cookies} ()
+\item 
+\hyperlink{classauth_aa951d8fc2e1b0e0d399029c41c931a8f}{delete\-Remember\-Me} (\$key)
+\item 
+\hyperlink{classauth_afbd47d6b338ab27fb1fcc8adc53ddac0}{gc\-Remember\-Me} ()
+\item 
+\hyperlink{classauth_a3f53c431d5b15d03c6af6260b7ac8277}{gc\-Users\-Online} (\$id)
+\item 
+\hyperlink{classauth_ab177523369f165636ec3ffa8ba621d1f}{update\-User\-Online} (\$id)
+\item 
+\hyperlink{classauth_ac11efe54e164ac6f3fbe1ade310d8f4b}{get\-User\-Record\-By\-Key} (\$key= '', \$show\-Deleted=false)
+\item 
+\hyperlink{classauth_a2bd353b223eb32ee61aa1fede60971bb}{check\-Permissions} (\$level)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classauth_a0d9c79b9b86b3f5891c6d3892f12c6a0}{{\bfseries \$connection}}\label{classauth_a0d9c79b9b86b3f5891c6d3892f12c6a0}
+
+\item 
+\hypertarget{classauth_a57cb02c49802724e460f74efc2374cae}{{\bfseries \$enforce\-U\-A\-String}}\label{classauth_a57cb02c49802724e460f74efc2374cae}
+
+\item 
+\hypertarget{classauth_a44444528e8ebaf01b9bbd6a2c30464e2}{{\bfseries \$sess\-Key\-Name}}\label{classauth_a44444528e8ebaf01b9bbd6a2c30464e2}
+
+\item 
+\hypertarget{classauth_aafbba0932302d4afea4716f26a5e7bef}{{\bfseries \$sess\-Key\-Req\-Val}}\label{classauth_aafbba0932302d4afea4716f26a5e7bef}
+
+\item 
+\hypertarget{classauth_a21876f5dc6ca6de6331209582c057a8c}{{\bfseries \$sess\-Token\-Name}}\label{classauth_a21876f5dc6ca6de6331209582c057a8c}
+
+\item 
+\hypertarget{classauth_a95fb6860d0f5ce9e9b369af728d930c5}{{\bfseries \$login\-U\-R\-L}}\label{classauth_a95fb6860d0f5ce9e9b369af728d930c5}
+
+\item 
+\hypertarget{classauth_a652459f82d11d56ed01354b359d7f003}{{\bfseries \$logout\-U\-R\-L}}\label{classauth_a652459f82d11d56ed01354b359d7f003}
+
+\item 
+\hypertarget{classauth_a10b9a547c4956a5108d0962d6428b582}{{\bfseries \$time\-Limit}}\label{classauth_a10b9a547c4956a5108d0962d6428b582}
+
+\item 
+\hypertarget{classauth_a51f6c30c28e12b9ea30a30accfccedfd}{{\bfseries \$allow\-Remember\-Me}}\label{classauth_a51f6c30c28e12b9ea30a30accfccedfd}
+
+\item 
+\hypertarget{classauth_ad125ea19d854f664ed977bea22c2aa28}{{\bfseries \$track\-Users\-Online}}\label{classauth_ad125ea19d854f664ed977bea22c2aa28}
+
+\item 
+\hypertarget{classauth_a2d75ca1079c05fbf6551ba7ad95418e7}{{\bfseries \$sess\-Banned\-Val}}\label{classauth_a2d75ca1079c05fbf6551ba7ad95418e7}
+
+\item 
+\hypertarget{classauth_ae8eeb8d3eb4b4afad80980ecdaf46b86}{{\bfseries \$logged\-In\-Location}}\label{classauth_ae8eeb8d3eb4b4afad80980ecdaf46b86}
+
+\item 
+\hypertarget{classauth_a35b9a5325eeba71dc5f8e88cdde73e5f}{{\bfseries \$non\-Auth\-Location}}\label{classauth_a35b9a5325eeba71dc5f8e88cdde73e5f}
+
+\item 
+\hypertarget{classauth_a0785b87a86f9e2ab38a450494b877c29}{{\bfseries \$user\-Record}}\label{classauth_a0785b87a86f9e2ab38a450494b877c29}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for performing user authentication tasks such as logging in the users etc. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classauth_a155afedbdfa01f1c0b813ca97642cdab}{\index{auth@{auth}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!auth@{auth}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classauth_a155afedbdfa01f1c0b813ca97642cdab}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classauth_a421831a265621325e1fdd19aace0c758}{\index{auth@{auth}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!auth@{auth}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{classauth_a4cffe19c1fe9a685eb6ad5b68af3d1de}{\index{auth@{auth}!check\-Authorization@{check\-Authorization}}
+\index{check\-Authorization@{check\-Authorization}!auth@{auth}}
+\subsubsection[{check\-Authorization}]{\setlength{\rightskip}{0pt plus 5cm}check\-Authorization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a4cffe19c1fe9a685eb6ad5b68af3d1de}
+check to ensure the user is authorized \hypertarget{classauth_a2bd353b223eb32ee61aa1fede60971bb}{\index{auth@{auth}!check\-Permissions@{check\-Permissions}}
+\index{check\-Permissions@{check\-Permissions}!auth@{auth}}
+\subsubsection[{check\-Permissions}]{\setlength{\rightskip}{0pt plus 5cm}check\-Permissions (
+\begin{DoxyParamCaption}
+\item[{}]{\$level}
+\end{DoxyParamCaption}
+)}}\label{classauth_a2bd353b223eb32ee61aa1fede60971bb}
+
+\begin{DoxyParams}{Parameters}
+{\em \$level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a99dff94a4c66e53cb8aef3e5968a364f}{\index{auth@{auth}!check\-Remember\-Me@{check\-Remember\-Me}}
+\index{check\-Remember\-Me@{check\-Remember\-Me}!auth@{auth}}
+\subsubsection[{check\-Remember\-Me}]{\setlength{\rightskip}{0pt plus 5cm}check\-Remember\-Me (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a99dff94a4c66e53cb8aef3e5968a364f}
+string \$config\-\_\-key \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a057f051ca656f78a79ca981dacebc88e}{\index{auth@{auth}!config@{config}}
+\index{config@{config}!auth@{auth}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}config (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{classauth_a057f051ca656f78a79ca981dacebc88e}
+sess\-Token\-Name -\/ key for the session token sess\-Key\-Name -\/ the session key name used to check whether or not someone's logged in sess\-Key\-Req\-Val -\/ value required for the sess\-Key\-Name in order for the user to be considered \char`\"{}logged in\char`\"{} login\-U\-R\-L -\/ path to U\-R\-L people must go to in order to login logout\-U\-R\-L -\/ path to U\-R\-L people are taken when they log out time\-Limit -\/ how long sessions should be kept for enforce\-U\-A\-String -\/ whether or not to enforce validity of the user agent string allow\-Remember\-Me -\/ whether or not to allow users to be \char`\"{}remembered\char`\"{} via cookie track\-Users\-Online -\/ whether or not to track users who are online sess\-Banned\-Val -\/ the permissions value for someone who has been banned logged\-In\-Location -\/ url to place where people are taken once they're logged in non\-Auth\-Location -\/ url to place where people are taken if they're not authorized to access a resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classauth_a329bef105cd79e4930ce041851c46f8b}{\index{auth@{auth}!delete\-Cookies@{delete\-Cookies}}
+\index{delete\-Cookies@{delete\-Cookies}!auth@{auth}}
+\subsubsection[{delete\-Cookies}]{\setlength{\rightskip}{0pt plus 5cm}delete\-Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a329bef105cd79e4930ce041851c46f8b}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classauth_aa951d8fc2e1b0e0d399029c41c931a8f}{\index{auth@{auth}!delete\-Remember\-Me@{delete\-Remember\-Me}}
+\index{delete\-Remember\-Me@{delete\-Remember\-Me}!auth@{auth}}
+\subsubsection[{delete\-Remember\-Me}]{\setlength{\rightskip}{0pt plus 5cm}delete\-Remember\-Me (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classauth_aa951d8fc2e1b0e0d399029c41c931a8f}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_ade192e4edd6743dadc62568b3c3b327b}{\index{auth@{auth}!enforce\-U\-A@{enforce\-U\-A}}
+\index{enforce\-U\-A@{enforce\-U\-A}!auth@{auth}}
+\subsubsection[{enforce\-U\-A}]{\setlength{\rightskip}{0pt plus 5cm}enforce\-U\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_ade192e4edd6743dadc62568b3c3b327b}
+prevent session hijacking by logging someone out if their user agent string is different from the user agent string they had when they logged in \hypertarget{classauth_afbd47d6b338ab27fb1fcc8adc53ddac0}{\index{auth@{auth}!gc\-Remember\-Me@{gc\-Remember\-Me}}
+\index{gc\-Remember\-Me@{gc\-Remember\-Me}!auth@{auth}}
+\subsubsection[{gc\-Remember\-Me}]{\setlength{\rightskip}{0pt plus 5cm}gc\-Remember\-Me (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_afbd47d6b338ab27fb1fcc8adc53ddac0}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a3f53c431d5b15d03c6af6260b7ac8277}{\index{auth@{auth}!gc\-Users\-Online@{gc\-Users\-Online}}
+\index{gc\-Users\-Online@{gc\-Users\-Online}!auth@{auth}}
+\subsubsection[{gc\-Users\-Online}]{\setlength{\rightskip}{0pt plus 5cm}gc\-Users\-Online (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classauth_a3f53c431d5b15d03c6af6260b7ac8277}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a09c027ddb57e88464c0c299bcec2bbe9}{\index{auth@{auth}!generate\-Remember\-Key@{generate\-Remember\-Key}}
+\index{generate\-Remember\-Key@{generate\-Remember\-Key}!auth@{auth}}
+\subsubsection[{generate\-Remember\-Key}]{\setlength{\rightskip}{0pt plus 5cm}generate\-Remember\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$user\-Key, }
+\item[{}]{\$expire}
+\end{DoxyParamCaption}
+)}}\label{classauth_a09c027ddb57e88464c0c299bcec2bbe9}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\-Key} & \\
+\hline
+date & {\em \$expire} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{classauth_a7e8d84a35b081d65271e0d428e36ef77}{\index{auth@{auth}!get\-User\-Record\-By\-I\-D@{get\-User\-Record\-By\-I\-D}}
+\index{get\-User\-Record\-By\-I\-D@{get\-User\-Record\-By\-I\-D}!auth@{auth}}
+\subsubsection[{get\-User\-Record\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}get\-User\-Record\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_a7e8d84a35b081d65271e0d428e36ef77}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+string & {\em \$fields} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classauth_ac11efe54e164ac6f3fbe1ade310d8f4b}{\index{auth@{auth}!get\-User\-Record\-By\-Key@{get\-User\-Record\-By\-Key}}
+\index{get\-User\-Record\-By\-Key@{get\-User\-Record\-By\-Key}!auth@{auth}}
+\subsubsection[{get\-User\-Record\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}get\-User\-Record\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key = {\ttfamily ''}, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_ac11efe54e164ac6f3fbe1ade310d8f4b}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classauth_a33bdd79e5da367ebddd4cfbdbbfc7cff}{\index{auth@{auth}!is\-Logged\-In@{is\-Logged\-In}}
+\index{is\-Logged\-In@{is\-Logged\-In}!auth@{auth}}
+\subsubsection[{is\-Logged\-In}]{\setlength{\rightskip}{0pt plus 5cm}is\-Logged\-In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a33bdd79e5da367ebddd4cfbdbbfc7cff}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_abefcaaea9deeedca260806646f382650}{\index{auth@{auth}!non\-Auth\-Redirect@{non\-Auth\-Redirect}}
+\index{non\-Auth\-Redirect@{non\-Auth\-Redirect}!auth@{auth}}
+\subsubsection[{non\-Auth\-Redirect}]{\setlength{\rightskip}{0pt plus 5cm}non\-Auth\-Redirect (
+\begin{DoxyParamCaption}
+\item[{}]{\$where = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classauth_abefcaaea9deeedca260806646f382650}
+redirects users to a new location (intended to be used on non-\/authorized users)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$where} & location where people will be sent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classauth_aba494ca171bd656b333cbb9ea412b05e}{\index{auth@{auth}!process\-Login@{process\-Login}}
+\index{process\-Login@{process\-Login}!auth@{auth}}
+\subsubsection[{process\-Login}]{\setlength{\rightskip}{0pt plus 5cm}process\-Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$un, }
+\item[{}]{\$pw}
+\end{DoxyParamCaption}
+)}}\label{classauth_aba494ca171bd656b333cbb9ea412b05e}
+
+\begin{DoxyParams}{Parameters}
+{\em \$un} & \\
+\hline
+{\em \$pw} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_aad6c1472b13774bc969706be59e18e76}{\index{auth@{auth}!reauthenticate\-User@{reauthenticate\-User}}
+\index{reauthenticate\-User@{reauthenticate\-User}!auth@{auth}}
+\subsubsection[{reauthenticate\-User}]{\setlength{\rightskip}{0pt plus 5cm}reauthenticate\-User (
+\begin{DoxyParamCaption}
+\item[{}]{\$user\-Key, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_aad6c1472b13774bc969706be59e18e76}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\-Key} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_af52cf47d75b041a556ba0e81deb360b9}{\index{auth@{auth}!set\-Remember\-Me@{set\-Remember\-Me}}
+\index{set\-Remember\-Me@{set\-Remember\-Me}!auth@{auth}}
+\subsubsection[{set\-Remember\-Me}]{\setlength{\rightskip}{0pt plus 5cm}set\-Remember\-Me (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classauth_af52cf47d75b041a556ba0e81deb360b9}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a139e1cf575e5e172ed7acf2cd46980a0}{\index{auth@{auth}!set\-Token\-Key@{set\-Token\-Key}}
+\index{set\-Token\-Key@{set\-Token\-Key}!auth@{auth}}
+\subsubsection[{set\-Token\-Key}]{\setlength{\rightskip}{0pt plus 5cm}set\-Token\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classauth_a139e1cf575e5e172ed7acf2cd46980a0}
+Sets the session token \hypertarget{classauth_ab177523369f165636ec3ffa8ba621d1f}{\index{auth@{auth}!update\-User\-Online@{update\-User\-Online}}
+\index{update\-User\-Online@{update\-User\-Online}!auth@{auth}}
+\subsubsection[{update\-User\-Online}]{\setlength{\rightskip}{0pt plus 5cm}update\-User\-Online (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classauth_ab177523369f165636ec3ffa8ba621d1f}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a93442c1443d04d0366326b3903857eb2}{\index{auth@{auth}!user\-Exists\-By\-I\-D@{user\-Exists\-By\-I\-D}}
+\index{user\-Exists\-By\-I\-D@{user\-Exists\-By\-I\-D}!auth@{auth}}
+\subsubsection[{user\-Exists\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}user\-Exists\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_a93442c1443d04d0366326b3903857eb2}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_ae954498fbd4e427531d238a83a74eeb0}{\index{auth@{auth}!user\-Exists\-By\-Key@{user\-Exists\-By\-Key}}
+\index{user\-Exists\-By\-Key@{user\-Exists\-By\-Key}!auth@{auth}}
+\subsubsection[{user\-Exists\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}user\-Exists\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_ae954498fbd4e427531d238a83a74eeb0}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_aa3f0ae9f886b6ef02ae06d035830ee01}{\index{auth@{auth}!user\-Exists\-By\-Login@{user\-Exists\-By\-Login}}
+\index{user\-Exists\-By\-Login@{user\-Exists\-By\-Login}!auth@{auth}}
+\subsubsection[{user\-Exists\-By\-Login}]{\setlength{\rightskip}{0pt plus 5cm}user\-Exists\-By\-Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$un, }
+\item[{}]{\$pw, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_aa3f0ae9f886b6ef02ae06d035830ee01}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$un} & \\
+\hline
+string & {\em \$pw} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_acb1c0f779213ec93f3853170a8bfb132}{\index{auth@{auth}!user\-Is\-Banned@{user\-Is\-Banned}}
+\index{user\-Is\-Banned@{user\-Is\-Banned}!auth@{auth}}
+\subsubsection[{user\-Is\-Banned}]{\setlength{\rightskip}{0pt plus 5cm}user\-Is\-Banned (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classauth_acb1c0f779213ec93f3853170a8bfb132}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classauth_a993edc9ce2684d94413789e743699f69}{\index{auth@{auth}!user\-Is\-Confirmed@{user\-Is\-Confirmed}}
+\index{user\-Is\-Confirmed@{user\-Is\-Confirmed}!auth@{auth}}
+\subsubsection[{user\-Is\-Confirmed}]{\setlength{\rightskip}{0pt plus 5cm}user\-Is\-Confirmed (
+\begin{DoxyParamCaption}
+\item[{}]{\$un, }
+\item[{}]{\$pw, }
+\item[{}]{\$show\-Deleted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classauth_a993edc9ce2684d94413789e743699f69}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$un} & \\
+\hline
+string & {\em \$pw} & \\
+\hline
+bool & {\em \$show\-Deleted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+auth.\-class.\-php\end{DoxyCompactItemize}

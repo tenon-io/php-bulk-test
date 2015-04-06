@@ -1,0 +1,125 @@
+\hypertarget{classjson}{\section{json Class Reference}
+\label{classjson}\index{json@{json}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjson_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\item 
+\hyperlink{classjson_a4a6bfe07217b39c7bcf778b5a2a1e2eb}{json\-Decode} (\$\hyperlink{classjson}{json}, \$assoc=true, \$depth=512, \$options=0)
+\item 
+\hyperlink{classjson_a0a70558c8430d7f0bb3329f878226826}{json\-Encode} (\$\hyperlink{classjson}{json}, \$options=0, \$depth=512)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classjson_a63578543715383fc0f78a1c95e8470e8}{utf8\-\_\-encode\-\_\-recursive} (\$data)
+\item 
+static \hyperlink{classjson_af02ed37393390857a892fd450ebca64c}{remove\-\_\-utf8\-\_\-bom} (\$text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class used to encode \& decode J\-S\-O\-N with P\-H\-P. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjson_a095c5d389db211932136b53f25f39685}{\index{json@{json}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!json@{json}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classjson_a095c5d389db211932136b53f25f39685}
+class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjson_a4a6bfe07217b39c7bcf778b5a2a1e2eb}{\index{json@{json}!json\-Decode@{json\-Decode}}
+\index{json\-Decode@{json\-Decode}!json@{json}}
+\subsubsection[{json\-Decode}]{\setlength{\rightskip}{0pt plus 5cm}json\-Decode (
+\begin{DoxyParamCaption}
+\item[{}]{\$json, }
+\item[{}]{\$assoc = {\ttfamily true}, }
+\item[{}]{\$depth = {\ttfamily 512}, }
+\item[{}]{\$options = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classjson_a4a6bfe07217b39c7bcf778b5a2a1e2eb}
+Decoding method. Replaces the native function to be a bit more robust
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$json} & the string of J\-S\-O\-N to be decoded \\
+\hline
+bool & {\em \$assoc} & whether or not to return an associative array (F\-A\-L\-S\-E means return an object) \\
+\hline
+int & {\em \$depth} & how many recursions \\
+\hline
+mixed & {\em \$options} & options to pass to the native json\-\_\-decode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classjson_a0a70558c8430d7f0bb3329f878226826}{\index{json@{json}!json\-Encode@{json\-Encode}}
+\index{json\-Encode@{json\-Encode}!json@{json}}
+\subsubsection[{json\-Encode}]{\setlength{\rightskip}{0pt plus 5cm}json\-Encode (
+\begin{DoxyParamCaption}
+\item[{}]{\$json, }
+\item[{}]{\$options = {\ttfamily 0}, }
+\item[{}]{\$depth = {\ttfamily 512}}
+\end{DoxyParamCaption}
+)}}\label{classjson_a0a70558c8430d7f0bb3329f878226826}
+Decode method. Basically just a tad more robust handling of the to-\/be-\/encoded data
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$json} & the stuff to encode. Typically an array \\
+\hline
+mixed & {\em \$options} & options to pass to the native function \\
+\hline
+int & {\em \$depth} & how far to recurse \\
+\hline
+ & {\em string$|$} & bool\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classjson_af02ed37393390857a892fd450ebca64c}{\index{json@{json}!remove\-\_\-utf8\-\_\-bom@{remove\-\_\-utf8\-\_\-bom}}
+\index{remove\-\_\-utf8\-\_\-bom@{remove\-\_\-utf8\-\_\-bom}!json@{json}}
+\subsubsection[{remove\-\_\-utf8\-\_\-bom}]{\setlength{\rightskip}{0pt plus 5cm}static remove\-\_\-utf8\-\_\-bom (
+\begin{DoxyParamCaption}
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjson_af02ed37393390857a892fd450ebca64c}
+Removes stupid B\-O\-M character from string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & the text to strip the B\-O\-M from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classjson_a63578543715383fc0f78a1c95e8470e8}{\index{json@{json}!utf8\-\_\-encode\-\_\-recursive@{utf8\-\_\-encode\-\_\-recursive}}
+\index{utf8\-\_\-encode\-\_\-recursive@{utf8\-\_\-encode\-\_\-recursive}!json@{json}}
+\subsubsection[{utf8\-\_\-encode\-\_\-recursive}]{\setlength{\rightskip}{0pt plus 5cm}static utf8\-\_\-encode\-\_\-recursive (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classjson_a63578543715383fc0f78a1c95e8470e8}
+Encodes information in U\-T\-F-\/8, recursively (for arrays and objects)
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the data, encoded 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+json.\-class.\-php\end{DoxyCompactItemize}

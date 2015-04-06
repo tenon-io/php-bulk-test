@@ -1,0 +1,56 @@
+\hypertarget{classparse_logs}{\section{parse\-Logs Class Reference}
+\label{classparse_logs}\index{parse\-Logs@{parse\-Logs}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classparse_logs_a9daae4f248534e4f57d73b95d42e0074}{\-\_\-\-\_\-construct} (\$path\-To\-Log\-File)
+\item 
+\hyperlink{classparse_logs_a38d99acc70a1d8fd8f94455743b2d237}{parse} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classparse_logs_a25e6dc7fc232cca129d90601d12a8f90}{{\bfseries \$path\-To\-Log\-File}}\label{classparse_logs_a25e6dc7fc232cca129d90601d12a8f90}
+
+\item 
+\hypertarget{classparse_logs_aac524d5b4c88fa95c14c042624f225a3}{{\bfseries \$log\-Array}}\label{classparse_logs_aac524d5b4c88fa95c14c042624f225a3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class parses Apache log files and turns the information into an array with the following keys ip access\-\_\-time page type success\-\_\-code bytes referer browser unique\-I\-D
+
+The latter key, 'unique\-I\-D' is particularly important as it does not come from the log file itself but is, instead, a hash of the record. This can be used to delineate one record from the next 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classparse_logs_a9daae4f248534e4f57d73b95d42e0074}{\index{parse\-Logs@{parse\-Logs}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!parseLogs@{parse\-Logs}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$path\-To\-Log\-File}
+\end{DoxyParamCaption}
+)}}\label{classparse_logs_a9daae4f248534e4f57d73b95d42e0074}
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path\-To\-Log\-File} & path to the file which holds the server logs \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classparse_logs_a38d99acc70a1d8fd8f94455743b2d237}{\index{parse\-Logs@{parse\-Logs}!parse@{parse}}
+\index{parse@{parse}!parseLogs@{parse\-Logs}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classparse_logs_a38d99acc70a1d8fd8f94455743b2d237}
+Grabs the server log file and turns it into an array. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parse\-Logs.\-class.\-php\end{DoxyCompactItemize}

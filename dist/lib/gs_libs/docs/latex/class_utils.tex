@@ -1,0 +1,131 @@
+\hypertarget{class_utils}{\section{Utils Class Reference}
+\label{class_utils}\index{Utils@{Utils}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_utils_a53f1566876c955a54e3fcc754f94b3cd}{get\-Bool\-To\-String} (\$val, \$true\-Val= 'Yes', \$false\-Val= 'No')
+\item 
+static \hyperlink{class_utils_a9cc61867fe47601f661e6f79cbb199a6}{var\-\_\-name} (\&\$var, \$scope=0)
+\item 
+static \hyperlink{class_utils_a16570f6fb09cfe74540f7161e8707e6a}{bool\-\_\-unset} (\$var)
+\item 
+static \hyperlink{class_utils_adb7f1752f4d6e0b6a45b274306f44b08}{add\-\_\-include\-\_\-path} (\$path)
+\item 
+static \hyperlink{class_utils_af26bb3d961d88c6c5c3d08eae977be7d}{g\-Serialize} (\$thing)
+\item 
+static \hyperlink{class_utils_a27aafa05a072f676f1d3820f866613ec}{g\-Unserialize} (\$thing)
+\item 
+static \hyperlink{class_utils_a429ba1fe1a3ae903b281b36ccc2ab1dc}{g\-Var\-Dump} (\$var)
+\item 
+static \hyperlink{class_utils_a2cb536d1e53d6a2e7d93cde7ca04d559}{get\-\_\-ancestors} (\$class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for doing certain utility functions (basically things that cannot be logically organized into the other framework classes) 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_utils_adb7f1752f4d6e0b6a45b274306f44b08}{\index{Utils@{Utils}!add\-\_\-include\-\_\-path@{add\-\_\-include\-\_\-path}}
+\index{add\-\_\-include\-\_\-path@{add\-\_\-include\-\_\-path}!Utils@{Utils}}
+\subsubsection[{add\-\_\-include\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}static add\-\_\-include\-\_\-path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_adb7f1752f4d6e0b6a45b274306f44b08}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_utils_a16570f6fb09cfe74540f7161e8707e6a}{\index{Utils@{Utils}!bool\-\_\-unset@{bool\-\_\-unset}}
+\index{bool\-\_\-unset@{bool\-\_\-unset}!Utils@{Utils}}
+\subsubsection[{bool\-\_\-unset}]{\setlength{\rightskip}{0pt plus 5cm}static bool\-\_\-unset (
+\begin{DoxyParamCaption}
+\item[{}]{\$var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a16570f6fb09cfe74540f7161e8707e6a}
+simple boolean replacement for P\-H\-P's native unset since 'unset' is a construct and not a function, it has no return value, so there's no way of knowing if the item was unset or not. (More specifically whether it existed to be unset in the first place)
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_utils_a2cb536d1e53d6a2e7d93cde7ca04d559}{\index{Utils@{Utils}!get\-\_\-ancestors@{get\-\_\-ancestors}}
+\index{get\-\_\-ancestors@{get\-\_\-ancestors}!Utils@{Utils}}
+\subsubsection[{get\-\_\-ancestors}]{\setlength{\rightskip}{0pt plus 5cm}static get\-\_\-ancestors (
+\begin{DoxyParamCaption}
+\item[{}]{\$class}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a2cb536d1e53d6a2e7d93cde7ca04d559}
+recursively gets a list of all parents of a given class \hypertarget{class_utils_a53f1566876c955a54e3fcc754f94b3cd}{\index{Utils@{Utils}!get\-Bool\-To\-String@{get\-Bool\-To\-String}}
+\index{get\-Bool\-To\-String@{get\-Bool\-To\-String}!Utils@{Utils}}
+\subsubsection[{get\-Bool\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Bool\-To\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$val, }
+\item[{}]{\$true\-Val = {\ttfamily 'Yes'}, }
+\item[{}]{\$false\-Val = {\ttfamily 'No'}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a53f1566876c955a54e3fcc754f94b3cd}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$val} & \\
+\hline
+string & {\em \$true\-Val} & \\
+\hline
+string & {\em \$false\-Val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_utils_af26bb3d961d88c6c5c3d08eae977be7d}{\index{Utils@{Utils}!g\-Serialize@{g\-Serialize}}
+\index{g\-Serialize@{g\-Serialize}!Utils@{Utils}}
+\subsubsection[{g\-Serialize}]{\setlength{\rightskip}{0pt plus 5cm}static g\-Serialize (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_af26bb3d961d88c6c5c3d08eae977be7d}
+Serializes and compresses data \hypertarget{class_utils_a27aafa05a072f676f1d3820f866613ec}{\index{Utils@{Utils}!g\-Unserialize@{g\-Unserialize}}
+\index{g\-Unserialize@{g\-Unserialize}!Utils@{Utils}}
+\subsubsection[{g\-Unserialize}]{\setlength{\rightskip}{0pt plus 5cm}static g\-Unserialize (
+\begin{DoxyParamCaption}
+\item[{}]{\$thing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a27aafa05a072f676f1d3820f866613ec}
+Unserializes and uncompresses data \hypertarget{class_utils_a429ba1fe1a3ae903b281b36ccc2ab1dc}{\index{Utils@{Utils}!g\-Var\-Dump@{g\-Var\-Dump}}
+\index{g\-Var\-Dump@{g\-Var\-Dump}!Utils@{Utils}}
+\subsubsection[{g\-Var\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}static g\-Var\-Dump (
+\begin{DoxyParamCaption}
+\item[{}]{\$var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a429ba1fe1a3ae903b281b36ccc2ab1dc}
+returns variable info wrapped in P\-R\-E tags, for debugging \hypertarget{class_utils_a9cc61867fe47601f661e6f79cbb199a6}{\index{Utils@{Utils}!var\-\_\-name@{var\-\_\-name}}
+\index{var\-\_\-name@{var\-\_\-name}!Utils@{Utils}}
+\subsubsection[{var\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}static var\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$var, }
+\item[{}]{\$scope = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_utils_a9cc61867fe47601f661e6f79cbb199a6}
+returns the name of the defined variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Utils.\-class.\-php\end{DoxyCompactItemize}

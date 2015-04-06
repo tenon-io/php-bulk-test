@@ -1,0 +1,257 @@
+\hypertarget{class_math}{\section{Math Class Reference}
+\label{class_math}\index{Math@{Math}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_math_a8c3a122e11ab8a2500c11566241be8df}{is\-Whole\-Num} (\$var)
+\item 
+static \hyperlink{class_math_a11cab2c16354c2bd7f6dd9dafc44f991}{make\-Percentage} (\$num\-\_\-amount, \$num\-\_\-total)
+\item 
+static \hyperlink{class_math_ac5ec0e4988ef630864fa88a3fed55aac}{pct\-Difference} (\$max, \$min)
+\item 
+static \hyperlink{class_math_a4a63f0213ce099ce76d7fe463d569be8}{get\-Percentage} (\$total, \$number, \$precision=2)
+\item 
+static \hyperlink{class_math_ad1b5f5c427d01d020542b65ac72ab639}{round\-To} (\$number, \$to)
+\item 
+static \hyperlink{class_math_a752100d0dd09f8ad94db1e5ed8c0d441}{calc\-Sum} ()
+\item 
+static \hyperlink{class_math_ae347ec17c4bbac15b793a1721734eab3}{calc\-Avg} ()
+\item 
+static \hyperlink{class_math_a2546f27afeb87dd500f7595889f6f094}{is\-Between} (\$x, \$low, \$high)
+\item 
+static \hyperlink{class_math_aa51b046d6f4eef3963d315cd008f6d37}{zero\-Safe\-Divide} (\$left\-Operand=0, \$right\-Operand=0, \$err\-Val=false)
+\item 
+static \hyperlink{class_math_a14d3952e4b784bd70504724161f373c1}{is\-Even} (\$num)
+\item 
+static \hyperlink{class_math_af9b887f56b4a7b0bb2ee72036cb70aaf}{is\-Odd} (\$num)
+\item 
+static \hyperlink{class_math_a71a0adf9a31795347b71cd99922dcb91}{format\-Bytes} (\$bytes, \$precision=2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_math}{Math} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_math_ae347ec17c4bbac15b793a1721734eab3}{\index{Math@{Math}!calc\-Avg@{calc\-Avg}}
+\index{calc\-Avg@{calc\-Avg}!Math@{Math}}
+\subsubsection[{calc\-Avg}]{\setlength{\rightskip}{0pt plus 5cm}static calc\-Avg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_ae347ec17c4bbac15b793a1721734eab3}
+calculates an average based on all of the parameters fed to it
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_math_a752100d0dd09f8ad94db1e5ed8c0d441}{\index{Math@{Math}!calc\-Sum@{calc\-Sum}}
+\index{calc\-Sum@{calc\-Sum}!Math@{Math}}
+\subsubsection[{calc\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}static calc\-Sum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a752100d0dd09f8ad94db1e5ed8c0d441}
+calculates a sum based on all of the parameters fed to it
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_math_a71a0adf9a31795347b71cd99922dcb91}{\index{Math@{Math}!format\-Bytes@{format\-Bytes}}
+\index{format\-Bytes@{format\-Bytes}!Math@{Math}}
+\subsubsection[{format\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}static format\-Bytes (
+\begin{DoxyParamCaption}
+\item[{}]{\$bytes, }
+\item[{}]{\$precision = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a71a0adf9a31795347b71cd99922dcb91}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$bytes} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_math_a4a63f0213ce099ce76d7fe463d569be8}{\index{Math@{Math}!get\-Percentage@{get\-Percentage}}
+\index{get\-Percentage@{get\-Percentage}!Math@{Math}}
+\subsubsection[{get\-Percentage}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Percentage (
+\begin{DoxyParamCaption}
+\item[{}]{\$total, }
+\item[{}]{\$number, }
+\item[{}]{\$precision = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a4a63f0213ce099ce76d7fe463d569be8}
+takes two numbers -\/ one large (the total) and one small (the part) and gets a percentage
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$total} & \\
+\hline
+int & {\em \$number} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_math_a2546f27afeb87dd500f7595889f6f094}{\index{Math@{Math}!is\-Between@{is\-Between}}
+\index{is\-Between@{is\-Between}!Math@{Math}}
+\subsubsection[{is\-Between}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Between (
+\begin{DoxyParamCaption}
+\item[{}]{\$x, }
+\item[{}]{\$low, }
+\item[{}]{\$high}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a2546f27afeb87dd500f7595889f6f094}
+determines if a number is between a range of numbers
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$x} & the number to check \\
+\hline
+int & {\em \$low} & the low number of the range \\
+\hline
+int & {\em \$high} & the high number of the range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_math_a14d3952e4b784bd70504724161f373c1}{\index{Math@{Math}!is\-Even@{is\-Even}}
+\index{is\-Even@{is\-Even}!Math@{Math}}
+\subsubsection[{is\-Even}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Even (
+\begin{DoxyParamCaption}
+\item[{}]{\$num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a14d3952e4b784bd70504724161f373c1}
+
+\begin{DoxyParams}{Parameters}
+{\em \$num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_math_af9b887f56b4a7b0bb2ee72036cb70aaf}{\index{Math@{Math}!is\-Odd@{is\-Odd}}
+\index{is\-Odd@{is\-Odd}!Math@{Math}}
+\subsubsection[{is\-Odd}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Odd (
+\begin{DoxyParamCaption}
+\item[{}]{\$num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_af9b887f56b4a7b0bb2ee72036cb70aaf}
+
+\begin{DoxyParams}{Parameters}
+{\em \$num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_math_a8c3a122e11ab8a2500c11566241be8df}{\index{Math@{Math}!is\-Whole\-Num@{is\-Whole\-Num}}
+\index{is\-Whole\-Num@{is\-Whole\-Num}!Math@{Math}}
+\subsubsection[{is\-Whole\-Num}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Whole\-Num (
+\begin{DoxyParamCaption}
+\item[{}]{\$var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a8c3a122e11ab8a2500c11566241be8df}
+determines if a variable is a whole number
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$var} & what we're testing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_math_a11cab2c16354c2bd7f6dd9dafc44f991}{\index{Math@{Math}!make\-Percentage@{make\-Percentage}}
+\index{make\-Percentage@{make\-Percentage}!Math@{Math}}
+\subsubsection[{make\-Percentage}]{\setlength{\rightskip}{0pt plus 5cm}static make\-Percentage (
+\begin{DoxyParamCaption}
+\item[{}]{\$num\-\_\-amount, }
+\item[{}]{\$num\-\_\-total}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_a11cab2c16354c2bd7f6dd9dafc44f991}
+takes two numbers -\/ one large (the total) and one small (the percentage) and returns the amount representing that percentage. In other words\-: Given 20\% of '5', would return '1'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$num\-\_\-amount} & \\
+\hline
+{\em \$num\-\_\-total} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_math_ac5ec0e4988ef630864fa88a3fed55aac}{\index{Math@{Math}!pct\-Difference@{pct\-Difference}}
+\index{pct\-Difference@{pct\-Difference}!Math@{Math}}
+\subsubsection[{pct\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}static pct\-Difference (
+\begin{DoxyParamCaption}
+\item[{}]{\$max, }
+\item[{}]{\$min}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_ac5ec0e4988ef630864fa88a3fed55aac}
+
+\begin{DoxyParams}{Parameters}
+{\em \$max} & \\
+\hline
+{\em \$min} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\hypertarget{class_math_ad1b5f5c427d01d020542b65ac72ab639}{\index{Math@{Math}!round\-To@{round\-To}}
+\index{round\-To@{round\-To}!Math@{Math}}
+\subsubsection[{round\-To}]{\setlength{\rightskip}{0pt plus 5cm}static round\-To (
+\begin{DoxyParamCaption}
+\item[{}]{\$number, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_ad1b5f5c427d01d020542b65ac72ab639}
+This function will let you round to an arbitrary non-\/zero number. Zero of course causes a division by zero.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$number} & the number being rounded \\
+\hline
+int & {\em \$to} & the number to round to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_math_aa51b046d6f4eef3963d315cd008f6d37}{\index{Math@{Math}!zero\-Safe\-Divide@{zero\-Safe\-Divide}}
+\index{zero\-Safe\-Divide@{zero\-Safe\-Divide}!Math@{Math}}
+\subsubsection[{zero\-Safe\-Divide}]{\setlength{\rightskip}{0pt plus 5cm}static zero\-Safe\-Divide (
+\begin{DoxyParamCaption}
+\item[{}]{\$left\-Operand = {\ttfamily 0}, }
+\item[{}]{\$right\-Operand = {\ttfamily 0}, }
+\item[{}]{\$err\-Val = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_math_aa51b046d6f4eef3963d315cd008f6d37}
+avoids P\-H\-P errors when one operand in a division operation is 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$left\-Operand} & the left operand \\
+\hline
+int | float & {\em \$right\-Operand} & the right operand \\
+\hline
+mixed & {\em \$err\-Val} & default return value (returned on eror)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Math.\-class.\-php\end{DoxyCompactItemize}

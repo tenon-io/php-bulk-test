@@ -1,0 +1,191 @@
+\hypertarget{class_images}{\section{Images Class Reference}
+\label{class_images}\index{Images@{Images}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_images_a6acbeecf6d38b6224ca2e69a5014e7ff}{get\-Val\-Msg\-Array} ()
+\item 
+static \hyperlink{class_images_a883566e1257c9f6f7ea797ba2ce0da06}{square\-\_\-crop} (\$src\-\_\-image, \$dest\-\_\-image, \$thumb\-\_\-size=50, \$jpg\-\_\-quality=90)
+\item 
+static \hyperlink{class_images_a69aaeb92ffa755b98a4092eb0a255c72}{thumbnail} (\$input\-File\-Name, \$max\-Size=100)
+\item 
+static \hyperlink{class_images_a187f2de0b924431a2a7b08a4637fbc9a}{image\-To\-File} (\$im, \$file\-Name, \$quality=90)
+\item 
+static \hyperlink{class_images_a9fd2462b057c4b6bbe052a757addad15}{is\-\_\-animated\-\_\-gif} (\$filename)
+\item 
+static \hyperlink{class_images_a6e88b713f61d605fefc5feb3dc00ff88}{clean\-File\-Name} (\$image\-\_\-name)
+\item 
+static \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{upload\-File} (\$var\-Name, \$tmp\-Path, \$retain\-Orig=true, \$max\-Size=null, \$lg\-Thumb\-Size=null, \$sq\-Thumb\-Size=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for handling images using G\-D, primarily via file upload
+
+S\-O\-M\-E U\-S\-A\-G\-E E\-X\-A\-M\-P\-L\-E\-S F\-O\-R T\-H\-E upload\-File M\-E\-T\-H\-O\-D, W\-H\-I\-C\-H I\-S T\-H\-E P\-R\-I\-M\-A\-R\-Y R\-E\-A\-S\-O\-N T\-H\-I\-S C\-L\-A\-S\-S E\-X\-I\-S\-T\-S
+
+// Do Not retain original, create a safe \char`\"{}full\char`\"{} image, a thumbnail, and a smaller thumbnail \$file\-\_\-info = \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{Images\-::upload\-File}('item\-\_\-pic', \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'D\-O\-C\-U\-M\-E\-N\-T\-\_\-\-R\-O\-O\-T'\mbox{]} . '/images/bodyparts/', F\-A\-L\-S\-E, \$config\mbox{[}'max\-\_\-bp\-\_\-img'\mbox{]}, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-lgthumb'\mbox{]}, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-smthumb'\mbox{]});
+
+// Retain original, create a safe \char`\"{}full\char`\"{} image, a thumbnail, and a smaller thumbnail \$file\-\_\-info = \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{Images\-::upload\-File}('item\-\_\-pic', \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'D\-O\-C\-U\-M\-E\-N\-T\-\_\-\-R\-O\-O\-T'\mbox{]} . '/images/bodyparts/', T\-R\-U\-E, \$config\mbox{[}'max\-\_\-bp\-\_\-img'\mbox{]}, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-lgthumb'\mbox{]}, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-smthumb'\mbox{]});
+
+// retain the original, no safe \char`\"{}full\char`\"{} image, no thumbnails \$file\-\_\-info = \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{Images\-::upload\-File}('item\-\_\-pic', \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'D\-O\-C\-U\-M\-E\-N\-T\-\_\-\-R\-O\-O\-T'\mbox{]} . '/images/bodyparts/', T\-R\-U\-E, N\-U\-L\-L, N\-U\-L\-L, N\-U\-L\-L);
+
+// do not retain the original, create only the safe \char`\"{}full\char`\"{} image \$file\-\_\-info = \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{Images\-::upload\-File}('item\-\_\-pic', \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'D\-O\-C\-U\-M\-E\-N\-T\-\_\-\-R\-O\-O\-T'\mbox{]} . '/images/bodyparts/', F\-A\-L\-S\-E, \$config\mbox{[}'max\-\_\-bp\-\_\-img'\mbox{]}, N\-U\-L\-L, N\-U\-L\-L);
+
+// retain the original, no safe \char`\"{}full\char`\"{} image, create a thumbnail and a smaller thumbnail \$file\-\_\-info = \hyperlink{class_images_a9816037394561e5a162c8162168b20d9}{Images\-::upload\-File}('item\-\_\-pic', \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'D\-O\-C\-U\-M\-E\-N\-T\-\_\-\-R\-O\-O\-T'\mbox{]} . '/images/bodyparts/', T\-R\-U\-E, N\-U\-L\-L, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-lgthumb'\mbox{]}, \$config\mbox{[}'max\-\_\-bp\-\_\-img\-\_\-smthumb'\mbox{]});
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000012}{Todo}]figure out how to resize animated gifs, keeping the animation \end{DoxyRefDesc}
+\begin{DoxyAuthor}{Author}
+Karl Groves \href{mailto:karl@karlgroves.com}{\tt karl@karlgroves.\-com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_images_a6e88b713f61d605fefc5feb3dc00ff88}{\index{Images@{Images}!clean\-File\-Name@{clean\-File\-Name}}
+\index{clean\-File\-Name@{clean\-File\-Name}!Images@{Images}}
+\subsubsection[{clean\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static clean\-File\-Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$image\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a6e88b713f61d605fefc5feb3dc00ff88}
+removes anything non alphanumeric from the file name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$image\-\_\-name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_images_a6acbeecf6d38b6224ca2e69a5014e7ff}{\index{Images@{Images}!get\-Val\-Msg\-Array@{get\-Val\-Msg\-Array}}
+\index{get\-Val\-Msg\-Array@{get\-Val\-Msg\-Array}!Images@{Images}}
+\subsubsection[{get\-Val\-Msg\-Array}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Val\-Msg\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a6acbeecf6d38b6224ca2e69a5014e7ff}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_images_a187f2de0b924431a2a7b08a4637fbc9a}{\index{Images@{Images}!image\-To\-File@{image\-To\-File}}
+\index{image\-To\-File@{image\-To\-File}!Images@{Images}}
+\subsubsection[{image\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}static image\-To\-File (
+\begin{DoxyParamCaption}
+\item[{}]{\$im, }
+\item[{}]{\$file\-Name, }
+\item[{}]{\$quality = {\ttfamily 90}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a187f2de0b924431a2a7b08a4637fbc9a}
+Save the image to a file. Type is determined from the extension. \$quality is only used for jpegs. Author\-: mthorn.\-net
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$im} & resource handler for the new image \\
+\hline
+string & {\em \$file\-Name} & name for the new image \\
+\hline
+int & {\em \$quality} & quality of the image, only relevant if jpg/ jpeg\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_images_a9fd2462b057c4b6bbe052a757addad15}{\index{Images@{Images}!is\-\_\-animated\-\_\-gif@{is\-\_\-animated\-\_\-gif}}
+\index{is\-\_\-animated\-\_\-gif@{is\-\_\-animated\-\_\-gif}!Images@{Images}}
+\subsubsection[{is\-\_\-animated\-\_\-gif}]{\setlength{\rightskip}{0pt plus 5cm}static is\-\_\-animated\-\_\-gif (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a9fd2462b057c4b6bbe052a757addad15}
+Thanks to Ze\-Badger for original example, and Davide Gualano for pointing me to it Original at \href{http://it.php.net/manual/en/function.imagecreatefromgif.php#59787}{\tt http\-://it.\-php.\-net/manual/en/function.\-imagecreatefromgif.\-php\#59787}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_images_a883566e1257c9f6f7ea797ba2ce0da06}{\index{Images@{Images}!square\-\_\-crop@{square\-\_\-crop}}
+\index{square\-\_\-crop@{square\-\_\-crop}!Images@{Images}}
+\subsubsection[{square\-\_\-crop}]{\setlength{\rightskip}{0pt plus 5cm}static square\-\_\-crop (
+\begin{DoxyParamCaption}
+\item[{}]{\$src\-\_\-image, }
+\item[{}]{\$dest\-\_\-image, }
+\item[{}]{\$thumb\-\_\-size = {\ttfamily 50}, }
+\item[{}]{\$jpg\-\_\-quality = {\ttfamily 90}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a883566e1257c9f6f7ea797ba2ce0da06}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$src\-\_\-image} & \\
+\hline
+string & {\em \$dest\-\_\-image} & \\
+\hline
+int & {\em \$thumb\-\_\-size} & \\
+\hline
+int & {\em \$jpg\-\_\-quality} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_images_a69aaeb92ffa755b98a4092eb0a255c72}{\index{Images@{Images}!thumbnail@{thumbnail}}
+\index{thumbnail@{thumbnail}!Images@{Images}}
+\subsubsection[{thumbnail}]{\setlength{\rightskip}{0pt plus 5cm}static thumbnail (
+\begin{DoxyParamCaption}
+\item[{}]{\$input\-File\-Name, }
+\item[{}]{\$max\-Size = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a69aaeb92ffa755b98a4092eb0a255c72}
+Create a thumbnail image from \$input\-File\-Name no taller or wider than \$max\-Size. Returns the new image resource or false on error. Author\-: mthorn.\-net
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input\-File\-Name} & \\
+\hline
+int & {\em \$max\-Size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_images_a9816037394561e5a162c8162168b20d9}{\index{Images@{Images}!upload\-File@{upload\-File}}
+\index{upload\-File@{upload\-File}!Images@{Images}}
+\subsubsection[{upload\-File}]{\setlength{\rightskip}{0pt plus 5cm}static upload\-File (
+\begin{DoxyParamCaption}
+\item[{}]{\$var\-Name, }
+\item[{}]{\$tmp\-Path, }
+\item[{}]{\$retain\-Orig = {\ttfamily true}, }
+\item[{}]{\$max\-Size = {\ttfamily null}, }
+\item[{}]{\$lg\-Thumb\-Size = {\ttfamily null}, }
+\item[{}]{\$sq\-Thumb\-Size = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_images_a9816037394561e5a162c8162168b20d9}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$var\-Name} & \\
+\hline
+string & {\em \$tmp\-Path} & \\
+\hline
+bool & {\em \$retain\-Orig} & \\
+\hline
+int & {\em \$max\-Size} & \\
+\hline
+int & {\em \$lg\-Thumb\-Size} & \\
+\hline
+int & {\em \$sq\-Thumb\-Size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Images.\-class.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,291 @@
+\hypertarget{classbasic_c_r_u_d_p_d_o}{\section{basic\-C\-R\-U\-D\-P\-D\-O Class Reference}
+\label{classbasic_c_r_u_d_p_d_o}\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}}
+}
+Inheritance diagram for basic\-C\-R\-U\-D\-P\-D\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classbasic_c_r_u_d_p_d_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\-\_\-\-\_\-construct} (\$db\-Name, \$user, \$pass, \$opts=null, \$db\-Type= 'mysql', \$host\-O\-Rpath= 'localhost', \$port= '')
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_adabf861bb374d51cf007f9b6888303cf}{insert} (\$data, \$table, \$check\-Fields=false, \$check\-Table=false)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_ab6c22e1f41766b0678cdd7c503baaa1f}{update} (\$data, \$table, \$criteria\-Field, \$criteria\-Value, \$extras=null, \$check\-Table=false, \$check\-Fields=false)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a0b1faa3905d79b263299154d0e51f408}{delete} (\$table, \$criteria\-Field, \$criteria\-Value, \$extras=null, \$check\-Table=false, \$check\-Field=false)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a7eb0e7204cac6c32a450c90a90d611b1}{get\-By\-I\-D} (\$table, \$id\-Field, \$id, \$fields= '$\ast$ ', \$check\-Table=false, \$check\-Field=false)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a2803d8e3b0a8dcc8f1efc580d4b254fe}{get\-All} (\$table, \$fields= '$\ast$ ', \$criteria\-Field=null, \$criteria\-Value=null, \$extras=null, \$order\-By=null, \$order\-Dir= '', \$limit=null, \$check\-Table=false, \$check\-Field=false)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_ab308739e3ca8d66719416002fd06fe5d}{count\-Items} (\$table, \$extras=null)
+\item 
+\hyperlink{classbasic_c_r_u_d_p_d_o_a6c556dc28409d01baef0f524ecb66819}{S\-Q\-L2\-H\-T\-M\-L\-Table} (\$query, \$attrs=null)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extends the db class to perform basic database interaction. Since 99\% of all the work I do is creating the same C\-R\-U\-D stuff over and over, it became very apparent that what I needed was a simple class to do all these things rather than writing the same fucking code over and over and over and over 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$db\-Name, }
+\item[{}]{\$user, }
+\item[{}]{\$pass, }
+\item[{}]{\$opts = {\ttfamily null}, }
+\item[{}]{\$db\-Type = {\ttfamily 'mysql'}, }
+\item[{}]{\$host\-O\-Rpath = {\ttfamily 'localhost'}, }
+\item[{}]{\$port = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a7f93adf2a111686240ea50fdd8bd8ebf}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\-Name} & database name \\
+\hline
+string & {\em \$user} & database username \\
+\hline
+string & {\em \$pass} & database password \\
+\hline
+array & {\em \$opts} & connection options. \\
+\hline
+string & {\em \$db\-Type} & type of database -\/ must be 'mysql', 'sqlite', or 'pgsql' \\
+\hline
+string & {\em \$host\-O\-Rpath} & ip or name of host (in the case of mysql or pgsql) or file path to db (in case of sqlite) \\
+\hline
+string & {\em \$port} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a421831a265621325e1fdd19aace0c758}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbasic_c_r_u_d_p_d_o_ab308739e3ca8d66719416002fd06fe5d}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!count\-Items@{count\-Items}}
+\index{count\-Items@{count\-Items}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{count\-Items}]{\setlength{\rightskip}{0pt plus 5cm}count\-Items (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$extras = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_ab308739e3ca8d66719416002fd06fe5d}
+Gets a count of all items based on criteria
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table to get a count from \\
+\hline
+string & {\em \$extras} & any optional extra criteria for selecting records\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a0b1faa3905d79b263299154d0e51f408}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!delete@{delete}}
+\index{delete@{delete}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$criteria\-Field, }
+\item[{}]{\$criteria\-Value, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$check\-Table = {\ttfamily false}, }
+\item[{}]{\$check\-Field = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a0b1faa3905d79b263299154d0e51f408}
+Deletes a record. Can include some other criteria for the deletion(s)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & table from which we're deleting records \\
+\hline
+string & {\em \$criteria\-Field} & the criteria field (such as the P\-K field) \\
+\hline
+string & {\em \$criteria\-Value} & the criteria value (such as the P\-K value) \\
+\hline
+string & {\em \$extras} & (optional) any extra stuff for the query \\
+\hline
+bool & {\em \$check\-Table} & (optional) whether or not to check that the table exists first \\
+\hline
+bool & {\em \$check\-Field} & (optional) whether or not to check that the criteria field exists first\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a2803d8e3b0a8dcc8f1efc580d4b254fe}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}get\-All (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$criteria\-Field = {\ttfamily null}, }
+\item[{}]{\$criteria\-Value = {\ttfamily null}, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$order\-By = {\ttfamily null}, }
+\item[{}]{\$order\-Dir = {\ttfamily ''}, }
+\item[{}]{\$limit = {\ttfamily null}, }
+\item[{}]{\$check\-Table = {\ttfamily false}, }
+\item[{}]{\$check\-Field = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a2803d8e3b0a8dcc8f1efc580d4b254fe}
+Selects all records from a table. Can include a number of optional criteria
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table to retrieve from \\
+\hline
+string & {\em \$fields} & the fields to retrieve \\
+\hline
+string & {\em \$criteria\-Field} & (optional) any specific fields to base the query on \\
+\hline
+string & {\em \$criteria\-Value} & (optional) the value for the criteria field \\
+\hline
+string & {\em \$extras} & (optional) extra stuff in the query, such as extra criteria \\
+\hline
+string & {\em \$order\-By} & (optional) column to sort by \\
+\hline
+string & {\em \$order\-Dir} & (optional) direction of the sort \\
+\hline
+int & {\em \$limit} & (optional) limit to the \# of returned results \\
+\hline
+bool & {\em \$check\-Table} & (optional) whether to check that the table exists \\
+\hline
+bool & {\em \$check\-Field} & (optional) whether to check that the criteria field exists\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a7eb0e7204cac6c32a450c90a90d611b1}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!get\-By\-I\-D@{get\-By\-I\-D}}
+\index{get\-By\-I\-D@{get\-By\-I\-D}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{get\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}get\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$table, }
+\item[{}]{\$id\-Field, }
+\item[{}]{\$id, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$check\-Table = {\ttfamily false}, }
+\item[{}]{\$check\-Field = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a7eb0e7204cac6c32a450c90a90d611b1}
+This selects a S\-I\-N\-G\-L\-E record from the database based on specific criteria (such as a unique I\-D)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & the table to retrieve from \\
+\hline
+string & {\em \$id\-Field} & the field which holds a unique I\-D \\
+\hline
+string & {\em \$id} & the unique I\-D value \\
+\hline
+string & {\em \$fields} & the fields to retrieve in the query \\
+\hline
+bool & {\em \$check\-Table} & (optional) whether or not to check that the table exists first \\
+\hline
+bool & {\em \$check\-Field} & (optional) whether or not to check that the I\-D field exists\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_adabf861bb374d51cf007f9b6888303cf}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!insert@{insert}}
+\index{insert@{insert}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}insert (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$table, }
+\item[{}]{\$check\-Fields = {\ttfamily false}, }
+\item[{}]{\$check\-Table = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_adabf861bb374d51cf007f9b6888303cf}
+Inserts a single record in the database using an associative array of values
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & array of key=$>$value pairs for insertion \\
+\hline
+string & {\em \$table} & the table to insert into \\
+\hline
+bool & {\em \$check\-Fields} & (optional) whether or not to check for each fields' existence \\
+\hline
+bool & {\em \$check\-Table} & (optional) whether or not to check for the table's existence\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true on success 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_a6c556dc28409d01baef0f524ecb66819}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!S\-Q\-L2\-H\-T\-M\-L\-Table@{S\-Q\-L2\-H\-T\-M\-L\-Table}}
+\index{S\-Q\-L2\-H\-T\-M\-L\-Table@{S\-Q\-L2\-H\-T\-M\-L\-Table}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{S\-Q\-L2\-H\-T\-M\-L\-Table}]{\setlength{\rightskip}{0pt plus 5cm}S\-Q\-L2\-H\-T\-M\-L\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$attrs = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_a6c556dc28409d01baef0f524ecb66819}
+Takes a S\-Q\-L query and turns it into an \hyperlink{class_h_t_m_l}{H\-T\-M\-L} table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & the query to select the data \\
+\hline
+array & {\em \$attrs} & (optional) any attributes for the table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classbasic_c_r_u_d_p_d_o_ab6c22e1f41766b0678cdd7c503baaa1f}{\index{basic\-C\-R\-U\-D\-P\-D\-O@{basic\-C\-R\-U\-D\-P\-D\-O}!update@{update}}
+\index{update@{update}!basicCRUDPDO@{basic\-C\-R\-U\-D\-P\-D\-O}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}update (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$table, }
+\item[{}]{\$criteria\-Field, }
+\item[{}]{\$criteria\-Value, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$check\-Table = {\ttfamily false}, }
+\item[{}]{\$check\-Fields = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classbasic_c_r_u_d_p_d_o_ab6c22e1f41766b0678cdd7c503baaa1f}
+Updates a record in the database using an associative array of values
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & data for the updated record \\
+\hline
+string & {\em \$table} & table \\
+\hline
+string & {\em \$criteria\-Field} & field (such as the P\-K field) \\
+\hline
+string & {\em \$criteria\-Value} & value for the criteria field (again, such as the P\-K) \\
+\hline
+string & {\em \$extras} & (optional) any extra stuff for the query \\
+\hline
+bool & {\em \$check\-Table} & (optional) whether or not to check that the table exists first \\
+\hline
+bool & {\em \$check\-Fields} & (optional) whether or not to check that each field exists first\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+basic\-C\-R\-U\-D\-P\-D\-O.\-class.\-php\end{DoxyCompactItemize}

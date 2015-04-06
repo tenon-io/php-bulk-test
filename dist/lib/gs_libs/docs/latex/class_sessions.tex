@@ -1,0 +1,196 @@
+\hypertarget{class_sessions}{\section{Sessions Class Reference}
+\label{class_sessions}\index{Sessions@{Sessions}}
+}
+Inheritance diagram for Sessions\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sessions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sessions_a8cd53e3840b870683ec955ec89da3abe}{\-\_\-\-\_\-construct} (\$connection, \$max\-Lifetime=6000, \$timezone= 'U\-T\-C')
+\item 
+\hyperlink{class_sessions_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{class_sessions_a1d183070ef4f11c8899b6dcbed874f40}{reset\-Session\-I\-D} (\$delete\-Old=false)
+\item 
+\hyperlink{class_sessions_a9824b1cfea0c3b5874afd027c4812344}{open} (\$sess\-\_\-path, \$sess\-\_\-name)
+\item 
+\hyperlink{class_sessions_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close} ()
+\item 
+\hyperlink{class_sessions_afa59bebedda70c37b94c2efc35da83f3}{read} (\$id)
+\item 
+\hyperlink{class_sessions_a5f277b5f0e4e2154cddc9a3a0d2bf57d}{write} (\$id, \$data)
+\item 
+\hyperlink{class_sessions_a726fa8a4b4b187b9ca32ba427aac8137}{destroy} (\$id)
+\item 
+\hyperlink{class_sessions_a14ff7ef4b198ff14884dd8c564264ca3}{gc} ()
+\item 
+\hyperlink{class_sessions_ae3ae7294fa85454de518e45e1c36fcf6}{set\-Session\-Vars} (\$array)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+connection-\/driven session handling 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sessions_a8cd53e3840b870683ec955ec89da3abe}{\index{Sessions@{Sessions}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!Sessions@{Sessions}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection, }
+\item[{}]{\$max\-Lifetime = {\ttfamily 6000}, }
+\item[{}]{\$timezone = {\ttfamily 'UTC'}}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a8cd53e3840b870683ec955ec89da3abe}
+class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$connection} & \\
+\hline
+int & {\em \$max\-Lifetime} & how long sessions should last \\
+\hline
+string & {\em \$timezone} & what timezone to use \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_sessions_a421831a265621325e1fdd19aace0c758}{\index{Sessions@{Sessions}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!Sessions@{Sessions}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a421831a265621325e1fdd19aace0c758}
+class destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sessions_aa69c8bf1f1dcf4e72552efff1fe3e87e}{\index{Sessions@{Sessions}!close@{close}}
+\index{close@{close}!Sessions@{Sessions}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_aa69c8bf1f1dcf4e72552efff1fe3e87e}
+closes a session
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_sessions_a726fa8a4b4b187b9ca32ba427aac8137}{\index{Sessions@{Sessions}!destroy@{destroy}}
+\index{destroy@{destroy}!Sessions@{Sessions}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}destroy (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a726fa8a4b4b187b9ca32ba427aac8137}
+destroys the session
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_sessions_a14ff7ef4b198ff14884dd8c564264ca3}{\index{Sessions@{Sessions}!gc@{gc}}
+\index{gc@{gc}!Sessions@{Sessions}}
+\subsubsection[{gc}]{\setlength{\rightskip}{0pt plus 5cm}gc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a14ff7ef4b198ff14884dd8c564264ca3}
+Session garbage collection dumps expired sessions
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_sessions_a9824b1cfea0c3b5874afd027c4812344}{\index{Sessions@{Sessions}!open@{open}}
+\index{open@{open}!Sessions@{Sessions}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}open (
+\begin{DoxyParamCaption}
+\item[{}]{\$sess\-\_\-path, }
+\item[{}]{\$sess\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a9824b1cfea0c3b5874afd027c4812344}
+opens a session
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$sess\-\_\-path} & \\
+\hline
+{\em \$sess\-\_\-name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_sessions_afa59bebedda70c37b94c2efc35da83f3}{\index{Sessions@{Sessions}!read@{read}}
+\index{read@{read}!Sessions@{Sessions}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}read (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_afa59bebedda70c37b94c2efc35da83f3}
+reads session data. Also updates the last time the session was touched
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_sessions_a1d183070ef4f11c8899b6dcbed874f40}{\index{Sessions@{Sessions}!reset\-Session\-I\-D@{reset\-Session\-I\-D}}
+\index{reset\-Session\-I\-D@{reset\-Session\-I\-D}!Sessions@{Sessions}}
+\subsubsection[{reset\-Session\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}reset\-Session\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$delete\-Old = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a1d183070ef4f11c8899b6dcbed874f40}
+call this to reset the session I\-D resets the session I\-D \hypertarget{class_sessions_ae3ae7294fa85454de518e45e1c36fcf6}{\index{Sessions@{Sessions}!set\-Session\-Vars@{set\-Session\-Vars}}
+\index{set\-Session\-Vars@{set\-Session\-Vars}!Sessions@{Sessions}}
+\subsubsection[{set\-Session\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}set\-Session\-Vars (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_ae3ae7294fa85454de518e45e1c36fcf6}
+sets multiple session variables at the same time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_sessions_a5f277b5f0e4e2154cddc9a3a0d2bf57d}{\index{Sessions@{Sessions}!write@{write}}
+\index{write@{write}!Sessions@{Sessions}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}write (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{class_sessions_a5f277b5f0e4e2154cddc9a3a0d2bf57d}
+writes information to the session record
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & \\
+\hline
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+db\-Sessions.\-class.\-php\end{DoxyCompactItemize}

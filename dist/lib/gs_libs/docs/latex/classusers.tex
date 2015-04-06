@@ -1,0 +1,485 @@
+\hypertarget{classusers}{\section{users Class Reference}
+\label{classusers}\index{users@{users}}
+}
+Inheritance diagram for users\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classusers}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classusers_a155afedbdfa01f1c0b813ca97642cdab}{\-\_\-\-\_\-construct} (\$connection)
+\item 
+\hyperlink{classusers_a2e355627d2f4a96559f022c4ab82df3c}{insert} (\$data)
+\item 
+\hyperlink{classusers_a1d8c1067487068c15fdf6bf9a1c9cad5}{update} (\$data, \$id)
+\item 
+\hyperlink{classusers_a2f8258add505482d7f00ea26493a5723}{delete} (\$id)
+\item 
+\hyperlink{classusers_a62e2e537ded1658daab4890c47e65cac}{real\-Delete} (\$id)
+\item 
+\hyperlink{classusers_a53634d1376ca031c9fb15fc6c414b38d}{get\-By\-I\-D} (\$id, \$fields= '$\ast$ ')
+\item 
+\hyperlink{classusers_acf08575a3118988b51fb2dac13cfd6d0}{get\-By\-Key} (\$key, \$fields= '$\ast$ ')
+\item 
+\hyperlink{classusers_a0578082f7a46ccb61c2f76c354790975}{get\-All} (\$fields= '$\ast$ ', \$criteria\-Field= 'deleted', \$criteria\-Value= '0', \$extras=null, \$order\-By= 'user\-Email', \$order\-Dir= 'A\-S\-C', \$limit=null)
+\item 
+\hyperlink{classusers_ab8f80834945b7c52c4dac242b83890a3}{get\-User\-By\-Email} (\$email, \$fields= '$\ast$ ', \$check\-Orig=false)
+\item 
+\hyperlink{classusers_a011d89c55eeb9dfb266cc4e1bb08e8ab}{get\-User\-By\-Login} (\$email, \$pw, \$fields= '$\ast$ ')
+\item 
+\hyperlink{classusers_a6919da8f21e92b94c33bb0510e5d16f7}{user\-Is\-Confirmed\-By\-Key} (\$key)
+\item 
+\hyperlink{classusers_a527ad71a11a95c657c00269c6a756127}{user\-Is\-Confirmed\-By\-I\-D} (\$id)
+\item 
+\hyperlink{classusers_a70a112c7f624f303e2fc3cad22c69e80}{confirm\-User\-By\-I\-D} (\$id)
+\item 
+\hyperlink{classusers_ad909fac2049c67ae141556dcaf6a66c2}{confirm\-User\-By\-Key} (\$key)
+\item 
+\hyperlink{classusers_a5caeed00e1e3ff2acac3d92a962d3bda}{ban\-User\-By\-Key} (\$key)
+\item 
+\hyperlink{classusers_a3bed00bbb0e743c0fe5e513bf6695dcd}{ban\-User\-By\-I\-D} (\$id)
+\item 
+\hyperlink{classusers_a6474d48790e73fb658ac2974fb43053e}{is\-User\-Banned\-By\-I\-D} (\$id)
+\item 
+\hyperlink{classusers_af86a653dcb218e32466bc672e8f5b1f6}{is\-User\-Banned\-By\-Key} (\$key)
+\item 
+\hyperlink{classusers_a07c707a8b2f6e0ea549d7d13894cde8d}{is\-User\-Banned\-By\-Email} (\$email)
+\item 
+\hyperlink{classusers_a440d92b40f07a9db78e2c7e207ac20c5}{is\-User\-Banned\-By\-Login} (\$email, \$pw)
+\item 
+\hyperlink{classusers_af903673a614f9aa8766667a40082efc7}{count\-Members} ()
+\item 
+\hyperlink{classusers_afff98e9501a6678ea1710bb44012e6a3}{user\-Permissions\-Readable} (\$val)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classusers_a0d9c79b9b86b3f5891c6d3892f12c6a0}{{\bfseries \$connection}}\label{classusers_a0d9c79b9b86b3f5891c6d3892f12c6a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for managing users and authenticating them 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classusers_a155afedbdfa01f1c0b813ca97642cdab}{\index{users@{users}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!users@{users}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classusers_a155afedbdfa01f1c0b813ca97642cdab}
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$connection} & database connection details \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classusers_a3bed00bbb0e743c0fe5e513bf6695dcd}{\index{users@{users}!ban\-User\-By\-I\-D@{ban\-User\-By\-I\-D}}
+\index{ban\-User\-By\-I\-D@{ban\-User\-By\-I\-D}!users@{users}}
+\subsubsection[{ban\-User\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}ban\-User\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a3bed00bbb0e743c0fe5e513bf6695dcd}
+Marks a user as 'banned' based on their P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & primary key I\-D of the record to be banned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a5caeed00e1e3ff2acac3d92a962d3bda}{\index{users@{users}!ban\-User\-By\-Key@{ban\-User\-By\-Key}}
+\index{ban\-User\-By\-Key@{ban\-User\-By\-Key}!users@{users}}
+\subsubsection[{ban\-User\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}ban\-User\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classusers_a5caeed00e1e3ff2acac3d92a962d3bda}
+Marks a user as 'banned' based on their key string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a70a112c7f624f303e2fc3cad22c69e80}{\index{users@{users}!confirm\-User\-By\-I\-D@{confirm\-User\-By\-I\-D}}
+\index{confirm\-User\-By\-I\-D@{confirm\-User\-By\-I\-D}!users@{users}}
+\subsubsection[{confirm\-User\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}confirm\-User\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a70a112c7f624f303e2fc3cad22c69e80}
+Marks a user as 'confirmed' based on their P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & primary key I\-D of the record to be looked at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_ad909fac2049c67ae141556dcaf6a66c2}{\index{users@{users}!confirm\-User\-By\-Key@{confirm\-User\-By\-Key}}
+\index{confirm\-User\-By\-Key@{confirm\-User\-By\-Key}!users@{users}}
+\subsubsection[{confirm\-User\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}confirm\-User\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classusers_ad909fac2049c67ae141556dcaf6a66c2}
+Marks a user as 'confirmed' based on their key string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_af903673a614f9aa8766667a40082efc7}{\index{users@{users}!count\-Members@{count\-Members}}
+\index{count\-Members@{count\-Members}!users@{users}}
+\subsubsection[{count\-Members}]{\setlength{\rightskip}{0pt plus 5cm}count\-Members (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusers_af903673a614f9aa8766667a40082efc7}
+Gets a count of all unbanned, confirmed, non-\/deleted members from the database
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{classusers_a2f8258add505482d7f00ea26493a5723}{\index{users@{users}!delete@{delete}}
+\index{delete@{delete}!users@{users}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a2f8258add505482d7f00ea26493a5723}
+Marks a user record as deleted
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be marked as deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a0578082f7a46ccb61c2f76c354790975}{\index{users@{users}!get\-All@{get\-All}}
+\index{get\-All@{get\-All}!users@{users}}
+\subsubsection[{get\-All}]{\setlength{\rightskip}{0pt plus 5cm}get\-All (
+\begin{DoxyParamCaption}
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$criteria\-Field = {\ttfamily 'deleted'}, }
+\item[{}]{\$criteria\-Value = {\ttfamily '0'}, }
+\item[{}]{\$extras = {\ttfamily null}, }
+\item[{}]{\$order\-By = {\ttfamily 'userEmail'}, }
+\item[{}]{\$order\-Dir = {\ttfamily 'ASC'}, }
+\item[{}]{\$limit = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classusers_a0578082f7a46ccb61c2f76c354790975}
+Gets all user records (subject to optional criteria)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$fields} & \\
+\hline
+string & {\em \$criteria\-Field} & \\
+\hline
+string & {\em \$criteria\-Value} & \\
+\hline
+string & {\em \$extras} & \\
+\hline
+string & {\em \$order\-By} & \\
+\hline
+string & {\em \$order\-Dir} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classusers_a53634d1376ca031c9fb15fc6c414b38d}{\index{users@{users}!get\-By\-I\-D@{get\-By\-I\-D}}
+\index{get\-By\-I\-D@{get\-By\-I\-D}!users@{users}}
+\subsubsection[{get\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}get\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}}
+\end{DoxyParamCaption}
+)}}\label{classusers_a53634d1376ca031c9fb15fc6c414b38d}
+Retrieves a user record based on P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be retrieved \\
+\hline
+string & {\em \$fields} & database fields to be retrieved in the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classusers_acf08575a3118988b51fb2dac13cfd6d0}{\index{users@{users}!get\-By\-Key@{get\-By\-Key}}
+\index{get\-By\-Key@{get\-By\-Key}!users@{users}}
+\subsubsection[{get\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}get\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}}
+\end{DoxyParamCaption}
+)}}\label{classusers_acf08575a3118988b51fb2dac13cfd6d0}
+Retrieves a user record based on associated key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & key string of the record to be retrieved \\
+\hline
+string & {\em \$fields} & database fields to be retrieved in the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classusers_ab8f80834945b7c52c4dac242b83890a3}{\index{users@{users}!get\-User\-By\-Email@{get\-User\-By\-Email}}
+\index{get\-User\-By\-Email@{get\-User\-By\-Email}!users@{users}}
+\subsubsection[{get\-User\-By\-Email}]{\setlength{\rightskip}{0pt plus 5cm}get\-User\-By\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}, }
+\item[{}]{\$check\-Orig = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classusers_ab8f80834945b7c52c4dac242b83890a3}
+Retrieves a user record based on email address
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+string & {\em \$fields} & database fields to be retrieved in the query \\
+\hline
+bool & {\em \$check\-Orig} & whether or not to include the user's original email as well\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classusers_a011d89c55eeb9dfb266cc4e1bb08e8ab}{\index{users@{users}!get\-User\-By\-Login@{get\-User\-By\-Login}}
+\index{get\-User\-By\-Login@{get\-User\-By\-Login}!users@{users}}
+\subsubsection[{get\-User\-By\-Login}]{\setlength{\rightskip}{0pt plus 5cm}get\-User\-By\-Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$pw, }
+\item[{}]{\$fields = {\ttfamily '~$\ast$~'}}
+\end{DoxyParamCaption}
+)}}\label{classusers_a011d89c55eeb9dfb266cc4e1bb08e8ab}
+Retrieves a user record based on login credentials (email address and password)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+string & {\em \$pw} & \\
+\hline
+string & {\em \$fields} & database fields to be retrieved in the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{classusers_a2e355627d2f4a96559f022c4ab82df3c}{\index{users@{users}!insert@{insert}}
+\index{insert@{insert}!users@{users}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}insert (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{classusers_a2e355627d2f4a96559f022c4ab82df3c}
+Adds a new user record to the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & associative array of data to be inserted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a07c707a8b2f6e0ea549d7d13894cde8d}{\index{users@{users}!is\-User\-Banned\-By\-Email@{is\-User\-Banned\-By\-Email}}
+\index{is\-User\-Banned\-By\-Email@{is\-User\-Banned\-By\-Email}!users@{users}}
+\subsubsection[{is\-User\-Banned\-By\-Email}]{\setlength{\rightskip}{0pt plus 5cm}is\-User\-Banned\-By\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)}}\label{classusers_a07c707a8b2f6e0ea549d7d13894cde8d}
+Determines whether or not a user is banned, based on their email
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a6474d48790e73fb658ac2974fb43053e}{\index{users@{users}!is\-User\-Banned\-By\-I\-D@{is\-User\-Banned\-By\-I\-D}}
+\index{is\-User\-Banned\-By\-I\-D@{is\-User\-Banned\-By\-I\-D}!users@{users}}
+\subsubsection[{is\-User\-Banned\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}is\-User\-Banned\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a6474d48790e73fb658ac2974fb43053e}
+Determines whether or not a user is banned, based on their P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & primary key I\-D of the record to be looked at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_af86a653dcb218e32466bc672e8f5b1f6}{\index{users@{users}!is\-User\-Banned\-By\-Key@{is\-User\-Banned\-By\-Key}}
+\index{is\-User\-Banned\-By\-Key@{is\-User\-Banned\-By\-Key}!users@{users}}
+\subsubsection[{is\-User\-Banned\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}is\-User\-Banned\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classusers_af86a653dcb218e32466bc672e8f5b1f6}
+Determines whether or not a user is banned, based on their key string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a440d92b40f07a9db78e2c7e207ac20c5}{\index{users@{users}!is\-User\-Banned\-By\-Login@{is\-User\-Banned\-By\-Login}}
+\index{is\-User\-Banned\-By\-Login@{is\-User\-Banned\-By\-Login}!users@{users}}
+\subsubsection[{is\-User\-Banned\-By\-Login}]{\setlength{\rightskip}{0pt plus 5cm}is\-User\-Banned\-By\-Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$pw}
+\end{DoxyParamCaption}
+)}}\label{classusers_a440d92b40f07a9db78e2c7e207ac20c5}
+Determines whether or not a user is banned, based on their email and password (probably redundant and unneeded)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+string & {\em \$pw} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a62e2e537ded1658daab4890c47e65cac}{\index{users@{users}!real\-Delete@{real\-Delete}}
+\index{real\-Delete@{real\-Delete}!users@{users}}
+\subsubsection[{real\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}real\-Delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a62e2e537ded1658daab4890c47e65cac}
+Removes a user record from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$id} & primary key I\-D of the record to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a1d8c1067487068c15fdf6bf9a1c9cad5}{\index{users@{users}!update@{update}}
+\index{update@{update}!users@{users}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}update (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a1d8c1067487068c15fdf6bf9a1c9cad5}
+Updates a user's database record
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & associative array of data to be updated \\
+\hline
+int & {\em \$id} & primary key I\-D of the record to be updated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a527ad71a11a95c657c00269c6a756127}{\index{users@{users}!user\-Is\-Confirmed\-By\-I\-D@{user\-Is\-Confirmed\-By\-I\-D}}
+\index{user\-Is\-Confirmed\-By\-I\-D@{user\-Is\-Confirmed\-By\-I\-D}!users@{users}}
+\subsubsection[{user\-Is\-Confirmed\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}user\-Is\-Confirmed\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{classusers_a527ad71a11a95c657c00269c6a756127}
+Determines whether or not a user has confirmed their registration based on their P\-K\-I\-D
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & primary key I\-D of the record to be looked at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_a6919da8f21e92b94c33bb0510e5d16f7}{\index{users@{users}!user\-Is\-Confirmed\-By\-Key@{user\-Is\-Confirmed\-By\-Key}}
+\index{user\-Is\-Confirmed\-By\-Key@{user\-Is\-Confirmed\-By\-Key}!users@{users}}
+\subsubsection[{user\-Is\-Confirmed\-By\-Key}]{\setlength{\rightskip}{0pt plus 5cm}user\-Is\-Confirmed\-By\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classusers_a6919da8f21e92b94c33bb0510e5d16f7}
+Determines whether or not a user has confirmed their registration based on their key string value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classusers_afff98e9501a6678ea1710bb44012e6a3}{\index{users@{users}!user\-Permissions\-Readable@{user\-Permissions\-Readable}}
+\index{user\-Permissions\-Readable@{user\-Permissions\-Readable}!users@{users}}
+\subsubsection[{user\-Permissions\-Readable}]{\setlength{\rightskip}{0pt plus 5cm}user\-Permissions\-Readable (
+\begin{DoxyParamCaption}
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classusers_afff98e9501a6678ea1710bb44012e6a3}
+Gets a human readable representation of a user's permissions level
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+users.\-class.\-php\end{DoxyCompactItemize}

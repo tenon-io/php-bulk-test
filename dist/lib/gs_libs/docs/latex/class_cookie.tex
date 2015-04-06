@@ -1,0 +1,257 @@
+\hypertarget{class_cookie}{\section{Cookie Class Reference}
+\label{class_cookie}\index{Cookie@{Cookie}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_cookie_a8b1b5a4dd1b1db66dfdbf1797f7c6ca3}{exists} (\$name)
+\item 
+static \hyperlink{class_cookie_adb5118ec874e8b05ad04383ef47b3d33}{is\-Empty} (\$name)
+\item 
+static \hyperlink{class_cookie_a8de2755d9f5089dedcf2ea146372d3c2}{get} (\$name, \$default= '')
+\item 
+static \hyperlink{class_cookie_ab6596e66cd53fb360f8774e79e4cf647}{set} (\$name, \$value, \$expiry=self\-::\-One\-Year, \$path= '/', \$domain=false, \$secure=false, \$httponly=true)
+\item 
+static \hyperlink{class_cookie_a509037890b7841315fec02ada395409d}{delete} (\$name, \$path= '/', \$domain=false, \$remove\-\_\-from\-\_\-global=false)
+\item 
+static \hyperlink{class_cookie_a27390ef5ef98875bd5e4a903d3dceaae}{set\-Multi} (\$name, \$array, \$expiry=self\-::\-One\-Year, \$path= '/', \$domain=false)
+\item 
+static \hyperlink{class_cookie_a7a1f4a3d8604c65e8eb9ef102e0ec892}{get\-All\-Multi} (\$name, \$default= '')
+\item 
+static \hyperlink{class_cookie_adda38d5ea097c287be032966f906d213}{get\-Multi} (\$name, \$key, \$default= '')
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cookie_a3880a2d65111dd04ed2762c3516238c4}{const {\bfseries Session} = null}\label{class_cookie_a3880a2d65111dd04ed2762c3516238c4}
+
+\item 
+\hypertarget{class_cookie_ab0d5d43ef5de3a8b8d246f38d4011644}{const {\bfseries One\-Hour} = 3600}\label{class_cookie_ab0d5d43ef5de3a8b8d246f38d4011644}
+
+\item 
+\hypertarget{class_cookie_aa521862df1faf3bae91e826bdd7c4307}{const {\bfseries One\-Day} = 86400}\label{class_cookie_aa521862df1faf3bae91e826bdd7c4307}
+
+\item 
+\hypertarget{class_cookie_a272654e12377439eb99efbc6cb9493b0}{const {\bfseries Seven\-Days} = 604800}\label{class_cookie_a272654e12377439eb99efbc6cb9493b0}
+
+\item 
+\hypertarget{class_cookie_ae5e80f88a08010c095ce85a659f5c819}{const {\bfseries Thirty\-Days} = 2592000}\label{class_cookie_ae5e80f88a08010c095ce85a659f5c819}
+
+\item 
+\hypertarget{class_cookie_a89aba8b2219057356a151cca43412b1d}{const {\bfseries Six\-Months} = 15811200}\label{class_cookie_a89aba8b2219057356a151cca43412b1d}
+
+\item 
+\hypertarget{class_cookie_ae1a7aa52bbb1caabe1babbfb6b74921c}{const {\bfseries One\-Year} = 31536000}\label{class_cookie_ae1a7aa52bbb1caabe1babbfb6b74921c}
+
+\item 
+\hypertarget{class_cookie_ae4b90b216439b5f4fd00c88bd87a26e1}{const {\bfseries Lifetime} = -\/1}\label{class_cookie_ae4b90b216439b5f4fd00c88bd87a26e1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class for creation and management of cookies
+
+D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N \begin{DoxyVerb}Some example usage:
+
+ Style preference, persists only until the browser is closed
+ Cookie::set('style', 'black_and_orange', Cookie::Session);
+
+ Remember the users email address to pre-fill the login form when they return
+ Cookie::set('rememberme', 'email@domain.com', Cookie::ThirtyDays);
+
+ Tracking cookie that effectively lasts forever
+ Cookie::set('tracking', 'sdfoiwuyo8who8wfhow8fhso4', Cookie::Lifetime, '/', '.domain.com');\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cookie_a509037890b7841315fec02ada395409d}{\index{Cookie@{Cookie}!delete@{delete}}
+\index{delete@{delete}!Cookie@{Cookie}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}static delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$path = {\ttfamily '/'}, }
+\item[{}]{\$domain = {\ttfamily false}, }
+\item[{}]{\$remove\-\_\-from\-\_\-global = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_a509037890b7841315fec02ada395409d}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$name} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+bool & {\em \$domain} & \\
+\hline
+bool & {\em \$remove\-\_\-from\-\_\-global} & Set to true to remove this cookie from this request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_cookie_a8b1b5a4dd1b1db66dfdbf1797f7c6ca3}{\index{Cookie@{Cookie}!exists@{exists}}
+\index{exists@{exists}!Cookie@{Cookie}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}static exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_a8b1b5a4dd1b1db66dfdbf1797f7c6ca3}
+determines if a cookie already exists with this name with {\itshape any} value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & the name of the cookie\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_cookie_a8de2755d9f5089dedcf2ea146372d3c2}{\index{Cookie@{Cookie}!get@{get}}
+\index{get@{get}!Cookie@{Cookie}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}static get (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$default = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_a8de2755d9f5089dedcf2ea146372d3c2}
+Get the value of the given cookie. If the cookie does not exist the value of \$default will be returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_cookie_a7a1f4a3d8604c65e8eb9ef102e0ec892}{\index{Cookie@{Cookie}!get\-All\-Multi@{get\-All\-Multi}}
+\index{get\-All\-Multi@{get\-All\-Multi}!Cookie@{Cookie}}
+\subsubsection[{get\-All\-Multi}]{\setlength{\rightskip}{0pt plus 5cm}static get\-All\-Multi (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$default = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_a7a1f4a3d8604c65e8eb9ef102e0ec892}
+Unserializes cookie data, set by set\-Multi, above. If the cookie does not exist the value of \$default will be returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{class_cookie_adda38d5ea097c287be032966f906d213}{\index{Cookie@{Cookie}!get\-Multi@{get\-Multi}}
+\index{get\-Multi@{get\-Multi}!Cookie@{Cookie}}
+\subsubsection[{get\-Multi}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Multi (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$key, }
+\item[{}]{\$default = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_adda38d5ea097c287be032966f906d213}
+Get the value of an individual item in a cookie set by set\-Multi. If the cookie does not exist the value of \$default will be returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+string & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\hypertarget{class_cookie_adb5118ec874e8b05ad04383ef47b3d33}{\index{Cookie@{Cookie}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Cookie@{Cookie}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}static is\-Empty (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_adb5118ec874e8b05ad04383ef47b3d33}
+Returns true if there is no cookie with this name or it's empty, or 0, or a few other things. Check \href{http://php.net/empty}{\tt http\-://php.\-net/empty} for a full list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & the name of the cookie\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_cookie_ab6596e66cd53fb360f8774e79e4cf647}{\index{Cookie@{Cookie}!set@{set}}
+\index{set@{set}!Cookie@{Cookie}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}static set (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value, }
+\item[{}]{\$expiry = {\ttfamily self\-:\-:OneYear}, }
+\item[{}]{\$path = {\ttfamily '/'}, }
+\item[{}]{\$domain = {\ttfamily false}, }
+\item[{}]{\$secure = {\ttfamily false}, }
+\item[{}]{\$httponly = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_ab6596e66cd53fb360f8774e79e4cf647}
+Set a cookie. Silently does nothing if headers have already been sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$name} & \\
+\hline
+ & {\em \$value} & \\
+\hline
+int & {\em \$expiry} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+bool & {\em \$domain} & \\
+\hline
+bool & {\em \$secure} & \\
+\hline
+bool & {\em \$httponly} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_cookie_a27390ef5ef98875bd5e4a903d3dceaae}{\index{Cookie@{Cookie}!set\-Multi@{set\-Multi}}
+\index{set\-Multi@{set\-Multi}!Cookie@{Cookie}}
+\subsubsection[{set\-Multi}]{\setlength{\rightskip}{0pt plus 5cm}static set\-Multi (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$array, }
+\item[{}]{\$expiry = {\ttfamily self\-:\-:OneYear}, }
+\item[{}]{\$path = {\ttfamily '/'}, }
+\item[{}]{\$domain = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cookie_a27390ef5ef98875bd5e4a903d3dceaae}
+Set a cookie with multiple values. Essentially, just serializes an array Neat way to set multiple values in one cookie, rather than a bunch. Silently does nothing if headers have already been sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$name} & \\
+\hline
+ & {\em \$array} & \\
+\hline
+int & {\em \$expiry} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+bool & {\em \$domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Cookie.\-class.\-php\end{DoxyCompactItemize}

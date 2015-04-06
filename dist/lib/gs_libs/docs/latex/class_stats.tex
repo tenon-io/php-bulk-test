@@ -1,0 +1,330 @@
+\hypertarget{class_stats}{\section{Stats Class Reference}
+\label{class_stats}\index{Stats@{Stats}}
+}
+Inheritance diagram for Stats\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stats}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stats_a9b576568bc17458490e6985a7489c3a9}{\-\_\-\-\_\-construct} (\$connection, \$current\-\_\-user=null, \$table\-Name= 'stats')
+\item 
+\hyperlink{class_stats_a421831a265621325e1fdd19aace0c758}{\-\_\-\-\_\-destruct} ()
+\item 
+\hyperlink{class_stats_a604a265217a1774947350bca38b39e01}{set\-Ignore} (\$array)
+\item 
+\hyperlink{class_stats_aec6efc1f87114d251b6d91be90bc3ddd}{insert\-Stats} ()
+\item 
+\hyperlink{class_stats_a017d22295900a75171f1a3e5b488eb09}{get\-Total\-Page\-Views} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_aa186bab67dcb150d445b84e6ec52cfd9}{get\-Total\-Distinct\-Sessions} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_ab8b13de24fa5d9e50a0d7cf9e9f1af32}{get\-Total\-Distinct\-I\-Ps} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_a0c99010e511c7fc19ad59f16179524cb}{get\-Total\-Distinct\-U\-R\-Is} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_a85991d88c2f5401b051cc554b04bdec8}{get\-Total\-Distinct\-User\-Agents} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_aaf9ae81485efae3ce6f902ddac969a45}{get\-Total\-Distinct\-Pages} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_a6c944fec89049927b811bd786a934e96}{get\-Total\-Distinct\-Users} (\$start=null, \$end=null)
+\item 
+\hyperlink{class_stats_adf94df76cef17a9a175924473b71446e}{count\-Dates} (\$start, \$end)
+\item 
+\hyperlink{class_stats_a025ccf47b1021dba92cb33c15b36e63b}{get\-First\-Date} ()
+\item 
+\hyperlink{class_stats_a4de981ae1f7c64de95d1d98f001b3e5f}{get\-Last\-Date} ()
+\item 
+\hyperlink{class_stats_af0592a90f0b14c809dad12c026a18b68}{get\-Raw\-Stats} (\$start=null, \$end=null, \$fields= '$\ast$')
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stats_aa7c64052a6704d3e4c8d4a17a506fed3}{{\bfseries \$\-Ignore}}\label{class_stats_aa7c64052a6704d3e4c8d4a17a506fed3}
+
+\item 
+\hypertarget{class_stats_a0d9c79b9b86b3f5891c6d3892f12c6a0}{{\bfseries \$connection}}\label{class_stats_a0d9c79b9b86b3f5891c6d3892f12c6a0}
+
+\item 
+\hypertarget{class_stats_a12f5443cc19cb33ae0292013c53a7b19}{{\bfseries \$current\-\_\-user}}\label{class_stats_a12f5443cc19cb33ae0292013c53a7b19}
+
+\item 
+\hypertarget{class_stats_aea06aaf672e3fe5fbf45958ae2782244}{{\bfseries \$table\-Name}}\label{class_stats_aea06aaf672e3fe5fbf45958ae2782244}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class for inserting and calculating basic web stats via database 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_stats_a9b576568bc17458490e6985a7489c3a9}{\index{Stats@{Stats}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!Stats@{Stats}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection, }
+\item[{}]{\$current\-\_\-user = {\ttfamily null}, }
+\item[{}]{\$table\-Name = {\ttfamily 'stats'}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a9b576568bc17458490e6985a7489c3a9}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+null & {\em \$current\-\_\-user} & \\
+\hline
+string & {\em \$table\-Name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_stats_a421831a265621325e1fdd19aace0c758}{\index{Stats@{Stats}!\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}}
+\index{\-\_\-\-\_\-destruct@{\-\_\-\-\_\-destruct}!Stats@{Stats}}
+\subsubsection[{\-\_\-\-\_\-destruct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a421831a265621325e1fdd19aace0c758}
+Destructor. Unsets all object variables 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_stats_adf94df76cef17a9a175924473b71446e}{\index{Stats@{Stats}!count\-Dates@{count\-Dates}}
+\index{count\-Dates@{count\-Dates}!Stats@{Stats}}
+\subsubsection[{count\-Dates}]{\setlength{\rightskip}{0pt plus 5cm}count\-Dates (
+\begin{DoxyParamCaption}
+\item[{}]{\$start, }
+\item[{}]{\$end}
+\end{DoxyParamCaption}
+)}}\label{class_stats_adf94df76cef17a9a175924473b71446e}
+counts the number of days between to dates
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_a025ccf47b1021dba92cb33c15b36e63b}{\index{Stats@{Stats}!get\-First\-Date@{get\-First\-Date}}
+\index{get\-First\-Date@{get\-First\-Date}!Stats@{Stats}}
+\subsubsection[{get\-First\-Date}]{\setlength{\rightskip}{0pt plus 5cm}get\-First\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a025ccf47b1021dba92cb33c15b36e63b}
+gets the first date logged in the stats
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_stats_a4de981ae1f7c64de95d1d98f001b3e5f}{\index{Stats@{Stats}!get\-Last\-Date@{get\-Last\-Date}}
+\index{get\-Last\-Date@{get\-Last\-Date}!Stats@{Stats}}
+\subsubsection[{get\-Last\-Date}]{\setlength{\rightskip}{0pt plus 5cm}get\-Last\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a4de981ae1f7c64de95d1d98f001b3e5f}
+gets the last date logged in the stats
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_stats_af0592a90f0b14c809dad12c026a18b68}{\index{Stats@{Stats}!get\-Raw\-Stats@{get\-Raw\-Stats}}
+\index{get\-Raw\-Stats@{get\-Raw\-Stats}!Stats@{Stats}}
+\subsubsection[{get\-Raw\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}get\-Raw\-Stats (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}, }
+\item[{}]{\$fields = {\ttfamily '$\ast$'}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_af0592a90f0b14c809dad12c026a18b68}
+gets complete raw stats for the range identified C\-A\-U\-T\-I\-O\-N!!! Keeping \$start and \$end as N\-U\-L\-L will result in far too much data in most instances
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date \\
+\hline
+string & {\em \$fields} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_stats_ab8b13de24fa5d9e50a0d7cf9e9f1af32}{\index{Stats@{Stats}!get\-Total\-Distinct\-I\-Ps@{get\-Total\-Distinct\-I\-Ps}}
+\index{get\-Total\-Distinct\-I\-Ps@{get\-Total\-Distinct\-I\-Ps}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-I\-Ps}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-I\-Ps (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_ab8b13de24fa5d9e50a0d7cf9e9f1af32}
+gets the total number of distinct I\-P addresses (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_aaf9ae81485efae3ce6f902ddac969a45}{\index{Stats@{Stats}!get\-Total\-Distinct\-Pages@{get\-Total\-Distinct\-Pages}}
+\index{get\-Total\-Distinct\-Pages@{get\-Total\-Distinct\-Pages}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-Pages}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-Pages (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_aaf9ae81485efae3ce6f902ddac969a45}
+gets the total number of distinct pages (optionally\-: within a specified range) The 'page' column is derived from \$\-\_\-\-S\-E\-R\-V\-E\-R\mbox{[}'P\-H\-P\-\_\-\-S\-E\-L\-F'\mbox{]} which means it only gets the actual page that was viewed, without the query string variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_aa186bab67dcb150d445b84e6ec52cfd9}{\index{Stats@{Stats}!get\-Total\-Distinct\-Sessions@{get\-Total\-Distinct\-Sessions}}
+\index{get\-Total\-Distinct\-Sessions@{get\-Total\-Distinct\-Sessions}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-Sessions}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-Sessions (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_aa186bab67dcb150d445b84e6ec52cfd9}
+gets the total number of distinct sessions (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_a0c99010e511c7fc19ad59f16179524cb}{\index{Stats@{Stats}!get\-Total\-Distinct\-U\-R\-Is@{get\-Total\-Distinct\-U\-R\-Is}}
+\index{get\-Total\-Distinct\-U\-R\-Is@{get\-Total\-Distinct\-U\-R\-Is}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-U\-R\-Is}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-U\-R\-Is (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a0c99010e511c7fc19ad59f16179524cb}
+gets the total number of distinct U\-R\-Is (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_a85991d88c2f5401b051cc554b04bdec8}{\index{Stats@{Stats}!get\-Total\-Distinct\-User\-Agents@{get\-Total\-Distinct\-User\-Agents}}
+\index{get\-Total\-Distinct\-User\-Agents@{get\-Total\-Distinct\-User\-Agents}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-User\-Agents}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-User\-Agents (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a85991d88c2f5401b051cc554b04bdec8}
+gets the total number of distinct user agents (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_a6c944fec89049927b811bd786a934e96}{\index{Stats@{Stats}!get\-Total\-Distinct\-Users@{get\-Total\-Distinct\-Users}}
+\index{get\-Total\-Distinct\-Users@{get\-Total\-Distinct\-Users}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Distinct\-Users}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Distinct\-Users (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a6c944fec89049927b811bd786a934e96}
+gets the total number of distinct users (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_a017d22295900a75171f1a3e5b488eb09}{\index{Stats@{Stats}!get\-Total\-Page\-Views@{get\-Total\-Page\-Views}}
+\index{get\-Total\-Page\-Views@{get\-Total\-Page\-Views}!Stats@{Stats}}
+\subsubsection[{get\-Total\-Page\-Views}]{\setlength{\rightskip}{0pt plus 5cm}get\-Total\-Page\-Views (
+\begin{DoxyParamCaption}
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a017d22295900a75171f1a3e5b488eb09}
+gets the total number of page views (optionally\-: within a specified range)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & start date \\
+\hline
+string & {\em \$end} & end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\hypertarget{class_stats_aec6efc1f87114d251b6d91be90bc3ddd}{\index{Stats@{Stats}!insert\-Stats@{insert\-Stats}}
+\index{insert\-Stats@{insert\-Stats}!Stats@{Stats}}
+\subsubsection[{insert\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}insert\-Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stats_aec6efc1f87114d251b6d91be90bc3ddd}
+inserts the stats into the database
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_stats_a604a265217a1774947350bca38b39e01}{\index{Stats@{Stats}!set\-Ignore@{set\-Ignore}}
+\index{set\-Ignore@{set\-Ignore}!Stats@{Stats}}
+\subsubsection[{set\-Ignore}]{\setlength{\rightskip}{0pt plus 5cm}set\-Ignore (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{class_stats_a604a265217a1774947350bca38b39e01}
+Sets the array of pages to be ignored (I\-O\-W not included in stats)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Stats.\-class.\-php\end{DoxyCompactItemize}

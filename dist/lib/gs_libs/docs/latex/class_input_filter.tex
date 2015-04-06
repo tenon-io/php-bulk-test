@@ -1,0 +1,259 @@
+\hypertarget{class_input_filter}{\section{Input\-Filter Class Reference}
+\label{class_input_filter}\index{Input\-Filter@{Input\-Filter}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_filter_ac48b3a07e4a3516c1d85ae3900cf3fb9}{\-\_\-\-\_\-construct} (\$tags\-Array=array(), \$attr\-Array=array(), \$tags\-Method=0, \$attr\-Method=0, \$xss\-Auto=1)
+\item 
+\hyperlink{class_input_filter_ac31900343e78d4b54e911d5af3c0b5e0}{process} (\$source)
+\item 
+\hyperlink{class_input_filter_a178f6ea15a691d60ebdcbcd2b7dbc743}{safe\-S\-Q\-L} (\$source)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_filter_a591a2b5e435a9d6eabe460819c41159c}{remove} (\$source)
+\item 
+\hyperlink{class_input_filter_a533c70ae138d5d14952ff868a168400d}{filter\-Tags} (\$source)
+\item 
+\hyperlink{class_input_filter_aae4567b940a1791eaf23770c4aa4376e}{filter\-Attr} (\$attr\-Set)
+\item 
+\hyperlink{class_input_filter_a8c18f57237b969231418c2d66ecd125d}{decode} (\$source)
+\item 
+\hyperlink{class_input_filter_a93797cf4a5128b15af79cb1c41553f32}{quote\-Smart} (\$source)
+\item 
+\hyperlink{class_input_filter_afadf58dcf9a66f9bf52ee8d4a19db97b}{escape\-String} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_input_filter_ae7f8f42c50985c03196222b4f1539ee0}{{\bfseries \$tags\-Array}}\label{class_input_filter_ae7f8f42c50985c03196222b4f1539ee0}
+
+\item 
+\hypertarget{class_input_filter_a39fb95773386c0379371b2520dd8cd8d}{{\bfseries \$attr\-Array}}\label{class_input_filter_a39fb95773386c0379371b2520dd8cd8d}
+
+\item 
+\hypertarget{class_input_filter_a8045801eda1e935339329800ec06bfba}{{\bfseries \$tags\-Method}}\label{class_input_filter_a8045801eda1e935339329800ec06bfba}
+
+\item 
+\hypertarget{class_input_filter_a3d010c4cf00e557c98fdfd6376ff85b4}{{\bfseries \$attr\-Method}}\label{class_input_filter_a3d010c4cf00e557c98fdfd6376ff85b4}
+
+\item 
+\hypertarget{class_input_filter_aebb1642f22abcf61c4a863789e36bbb1}{{\bfseries \$xss\-Auto}}\label{class_input_filter_aebb1642f22abcf61c4a863789e36bbb1}
+
+\item 
+\hypertarget{class_input_filter_a729b176d3d97e4d8961e15fe622ea58e}{{\bfseries \$tag\-Blacklist} = array('applet', 'body', 'bgsound', 'base', 'basefont', 'embed', 'frame', 'frameset', 'head', 'html', 'id', 'iframe', 'ilayer', 'layer', 'link', 'meta', 'name', 'object', 'script', 'style', 'title', 'xml')}\label{class_input_filter_a729b176d3d97e4d8961e15fe622ea58e}
+
+\item 
+\hypertarget{class_input_filter_a5d1cf3b7473a284ddbb8573cf52a2718}{{\bfseries \$attr\-Blacklist} = array('action', 'background', 'codebase', 'dynsrc', 'lowsrc')}\label{class_input_filter_a5d1cf3b7473a284ddbb8573cf52a2718}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+comments)  \-: P\-H\-P Input Filter \begin{DoxyDate}{Date}
+\-: 10-\/05-\/2005 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+\-: 1.\-2.\-2\-\_\-php5 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+\-: Daniel Morris \-: Gianpaolo Racca, Ghislain Picard, Marco Wandschneider, Chris Tobin and Andrew Eddie. 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+\-: Daniel Morris  \-: G\-N\-U General Public License (G\-P\-L) 
+\end{DoxyCopyright}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_input_filter_ac48b3a07e4a3516c1d85ae3900cf3fb9}{\index{Input\-Filter@{Input\-Filter}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!InputFilter@{Input\-Filter}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$tags\-Array = {\ttfamily array()}, }
+\item[{}]{\$attr\-Array = {\ttfamily array()}, }
+\item[{}]{\$tags\-Method = {\ttfamily 0}, }
+\item[{}]{\$attr\-Method = {\ttfamily 0}, }
+\item[{}]{\$xss\-Auto = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_input_filter_ac48b3a07e4a3516c1d85ae3900cf3fb9}
+Constructor for input\-Filter class. Only first parameter is required.
+
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+Array & {\em \$tags\-Array} & -\/ list of user-\/defined tags \\
+\hline
+Array & {\em \$attr\-Array} & -\/ list of user-\/defined attributes \\
+\hline
+int & {\em \$tags\-Method} & -\/ 0= allow just user-\/defined, 1= allow all but user-\/defined \\
+\hline
+int & {\em \$attr\-Method} & -\/ 0= allow just user-\/defined, 1= allow all but user-\/defined \\
+\hline
+int & {\em \$xss\-Auto} & -\/ 0= only auto clean essentials, 1= allow clean blacklisted tags/attr \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_input_filter_a8c18f57237b969231418c2d66ecd125d}{\index{Input\-Filter@{Input\-Filter}!decode@{decode}}
+\index{decode@{decode}!InputFilter@{Input\-Filter}}
+\subsubsection[{decode}]{\setlength{\rightskip}{0pt plus 5cm}decode (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_a8c18f57237b969231418c2d66ecd125d}
+Try to convert to plaintext
+
+protected
+
+
+\begin{DoxyParams}[1]{Parameters}
+String & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_afadf58dcf9a66f9bf52ee8d4a19db97b}{\index{Input\-Filter@{Input\-Filter}!escape\-String@{escape\-String}}
+\index{escape\-String@{escape\-String}!InputFilter@{Input\-Filter}}
+\subsubsection[{escape\-String}]{\setlength{\rightskip}{0pt plus 5cm}escape\-String (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_afadf58dcf9a66f9bf52ee8d4a19db97b}
+\begin{DoxyAuthor}{Author}
+Chris Tobin 
+
+Daniel Morris  protected
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_aae4567b940a1791eaf23770c4aa4376e}{\index{Input\-Filter@{Input\-Filter}!filter\-Attr@{filter\-Attr}}
+\index{filter\-Attr@{filter\-Attr}!InputFilter@{Input\-Filter}}
+\subsubsection[{filter\-Attr}]{\setlength{\rightskip}{0pt plus 5cm}filter\-Attr (
+\begin{DoxyParamCaption}
+\item[{}]{\$attr\-Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_aae4567b940a1791eaf23770c4aa4376e}
+Internal method to strip a tag of certain attributes
+
+protected
+
+
+\begin{DoxyParams}[1]{Parameters}
+Array & {\em \$attr\-Set} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array \$new\-Set 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_a533c70ae138d5d14952ff868a168400d}{\index{Input\-Filter@{Input\-Filter}!filter\-Tags@{filter\-Tags}}
+\index{filter\-Tags@{filter\-Tags}!InputFilter@{Input\-Filter}}
+\subsubsection[{filter\-Tags}]{\setlength{\rightskip}{0pt plus 5cm}filter\-Tags (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_a533c70ae138d5d14952ff868a168400d}
+Internal method to strip a string of certain tags
+
+protected
+
+
+\begin{DoxyParams}[1]{Parameters}
+String & {\em \$source} & -\/ input string to be 'cleaned'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source -\/ 'cleaned' version of input parameter 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_ac31900343e78d4b54e911d5af3c0b5e0}{\index{Input\-Filter@{Input\-Filter}!process@{process}}
+\index{process@{process}!InputFilter@{Input\-Filter}}
+\subsubsection[{process}]{\setlength{\rightskip}{0pt plus 5cm}process (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)}}\label{class_input_filter_ac31900343e78d4b54e911d5af3c0b5e0}
+Method to be called by another php script. Processes for X\-S\-S and specified bad code.
+
+public
+
+
+\begin{DoxyParams}[1]{Parameters}
+Mixed & {\em \$source} & -\/ input string/array-\/of-\/string to be 'cleaned'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source -\/ 'cleaned' version of input parameter 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_a93797cf4a5128b15af79cb1c41553f32}{\index{Input\-Filter@{Input\-Filter}!quote\-Smart@{quote\-Smart}}
+\index{quote\-Smart@{quote\-Smart}!InputFilter@{Input\-Filter}}
+\subsubsection[{quote\-Smart}]{\setlength{\rightskip}{0pt plus 5cm}quote\-Smart (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_a93797cf4a5128b15af79cb1c41553f32}
+\begin{DoxyAuthor}{Author}
+Chris Tobin 
+
+Daniel Morris  protected
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+String & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_a591a2b5e435a9d6eabe460819c41159c}{\index{Input\-Filter@{Input\-Filter}!remove@{remove}}
+\index{remove@{remove}!InputFilter@{Input\-Filter}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}remove (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_input_filter_a591a2b5e435a9d6eabe460819c41159c}
+Internal method to iteratively remove all unwanted tags and attributes
+
+protected
+
+
+\begin{DoxyParams}[1]{Parameters}
+String & {\em \$source} & -\/ input string to be 'cleaned'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source -\/ 'cleaned' version of input parameter 
+\end{DoxyReturn}
+\hypertarget{class_input_filter_a178f6ea15a691d60ebdcbcd2b7dbc743}{\index{Input\-Filter@{Input\-Filter}!safe\-S\-Q\-L@{safe\-S\-Q\-L}}
+\index{safe\-S\-Q\-L@{safe\-S\-Q\-L}!InputFilter@{Input\-Filter}}
+\subsubsection[{safe\-S\-Q\-L}]{\setlength{\rightskip}{0pt plus 5cm}safe\-S\-Q\-L (
+\begin{DoxyParamCaption}
+\item[{}]{\$source}
+\end{DoxyParamCaption}
+)}}\label{class_input_filter_a178f6ea15a691d60ebdcbcd2b7dbc743}
+Method to be called by another php script. Processes for S\-Q\-L injection
+
+public
+
+
+\begin{DoxyParams}[1]{Parameters}
+Mixed & {\em \$source} & -\/ input string/array-\/of-\/string to be 'cleaned'\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String \$source -\/ 'cleaned' version of input parameter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Input\-Filter.\-class.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,236 @@
+\hypertarget{class_h_t_m_l}{\section{H\-T\-M\-L Class Reference}
+\label{class_h_t_m_l}\index{H\-T\-M\-L@{H\-T\-M\-L}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_h_t_m_l_a1e9922fb2649f9daec7e6f6aa175b513}{trim\-\_\-link} (\$link, \$limit=50)
+\item 
+static \hyperlink{class_h_t_m_l_a4b790d727e0af073c9c2ac8a6e61e7f5}{add\-Links} (\$string)
+\item 
+static \hyperlink{class_h_t_m_l_a57f0036fe5c8f936509dfae0db8dfe1e}{email\-\_\-links} (\$string)
+\item 
+static \hyperlink{class_h_t_m_l_a50b9ae86bef1a3cc3dc3db0b5ddbe1f4}{extract\-Emails} (\$string)
+\item 
+static \hyperlink{class_h_t_m_l_a5d1e7d37a08bafd7d104f93df392b745}{get\-Links} (\$str)
+\item 
+static \hyperlink{class_h_t_m_l_ab415e22bfd0c559f285fdb798540ca04}{remove\-Images} (\$string)
+\item 
+static \hyperlink{class_h_t_m_l_ac5b3824500995287210d55f50c86407f}{get\-All\-Images} (\$data)
+\item 
+static \hyperlink{class_h_t_m_l_a91e29d92c34a75a1f1e662a4a22ca023}{get\-\_\-title\-\_\-tag} (\$page)
+\item 
+static \hyperlink{class_h_t_m_l_aec680be0c9763f9e5d1526a22b0848f7}{get\-Title\-From\-Source} (\$content)
+\item 
+static \hyperlink{class_h_t_m_l_adb257193ff7faa59c1720210b77ecf49}{contains\-H\-T\-M\-L} (\$str, \$count=false)
+\item 
+static \hyperlink{class_h_t_m_l_a84b1d11966a91441133d817e58bdf0bb}{make\-\_\-page\-\_\-keywords} (\$string, \$common\-\_\-words\-\_\-array, \$length=30, \$word\-\_\-length=3, \$delim=\char`\"{},\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for working with/ manipulating \hyperlink{class_h_t_m_l}{H\-T\-M\-L} content. This class is separate from the strings class because of the distinction that the strings class has more to do the the text nodes of \hyperlink{class_h_t_m_l}{H\-T\-M\-L} whereas this class mostly operates with the element nodes. This is sometimes a difficult distinction to make and there may at times be some overlap 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_h_t_m_l_a4b790d727e0af073c9c2ac8a6e61e7f5}{\index{H\-T\-M\-L@{H\-T\-M\-L}!add\-Links@{add\-Links}}
+\index{add\-Links@{add\-Links}!HTML@{H\-T\-M\-L}}
+\subsubsection[{add\-Links}]{\setlength{\rightskip}{0pt plus 5cm}static add\-Links (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a4b790d727e0af073c9c2ac8a6e61e7f5}
+automatically creates links out of strings that start with 'www' or 'http'
+
+\begin{DoxyAuthor}{Author}
+Brian Huisman -\/ \href{http://www.greywyvern.com}{\tt http\-://www.\-greywyvern.\-com}
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & string of text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the same input string is redisplayed with the links added 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_adb257193ff7faa59c1720210b77ecf49}{\index{H\-T\-M\-L@{H\-T\-M\-L}!contains\-H\-T\-M\-L@{contains\-H\-T\-M\-L}}
+\index{contains\-H\-T\-M\-L@{contains\-H\-T\-M\-L}!HTML@{H\-T\-M\-L}}
+\subsubsection[{contains\-H\-T\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}static contains\-H\-T\-M\-L (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_adb257193ff7faa59c1720210b77ecf49}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+bool | int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_a57f0036fe5c8f936509dfae0db8dfe1e}{\index{H\-T\-M\-L@{H\-T\-M\-L}!email\-\_\-links@{email\-\_\-links}}
+\index{email\-\_\-links@{email\-\_\-links}!HTML@{H\-T\-M\-L}}
+\subsubsection[{email\-\_\-links}]{\setlength{\rightskip}{0pt plus 5cm}static email\-\_\-links (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a57f0036fe5c8f936509dfae0db8dfe1e}
+does the same as above, except for email addresses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & string of text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the same input string is redisplayed with the email links added 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_a50b9ae86bef1a3cc3dc3db0b5ddbe1f4}{\index{H\-T\-M\-L@{H\-T\-M\-L}!extract\-Emails@{extract\-Emails}}
+\index{extract\-Emails@{extract\-Emails}!HTML@{H\-T\-M\-L}}
+\subsubsection[{extract\-Emails}]{\setlength{\rightskip}{0pt plus 5cm}static extract\-Emails (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a50b9ae86bef1a3cc3dc3db0b5ddbe1f4}
+pulls e-\/mail addresses from a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & the string we're looking in\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array an array of e-\/mail addresses 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_a91e29d92c34a75a1f1e662a4a22ca023}{\index{H\-T\-M\-L@{H\-T\-M\-L}!get\-\_\-title\-\_\-tag@{get\-\_\-title\-\_\-tag}}
+\index{get\-\_\-title\-\_\-tag@{get\-\_\-title\-\_\-tag}!HTML@{H\-T\-M\-L}}
+\subsubsection[{get\-\_\-title\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}static get\-\_\-title\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a91e29d92c34a75a1f1e662a4a22ca023}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_ac5b3824500995287210d55f50c86407f}{\index{H\-T\-M\-L@{H\-T\-M\-L}!get\-All\-Images@{get\-All\-Images}}
+\index{get\-All\-Images@{get\-All\-Images}!HTML@{H\-T\-M\-L}}
+\subsubsection[{get\-All\-Images}]{\setlength{\rightskip}{0pt plus 5cm}static get\-All\-Images (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_ac5b3824500995287210d55f50c86407f}
+gets all of the images
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_h_t_m_l_a5d1e7d37a08bafd7d104f93df392b745}{\index{H\-T\-M\-L@{H\-T\-M\-L}!get\-Links@{get\-Links}}
+\index{get\-Links@{get\-Links}!HTML@{H\-T\-M\-L}}
+\subsubsection[{get\-Links}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Links (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a5d1e7d37a08bafd7d104f93df392b745}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_aec680be0c9763f9e5d1526a22b0848f7}{\index{H\-T\-M\-L@{H\-T\-M\-L}!get\-Title\-From\-Source@{get\-Title\-From\-Source}}
+\index{get\-Title\-From\-Source@{get\-Title\-From\-Source}!HTML@{H\-T\-M\-L}}
+\subsubsection[{get\-Title\-From\-Source}]{\setlength{\rightskip}{0pt plus 5cm}static get\-Title\-From\-Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_aec680be0c9763f9e5d1526a22b0848f7}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_a84b1d11966a91441133d817e58bdf0bb}{\index{H\-T\-M\-L@{H\-T\-M\-L}!make\-\_\-page\-\_\-keywords@{make\-\_\-page\-\_\-keywords}}
+\index{make\-\_\-page\-\_\-keywords@{make\-\_\-page\-\_\-keywords}!HTML@{H\-T\-M\-L}}
+\subsubsection[{make\-\_\-page\-\_\-keywords}]{\setlength{\rightskip}{0pt plus 5cm}static make\-\_\-page\-\_\-keywords (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$common\-\_\-words\-\_\-array, }
+\item[{}]{\$length = {\ttfamily 30}, }
+\item[{}]{\$word\-\_\-length = {\ttfamily 3}, }
+\item[{}]{\$delim = {\ttfamily \char`\"{},\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a84b1d11966a91441133d817e58bdf0bb}
+takes a string of text and retrieves a filtered list of keywords within the text
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & the text to be filtered \\
+\hline
+array & {\em \$common\-\_\-words\-\_\-array} & array of common words to be stripped \\
+\hline
+int | string & {\em \$length} & the number of words to be included \\
+\hline
+int | string & {\em \$word\-\_\-length} & the string length of the words to be included \\
+\hline
+string & {\em \$delim} & the item being used as delimiter on the string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_ab415e22bfd0c559f285fdb798540ca04}{\index{H\-T\-M\-L@{H\-T\-M\-L}!remove\-Images@{remove\-Images}}
+\index{remove\-Images@{remove\-Images}!HTML@{H\-T\-M\-L}}
+\subsubsection[{remove\-Images}]{\setlength{\rightskip}{0pt plus 5cm}static remove\-Images (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_ab415e22bfd0c559f285fdb798540ca04}
+removes images from a string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & the string clean\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{class_h_t_m_l_a1e9922fb2649f9daec7e6f6aa175b513}{\index{H\-T\-M\-L@{H\-T\-M\-L}!trim\-\_\-link@{trim\-\_\-link}}
+\index{trim\-\_\-link@{trim\-\_\-link}!HTML@{H\-T\-M\-L}}
+\subsubsection[{trim\-\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}static trim\-\_\-link (
+\begin{DoxyParamCaption}
+\item[{}]{\$link, }
+\item[{}]{\$limit = {\ttfamily 50}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_t_m_l_a1e9922fb2649f9daec7e6f6aa175b513}
+trims the text from a link so it doesn't b0rk anything
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$link} & the link \\
+\hline
+int & {\em \$limit} & the number of characters allowed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the same input string is returned, shortened 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+H\-T\-M\-L.\-class.\-php\end{DoxyCompactItemize}
