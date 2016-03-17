@@ -26,7 +26,6 @@ http://www.marathonpetroleum.com
 http://www.citigroup.com
 http://www.adm.com
 http://www.amerisourcebergen.com
-http://www.wellsfargo.com
 http://www.boeing.com
 http://www.pg.com
 http://www.freddiemac.com

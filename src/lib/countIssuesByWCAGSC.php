@@ -25,8 +25,8 @@ $out .= '<tbody>';
 foreach ($data AS $k => $v) {
     $out .= '<tr>';
     $out .= '<td>' . $k .'&nbsp;' . $reports->getSCTitle($k) .'</td>';
-    $out .= '<td>' . $v .'</td>';
-    $out .= '<td></td>';
+    $out .= '<td class="data">' . $v .'</td>';
+    $out .= '<td class="pct"></td>';
     $out .= '</tr>';
 }
 
