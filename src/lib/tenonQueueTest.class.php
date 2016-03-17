@@ -38,6 +38,7 @@ class tenonQueueTest extends tenonTest
             $this->connection['port']);
 
         if (false === $this->db) {
+            echo 'Could not connect to database<br>';
             return false;
         }
 
@@ -229,6 +230,8 @@ class tenonQueueTest extends tenonTest
                 array_unshift($queries, 'TRUNCATE TABLE queue');
             }
 
+            var_dump($queries);
+
             return $this->db->MultiQuery($queries);
         }
     }
@@ -243,6 +246,9 @@ class tenonQueueTest extends tenonTest
 
         $queries[] = "TRUNCATE TABLE issues";
         $queries[] = "TRUNCATE TABLE responseLog";
+
+        var_dump($queries);
+        echo '<br>';
 
         return $this->db->MultiQuery($queries);
     }
@@ -260,6 +266,9 @@ class tenonQueueTest extends tenonTest
             $queries[] = "DELETE FROM queue WHERE url LIKE '%" . $ext . "'";
 
         }
+
+        var_dump($queries);
+        echo '<br>';
 
         return $this->db->MultiQuery($queries);
 
@@ -321,13 +330,19 @@ class tenonQueueTest extends tenonTest
      */
     public function getDistinctResponses($status = null)
     {
-        $query = "SELECT DISTINCT responseID FROM responseLog";
+        $query = "SELECT DISTINCT responseID FROM queue";
 
         if (!is_null($status)) {
             $query .= Strings::strPad(sprintf("WHERE status='%s'", $this->db->EscapeString($status)));
         }
 
         $data = $this->db->SelectData($query, PDO::FETCH_ASSOC);
+
+        var_dump($query);
+        echo '<br>';
+
+        var_dump(count($data));
+        echo '<br>';
 
         return $data;
 
@@ -343,6 +358,7 @@ class tenonQueueTest extends tenonTest
         $data = $this->db->SelectData($query, PDO::FETCH_ASSOC);
 
         if (false === $data) {
+            echo 'No issues in database!<br>';
             return false;
         }
 
@@ -361,11 +377,13 @@ class tenonQueueTest extends tenonTest
         $data = $this->db->SelectData($query, PDO::FETCH_ASSOC);
 
         if (false === $data) {
+            echo 'No issues exist for responseID: ' . $id . '<br>';
             return false;
         }
-
-        return $this->writeResultsToCSV($data, $this->cleanFileName($data[0]['url']) . '.csv');
-
+        else {
+            echo count($data) . ' issues for responseID: ' . $id . '<br>';
+            return $this->writeResultsToCSV($data, $this->cleanFileName($data[0]['url']) . '.csv');
+        }
     }
 
     /**
@@ -382,6 +400,8 @@ class tenonQueueTest extends tenonTest
         $responses = $this->getDistinctResponses($status);
 
         $count = count($responses);
+
+        echo $count . ' distinct responses. <br>';
 
         for ($x = 0; $x < $count; $x++) {
             $this->exportIssuesByResponseID($responses[$x]['responseID']);
@@ -408,6 +428,7 @@ class tenonQueueTest extends tenonTest
         $count = count($issues);
 
         if ($count < 1) {
+            echo 'No results to write to CSV. <br>';
             return false;
         }
 
@@ -442,10 +463,12 @@ class tenonQueueTest extends tenonTest
                 fputcsv($fp, $fields);
             }
             fclose($fp);
-
+            echo EXPORT_FOLDER_PATH . $name . 'written! <br>';
             return true;
         }
-
-        return false;
+        else {
+            echo 'Could not write' . EXPORT_FOLDER_PATH . $name . '<br>';
+            return false;
+        }
     }
 }

@@ -13,8 +13,8 @@ define('DEBUG', false);
 define('TENON_API_KEY', '');
 
 // You must use the URL for a Tenon API end point. For enterprise users, this might be custom
-// but for everyone else, it will be https://tenon.io/api/
-define('TENON_API_URL', 'https://tenon.io/api/');
+// but for everyone else, it will be https://tenon.io/api/index.php
+define('TENON_API_URL', 'https://tenon.io/api/index.php');
 
 // This is the file path for the queue file.
 define('QUEUE_FILE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/queue.txt');
@@ -39,12 +39,12 @@ $tenonOpts = array(
     'level'          => 'AAA', // minimum WCAG Level
     'certainty'      => 0, // minimum test certainty
     'priority'       => 0, // minimum priority
-    'projectID'      => '', // system ID - left blank by default
+    'projectID'      => '', // project ID - left blank by default
     'viewPortHeight' => '', //height of the viewport for Tenon to test in
     'viewPortWidth'  => '', //width of the viewport for Tenon to test in
-    'uaString'       => '', // user agent string for Tenon to use
-    'ref'            => 0, // whether to include reference material in the response
-    'store'          => 0 // whether to store the response data on Tenon's servers
+    'uaString'       => '', // user agent string for Tenon to use during testing.
+    'ref'            => 0, // whether to include reference material in the response -  set to '1' if you want the reference link
+    'store'          => 0 // whether to store the response data on Tenon's servers - set to '1' if you want the results stored on Tenon
 );
 
 // Database connection details
@@ -53,7 +53,7 @@ $dbConnection['user'] = '';
 $dbConnection['pass'] = '';
 $dbConnection['opts'] = null;
 $dbConnection['dbType'] = 'mysql';
-$dbConnection['hostORpath'] = $_SERVER['MYSQL_HOST'];
+$dbConnection['hostORpath'] = 'localhost';
 
 
 /**

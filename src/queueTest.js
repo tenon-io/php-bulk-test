@@ -29,7 +29,8 @@ $(document).ready(function () {
     function queueTest() {
         $.get('test.php', function (response) {
 
-            console.log(response);
+            //console.log(response);
+            //console.log(response.responseID);
 
             if (typeof response !== 'undefined') {
                 var logs = $('#results tbody');
@@ -52,7 +53,6 @@ $(document).ready(function () {
                     });
                 }
             }
-
         }, 'json');
 
 
@@ -60,6 +60,6 @@ $(document).ready(function () {
 
 
     if ($('#results').length > 0) {
-        setInterval(queueTest, 100);
+        setInterval(queueTest, 500);
     }
 });

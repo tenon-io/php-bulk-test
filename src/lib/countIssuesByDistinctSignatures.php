@@ -18,6 +18,7 @@ $out .= '<table class="table table-striped table-condensed">
 <tr>
 <th scope="col">Error Title</th>
 <th scope="col">Num. Instances</th>
+$out .= \'<th scope="col">Percent</th>\';
 </tr>
 </thead>
 <tbody>';
@@ -26,6 +27,7 @@ foreach ($data AS $k => $v) {
     $out .= '<tr>';
     $out .= '<td>' . $k . '</td>';
     $out .= '<td>' . $v . '</td>';
+    $out .= '<td></td>';
     $out .= '</tr>';
 }
 

@@ -10,7 +10,10 @@ $tenon = new tenonQueueTest($tenonOpts, $dbConnection);
 
 // check to see if there are any pages in the queue
 // we do this by counting the length of the queue. Proceed if the queue is > 1
-if ($tenon->getQueueLength() > 0) {
+if ($tenon->getQueueLength() < 1) {
+    exit;
+}
+else{
     $next = $tenon->pluckURL();
 
     if (false !== $next) {
@@ -29,7 +32,7 @@ if ($tenon->getQueueLength() > 0) {
         $response = array(
             'responseID' => $tenon->rspArray['request']['responseID'],
             'dateAdded'  => $tenon->rspArray['responseTime'],
-            'url'        => $tenon->rspArray['request']['url'],
+            'url'        => Strings::truncateToMiddle($tenon->rspArray['request']['url'], 75),
             'status'     => $tenon->rspArray['status'],
             'errors'     => $tenon->rspArray['resultSummary']['issues']['totalErrors'],
             'warnings'   => $tenon->rspArray['resultSummary']['issues']['totalWarnings'],
@@ -52,18 +55,17 @@ if ($tenon->getQueueLength() > 0) {
             $update['status'] = $tenon->rspArray['status'];
             $update['tested'] = '0';
             $update['retries'] = $next['retries'] + 1;
-
-            sleep(1);
         }
-
         $update['testing'] = '0';
         $tenon->updateQueuedURL($update, $next['queueID']);
     }
-
 }
 
 $response['totalRemaining'] = $tenon->getTotalUntested();
 $response['totalTested'] = $tenon->getTotalTested();
 $response['totalFailed'] = $tenon->getTotalFailed();
 
+
 echo json_encode($response);
+$tenon = null;
+$response = null;

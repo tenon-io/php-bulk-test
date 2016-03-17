@@ -9,4 +9,4 @@ if (false === $data) {
     exit;
 }
 
-echo round($data);
+echo round($data) . '%';

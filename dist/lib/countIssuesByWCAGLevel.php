@@ -17,6 +17,7 @@ $out .= '<thead>';
 $out .= '<tr>';
 $out .= '<th>WCAG Level</th>';
 $out .= '<th>Count</th>';
+$out .= '<th scope="col">Percent</th>';
 $out .= '</tr>';
 $out .= '</thead>';
 $out .= '<tbody>';
@@ -25,6 +26,7 @@ foreach ($data AS $k => $v) {
     $out .= '<tr>';
     $out .= '<td>' . $k . '</td>';
     $out .= '<td>' . $v . '</td>';
+    $out .= '<td></td>';
     $out .= '</tr>';
 }
 

@@ -85,7 +85,7 @@ class reports
      */
     public function countAvgErrorsPerPage()
     {
-        $query = "SELECT AVG(errors) AS avgErrors FROM responseLog";
+        $query = "SELECT AVG(errors) AS avgErrors FROM responseLog WHERE status='200'";
 
         $data = $this->db->SelectSingleRecord($query, PDO::FETCH_ASSOC);
 
@@ -101,7 +101,7 @@ class reports
      */
     public function countAvgWarningsPerPage()
     {
-        $query = "SELECT AVG(warnings) AS avgWarnings FROM responseLog";
+        $query = "SELECT AVG(warnings) AS avgWarnings FROM responseLog WHERE status='200'";
 
         $data = $this->db->SelectSingleRecord($query, PDO::FETCH_ASSOC);
 
@@ -117,7 +117,7 @@ class reports
      */
     public function countAvgIssuesPerPage()
     {
-        $query = "SELECT AVG(errors + warnings) AS avgIssues FROM responseLog";
+        $query = "SELECT AVG(errors + warnings) AS avgIssues FROM responseLog WHERE status='200'";
 
         $data = $this->db->SelectSingleRecord($query, PDO::FETCH_ASSOC);
 
@@ -343,5 +343,84 @@ class reports
         }
 
         return $output;
+    }
+
+    /**
+     *
+     */
+    public function getSCArray(){
+        $this->SCArray['1.1.1'] = "Non-text Content (Level A)";
+        $this->SCArray['1.2.1'] = "Audio-only and Video-only (Prerecorded) (Level A)";
+        $this->SCArray['1.2.2'] = "Captions (Prerecorded) (Level A)";
+        $this->SCArray['1.2.3'] = "Audio Description or Media Alternative (Prerecorded) (Level A)";
+        $this->SCArray['1.2.4'] = "Captions (Live) (Level AA)";
+        $this->SCArray['1.2.5'] = "Audio Description (Prerecorded) (Level AA)";
+        $this->SCArray['1.2.6'] = "Sign Language (Prerecorded) (Level AAA)";
+        $this->SCArray['1.2.7'] = "Extended Audio Description (Prerecorded) (Level AAA)";
+        $this->SCArray['1.2.8'] = "Media Alternative (Prerecorded) (Level AAA)";
+        $this->SCArray['1.2.9'] = "Audio-only (Live) (Level AAA)";
+        $this->SCArray['1.3.1'] = "Info and Relationships (Level A)";
+        $this->SCArray['1.3.2'] = "Meaningful Sequence (Level A)";
+        $this->SCArray['1.3.3'] = "Sensory Characteristics (Level A)";
+        $this->SCArray['1.4.1'] = "Use of Color (Level A)";
+        $this->SCArray['1.4.2'] = "Audio Control (Level A)";
+        $this->SCArray['1.4.3'] = "Contrast (Minimum) (Level AA)";
+        $this->SCArray['1.4.4'] = "Resize text (Level AA)";
+        $this->SCArray['1.4.5'] = "Images of Text (Level AA)";
+        $this->SCArray['1.4.6'] = "Contrast (Enhanced) (Level AA)";
+        $this->SCArray['1.4.7'] = "Low or No Background Audio (Level AAA)";
+        $this->SCArray['1.4.8'] = "Visual Presentation (Level AAA)";
+        $this->SCArray['1.4.9'] = "Images of Text (No Exception) (Level AAA)";
+        $this->SCArray['2.1.1'] = "Keyboard (Level A)";
+        $this->SCArray['2.1.2'] = "No Keyboard Trap (Level A)";
+        $this->SCArray['2.1.3'] = "Keyboard (No Exception) (Level AAA)";
+        $this->SCArray['2.2.1'] = "Timing Adjustable (Level A)";
+        $this->SCArray['2.2.2'] = "Pause, Stop, Hide (Level AA)";
+        $this->SCArray['2.2.3'] = "No Timing (Level AAA)";
+        $this->SCArray['2.2.4'] = "Interruptions (Level AAA)";
+        $this->SCArray['2.2.5'] = "Re-authenticating (Level AAA)";
+        $this->SCArray['2.3.1'] = "Three Flashes or Below Threshold (Level A)";
+        $this->SCArray['2.3.2'] = "Three Flashes (Level AAA)";
+        $this->SCArray['2.4.1'] = "Bypass Blocks (Level A)";
+        $this->SCArray['2.4.2'] = "Page Titled";
+        $this->SCArray['2.4.3'] = "Focus Order (Level A)";
+        $this->SCArray['2.4.4'] = "Link Purpose (In Context) (Level A)";
+        $this->SCArray['2.4.5'] = "Multiple Ways (Level AA)";
+        $this->SCArray['2.4.6'] = "Headings and Labels (Level AA)";
+        $this->SCArray['2.4.7'] = "Focus Visible (Level AA)";
+        $this->SCArray['2.4.8'] = "Location (Level AAA)";
+        $this->SCArray['2.4.9'] = "Link Purpose (Link Only) (Level AAA)";
+        $this->SCArray['2.4.10'] = "Section Headings (Level AAA)";
+        $this->SCArray['3.1.1'] = "Language of Page (Level A)";
+        $this->SCArray['3.1.2'] = "Language of Parts (Level AA)";
+        $this->SCArray['3.1.3'] = "Unusual Words (Level AAA)";
+        $this->SCArray['3.1.4'] = "Abbreviations (Level AAA)";
+        $this->SCArray['3.1.5'] = "Reading Level (Level AAA)";
+        $this->SCArray['3.1.6'] = "Pronunciation (Level AAA)";
+        $this->SCArray['3.2.1'] = "On Focus (Level A)";
+        $this->SCArray['3.2.2'] = "On Input (Level A)";
+        $this->SCArray['3.2.3'] = "Consistent Navigation (Level AA)";
+        $this->SCArray['3.2.4'] = "Consistent Identification (Level AA)";
+        $this->SCArray['3.2.5'] = "Change on Request (Level AAA)";
+        $this->SCArray['3.3.1'] = "Error Identification (Level A)";
+        $this->SCArray['3.3.2'] = "Labels or Instructions (Level A)";
+        $this->SCArray['3.3.3'] = "Error Suggestion (Level AA)";
+        $this->SCArray['3.3.4'] = "Error Prevention (Legal, Financial, Data) (Level AA)";
+        $this->SCArray['3.3.5'] = "Help (Level AAA)";
+        $this->SCArray['3.3.6'] = "Error Prevention (All) (Level AAA)";
+        $this->SCArray['4.1.1'] = "Parsing (Level A)";
+        $this->SCArray['4.1.2'] = "Name, Role, Value (Level A)";
+    }
+
+
+    /**
+     * @param $num
+     *
+     * @return mixed
+     */
+    public function getSCTitle($num){
+        if (array_key_exists($num, $this->SCArray)) {
+            return $this->SCArray[$num];
+        }
     }
 }

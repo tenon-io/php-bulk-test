@@ -2,6 +2,7 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/lib/config.php');
 $reports = new reports($dbConnection);
 
+$reports->getSCArray();
 $data = $reports->countIssuesByWCAGSC();
 
 if (false === $data) {
@@ -16,14 +17,16 @@ $out .= '<thead>';
 $out .= '<tr>';
 $out .= '<th scope="col">Success Criteria</th>';
 $out .= '<th scope="col">Num. Instances</th>';
+$out .= '<th scope="col">Percent</th>';
 $out .= '</tr>';
 $out .= '</thead>';
 $out .= '<tbody>';
 
 foreach ($data AS $k => $v) {
     $out .= '<tr>';
-    $out .= '<td>' . $k . '</td>';
-    $out .= '<td>' . $v . '</td>';
+    $out .= '<td>' . $k .'&nbsp;' . $reports->getSCTitle($k) .'</td>';
+    $out .= '<td>' . $v .'</td>';
+    $out .= '<td></td>';
     $out .= '</tr>';
 }
 

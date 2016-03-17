@@ -15,6 +15,7 @@ $out .= '<thead>';
 $out .= '<tr>';
 $out .= '<th scope="col">Error</th>';
 $out .= '<th scope="col">Num. Instances</th>';
+$out .= '<th scope="col">Percent</th>';
 $out .= '</tr>';
 $out .= '</thead>';
 $out .= '<tbody>';
@@ -23,6 +24,7 @@ foreach ($data as $k => $v) {
     $out .= '<tr>';
     $out .= '<td>' . $k . '</td>';
     $out .= '<td>' . $v . '</td>';
+    $out .= '<td></td>';
     $out .= '</tr>';
 }
 

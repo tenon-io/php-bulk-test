@@ -66,6 +66,7 @@
         <div id="countIssuesByPriority"></div>
     </section>
 </main>
+<script src="getTablePercentages.js"></script>
 <script src="reports.js"></script>
 
 </body>
