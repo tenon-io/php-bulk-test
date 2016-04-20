@@ -128,6 +128,22 @@ class reports
         return $data['avgIssues'];
     }
 
+    /**
+     * @return mixed
+     */
+    public function totalPagesTested()
+    {
+        $query = "SELECT COUNT(*) AS count FROM responseLog WHERE status='200'";
+
+        $data = $this->db->SelectSingleRecord($query, PDO::FETCH_ASSOC);
+
+        if (false === $data) {
+            return false;
+        }
+
+        return $data['count'];
+    }
+
 
     /**
      * @return array|bool

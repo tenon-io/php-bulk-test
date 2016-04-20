@@ -254,6 +254,17 @@ class tenonQueueTest extends tenonTest
     }
 
     /**
+    *
+    *   @param $url
+    *   @return bool
+    */
+    public function deleteByURL($url){
+        $query = sprintf("DELETE FROM queue WHERE url='%s'", $this->db->EscapeString($url));
+        return $this->db->DeleteData($url);
+    }
+
+
+    /**
      * @return mixed
      */
     public function cleanExts()

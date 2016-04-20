@@ -20,6 +20,7 @@ else{
 
         $tenon->opts['url'] = $next['url'];
 
+
         $tenon->submit(DEBUG);
 
         //return tenon's response code
@@ -52,12 +53,40 @@ else{
 
             $tenon->logIssues();
         } else {
+
+            $failed = true;
+
             $update['status'] = $tenon->rspArray['status'];
             $update['tested'] = '0';
             $update['retries'] = $next['retries'] + 1;
         }
         $update['testing'] = '0';
-        $tenon->updateQueuedURL($update, $next['queueID']);
+
+        // if this test run failed, it might be due to a bad URL
+        // check the MIME type to be sure
+        if($failed === true){
+
+            // get the MIME type from the headers
+            $mimeInfo = Network::getRemoteMimeType($tenon->opts['url']);
+
+            // sometimes the MIME type isn't properly set by some servers.
+            // returning FALSE from getRemoteMimeType isn't a guarantee
+            // that the MIME type is bad.
+            if(false !== $mimeInfo){
+                // MIME type header is actually the MIME type and charset.
+                // all we want is the content type so split it up
+                $parts = explode(';', $mimeInfo);
+
+                // if the URL isn't HTML then it must've gotten here by accident, so
+                // delete it instead of continuing to try.
+                if(false === Strings::contains('html', $parts[0])){
+                    $tenon->deleteByURL($tenon->opts['url']);
+                }
+            }
+        }
+        else{
+            $tenon->updateQueuedURL($update, $next['queueID']);
+        }
     }
 }
 

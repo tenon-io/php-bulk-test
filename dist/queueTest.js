@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function () {
 
     var resTable = $('#results');
@@ -36,7 +37,7 @@ $(document).ready(function () {
                 var logs = $('#results tbody');
                 var newRow = $('<tr></tr>');
 
-                if ($('th[id="' + response.responseID + '"]').length == 0) {
+                if ($('th[id="' + response.responseID + '"]').length === 0) {
                     $(newRow).append('<th scope="row" id="' + response.responseID + '">' + response.responseID + '</th>');
                     $(newRow).append('<td>' + response.dateAdded + '</td>');
                     $(newRow).append('<td>' + response.url + '</td>');
@@ -60,6 +61,6 @@ $(document).ready(function () {
 
 
     if ($('#results').length > 0) {
-        setInterval(queueTest, 500);
+        setInterval(queueTest, 1000);
     }
 });

@@ -20,6 +20,10 @@
         <h2>Summary</h2>
         <table class="table">
             <tr>
+                <td>Total Pages Tested</td>
+                <td id="totalPagesTested"></td>
+            </tr>
+            <tr>
                 <td>Average errors per page</td>
                 <td id="countAvgErrorsPerPage"></td>
             </tr>

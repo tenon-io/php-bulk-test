@@ -10,7 +10,7 @@ $.fn.extend({
             var value = $(this).text();
 
             // add only if the value is number
-            if (!isNaN(value) && value.length != 0) {
+            if (!isNaN(value) && value.length !== 0) {
                 sum += parseFloat(value);
             }
 
@@ -41,5 +41,3 @@ $.fn.extend({
 
     }
 });
-
-
