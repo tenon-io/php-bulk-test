@@ -62,9 +62,9 @@ class tenonQueueTest extends tenonTest
      */
     public function logResponse($data)
     {
-        $query = sprintf("INSERT INTO responseLog(responseID, dateAdded, url, status, errors, warnings) VALUES('%s', '%s', '%s', '%s','%s', '%s')",
+        $query = sprintf("INSERT INTO responseLog(responseID, dateAdded, url, status, errors, warnings, elapsed_time) VALUES('%s', '%s', '%s', '%s','%s', '%s', '%s')",
             $this->db->EscapeString($data['responseID']), $this->db->EscapeString($data['dateAdded']), $this->db->EscapeString($data['url']),
-            $this->db->EscapeString($data['status']), $this->db->EscapeString($data['errors']), $this->db->EscapeString($data['warnings']));
+            $this->db->EscapeString($data['status']), $this->db->EscapeString($data['errors']), $this->db->EscapeString($data['warnings']), $this->db->EscapeString($data['elapsed_time']));
 
         return $this->db->InsertData($query);
     }

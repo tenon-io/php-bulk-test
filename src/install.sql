@@ -97,3 +97,8 @@ ALTER TABLE `responseLog`
 --
 ALTER TABLE `queue`
 MODIFY `queueID` int(6) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `queue` ADD `elapsed_time` VARCHAR(255) NOT NULL;
+
+
+ALTER TABLE `responseLog` ADD `elapsed_time` VARCHAR(255) NOT NULL;

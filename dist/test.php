@@ -20,6 +20,7 @@ else{
 
         $tenon->opts['url'] = $next['url'];
 
+        $start_time = microtime(true);
 
         $tenon->submit(DEBUG);
 
@@ -29,14 +30,17 @@ else{
         // Sanity check to make sure everything went OK
         $tenon->decodeResponse();
 
+        $end_time = microtime(true);
+
         //assemble a response summary for appending to the #results table
         $response = array(
-            'responseID' => $tenon->rspArray['request']['responseID'],
-            'dateAdded'  => $tenon->rspArray['responseTime'],
-            'url'        => Strings::truncateToMiddle($tenon->rspArray['request']['url'], 75),
-            'status'     => $tenon->rspArray['status'],
-            'errors'     => $tenon->rspArray['resultSummary']['issues']['totalErrors'],
-            'warnings'   => $tenon->rspArray['resultSummary']['issues']['totalWarnings'],
+            'responseID'   => $tenon->rspArray['request']['responseID'],
+            'dateAdded'    => $tenon->rspArray['responseTime'],
+            'url'          => Strings::truncateToMiddle($tenon->rspArray['request']['url'], 75),
+            'status'       => $tenon->rspArray['status'],
+            'errors'       => $tenon->rspArray['resultSummary']['issues']['totalErrors'],
+            'warnings'     => $tenon->rspArray['resultSummary']['issues']['totalWarnings'],
+            'elapsed_time' => ($end_time - $start_time)
         );
 
         // This logs the response no matter what
