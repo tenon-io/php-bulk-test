@@ -6,7 +6,7 @@ This is a proof-of-concept created to demonstrate testing of a series of URLs us
 
 You need a Tenon API key to use this.  To get a key, go to [http://www.tenon.io/register.php](http://www.tenon.io/register.php) 
 
-You should eventually dive right into the documentation to make your own awesome stuff with Tenon API [https://bitbucket.org/tenon-io/tenon.io-documentation/](https://bitbucket.org/tenon-io/tenon.io-documentation/)
+You should eventually dive right into the documentation to make your own awesome stuff with Tenon API [https://tenon.io/documentation](https://tenon.io/documentation)
 
 ## How this thing works
 
