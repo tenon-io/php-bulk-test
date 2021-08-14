@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "time-grunt": "~0.3.1",
-        "grunt-sync": "0.0.7"
+        "grunt-sync": "0.8.2"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
@@ -43,7 +43,7 @@
         "grunt-contrib-uglify": "~0.7.0",
         "jshint-stylish": "~1.0.0",
         "time-grunt": "~0.3.2",
-        "grunt-sync": "0.0.7"
+        "grunt-sync": "0.8.2"
     },
     "licenses": [
         {
