@@ -26,7 +26,7 @@
         "url": "git@bitbucket.org:tenon-io/php-bulk-test.git"
     },
     "dependencies": {
-        "time-grunt": "~0.3.1",
+        "time-grunt": "~0.4.0",,
         "grunt-sync": "0.8.2"
     },
     "devDependencies": {
@@ -42,7 +42,7 @@
         "load-grunt-tasks": "~2.0.0",
         "grunt-contrib-uglify": "~0.7.0",
         "jshint-stylish": "~1.0.0",
-        "time-grunt": "~0.3.2",
+        "time-grunt": "~0.4.0",
         "grunt-sync": "0.8.2"
     },
     "licenses": [
